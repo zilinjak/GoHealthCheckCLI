@@ -3,7 +3,7 @@ on:
   push:
   pull_request:
 jobs:
-  build:
+  ci:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -18,13 +18,14 @@ jobs:
           version: v2.0
 
       - name: Format
-        run:
+        shell: bash
+        run: |
           files=$(gofmt -l .)
-            if [ -n "$files" ]; then
-                echo "The following files are not formatted:"
-                echo "$files"
-                exit 1
-            fi
+          if [ -n "$files" ]; then
+            echo "The following files are not formatted:"
+            echo "$files"
+            exit 1
+          fi
 
       - name: Build
         run: go build -v ./cmd/app
