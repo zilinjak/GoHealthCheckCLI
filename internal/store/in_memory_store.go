@@ -2,18 +2,24 @@ package store
 
 import (
 	"GoHealthChecker/internal/model"
+	"errors"
 	urllib "net/url"
 	"sync"
 )
 
 type InMemoryStore struct {
-	mu    sync.RWMutex
-	items map[string][]model.HealthCheckResult // Map of URL to result history
+	mu            sync.RWMutex
+	latestResults map[string]model.HealthCheckResult
+	resultMetrics map[string]model.Metrics
+
+	registeredURLs []string
 }
 
 func NewInMemoryStore() *InMemoryStore {
 	return &InMemoryStore{
-		items: make(map[string][]model.HealthCheckResult),
+		latestResults:  make(map[string]model.HealthCheckResult),
+		resultMetrics:  make(map[string]model.Metrics),
+		registeredURLs: make([]string, 0),
 	}
 }
 
@@ -21,29 +27,18 @@ func (s *InMemoryStore) SaveResult(url string, result model.HealthCheckResult) {
 	s.mu.Lock()
 	defer s.mu.Unlock()
 
-	s.items[url] = append(s.items[url], result)
-}
+	// create the latestResult && metrics incase of not initialized yet
+	s.latestResults[url] = result
 
-func (s *InMemoryStore) GetResult(url string) []model.HealthCheckResult {
-	s.mu.RLock()
-	defer s.mu.RUnlock()
-
-	history := make([]model.HealthCheckResult, len(s.items[url]))
-	copy(history, s.items[url])
-	return history
-}
-
-func (s *InMemoryStore) GetResultsAll() map[string][]model.HealthCheckResult {
-	s.mu.RLock()
-	defer s.mu.RUnlock()
-
-	// TODO: This can maybe be optimzed
-	resultsCopy := make(map[string][]model.HealthCheckResult)
-	for k, v := range s.items {
-		resultsCopy[k] = make([]model.HealthCheckResult, len(v))
-		copy(resultsCopy[k], v)
+	if _, exists := s.resultMetrics[url]; !exists {
+		// Create new metrics for first result
+		s.resultMetrics[url] = model.NewMetrics(result)
+	} else {
+		// if already initialized then update the metrics
+		metrics := s.resultMetrics[url]
+		metrics.Update(result)
+		s.resultMetrics[url] = metrics
 	}
-	return resultsCopy
 }
 
 func (s *InMemoryStore) AddURL(url string) error {
@@ -52,38 +47,43 @@ func (s *InMemoryStore) AddURL(url string) error {
 
 	// check if the URL is valid
 	if _, err := urllib.ParseRequestURI(url); err != nil {
-		return err // Invalid URL
+		return errors.New("invalid URL: " + err.Error())
 	}
 
-	// URL already exists
-	if _, exists := s.items[url]; exists {
-		return nil
+	// URL already exists in registeredURLs
+	for _, registeredURL := range s.registeredURLs {
+		if registeredURL == url {
+			return nil
+		}
 	}
 
-	s.items[url] = []model.HealthCheckResult{}
+	// Add the URL to registeredURLs
+	s.registeredURLs = append(s.registeredURLs, url)
 	return nil
 }
 
 func (s *InMemoryStore) GetURLs() []string {
-	s.mu.RLock()
-	defer s.mu.RUnlock()
-
-	urls := make([]string, 0, len(s.items))
-	for url := range s.items {
-		urls = append(urls, url)
-	}
-	return urls
+	return s.registeredURLs
 }
 
 func (s *InMemoryStore) GetLatestResults() map[string]model.HealthCheckResult {
 	s.mu.RLock()
 	defer s.mu.RUnlock()
 
-	latestResults := make(map[string]model.HealthCheckResult)
-	for url, results := range s.items {
-		if len(results) > 0 {
-			latestResults[url] = results[len(results)-1]
-		}
+	results := make(map[string]model.HealthCheckResult, len(s.latestResults))
+	for k, v := range s.latestResults {
+		results[k] = v
 	}
-	return latestResults
+	return results
+}
+
+func (s *InMemoryStore) GetMetrics() map[string]model.Metrics {
+	s.mu.RLock()
+	defer s.mu.RUnlock()
+
+	metrics := make(map[string]model.Metrics, len(s.resultMetrics))
+	for k, v := range s.resultMetrics {
+		metrics[k] = v
+	}
+	return metrics
 }

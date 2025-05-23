@@ -1,14 +1,16 @@
 package service
 
 import (
+	"GoHealthChecker/internal"
 	"GoHealthChecker/internal/model"
 	"fmt"
+	"io"
 	"net/http"
 	"time"
 )
 
 type Service interface {
-	CheckUrl(url string) (*model.HealthCheckResult, error)
+	CheckUrl(url string) (model.HealthCheckResult, error)
 }
 
 type HTTPService struct {
@@ -27,13 +29,19 @@ func NewHTTPService(timeout int) *HTTPService {
 	}
 }
 
-func (H HTTPService) CheckUrl(url string) (*model.HealthCheckResult, error) {
+func (H HTTPService) CheckUrl(url string) (model.HealthCheckResult, error) {
 	start := time.Now()
 	resp, err := H.client.Get(url)
 	duration := time.Since(start)
-	fmt.Printf("%s: %s\n", url, duration.String())
+	internal.LOGGER.Info(fmt.Sprintf("%s: %s\n", url, duration.String()))
+
 	if err != nil {
-		return nil, err
+		return model.HealthCheckResult{}, err
 	}
-	return model.NewHealthCheckResult(resp.StatusCode, duration), nil
+	data, err := io.ReadAll(resp.Body)
+	if err != nil {
+		return model.HealthCheckResult{}, err
+	}
+	var sizeOfResponse = uint64(len(data))
+	return model.NewHealthCheckResult(resp.StatusCode, duration, sizeOfResponse), nil
 }

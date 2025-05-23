@@ -1,6 +1,7 @@
 package main
 
 import (
+	"GoHealthChecker/internal"
 	"GoHealthChecker/internal/controller"
 	"GoHealthChecker/internal/service"
 	"GoHealthChecker/internal/store"
@@ -15,6 +16,6 @@ func main() {
 	HTTPService := service.NewHTTPService(TIMEOUT)
 
 	appController := controller.NewController(inMemoryStore, CLIView, HTTPService)
-
+	internal.LOGGER.Info("Starting the app.")
 	appController.Start()
 }

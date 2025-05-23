@@ -1,6 +1,7 @@
 package controller
 
 import (
+	"GoHealthChecker/internal"
 	"GoHealthChecker/internal/service"
 	"GoHealthChecker/internal/store"
 	"GoHealthChecker/internal/view"
@@ -42,6 +43,7 @@ func (controller *Controller) handleError(err error) {
 
 func (controller *Controller) Start() {
 	// Parse args and load them to Store
+
 	err := controller.ParseArgs()
 	if err != nil {
 		controller.handleError(err)
@@ -54,9 +56,9 @@ func (controller *Controller) Start() {
 	defer ticker.Stop()
 
 	// Main loop
-	fmt.Println("Starting loop (press Ctrl+C to stop)...")
+	internal.LOGGER.Info("Starting loop (press Ctrl+C to stop)...")
 	// Add elements to Queues
-	fmt.Println("Spawning workers for each URL")
+	internal.LOGGER.Info("Spawning workers for each URL")
 	ctx, cancel := context.WithCancel(context.Background())
 	for _, url := range controller.Store.GetURLs() {
 		controller.workersWg.Add(1)
@@ -67,7 +69,7 @@ func (controller *Controller) Start() {
 	for {
 		select {
 		case <-stop:
-			fmt.Println("\nGracefully exiting...")
+			internal.LOGGER.Info("Gracefully exiting...")
 			cancel()
 			controller.Stop()
 		case <-ticker.C:
@@ -80,7 +82,7 @@ func (controller *Controller) Start() {
 func (controller *Controller) Stop() {
 	// Wait for all workers to finish
 	controller.workersWg.Wait()
-	controller.View.RenderTable(controller.Store.GetResultsAll())
+	controller.View.RenderMetrics(controller.Store.GetMetrics())
 	os.Exit(0)
 }
 
@@ -104,17 +106,16 @@ func (controller *Controller) addToQueue() {
 	for _, url := range controller.Store.GetURLs() {
 		if _, exists := controller.workerChannels[url]; !exists {
 			controller.workerChannels[url] = make(chan struct{}, 5)
-			// We cap the queue at max 5 requests
 		}
 		if len(controller.workerChannels[url]) == cap(controller.workerChannels[url]) {
-			fmt.Printf("%s FULL\n", url)
+			internal.LOGGER.Warn(fmt.Sprintf("Queue for %s is FULL\n", url))
 			continue
 		}
 		controller.workerChannels[url] <- struct{}{}
 	}
 	//fmt.Println("Currently these are the queues and their size:")
 	for url, ch := range controller.workerChannels {
-		fmt.Printf("URL: %s, Queue size: %d\n", url, len(ch))
+		internal.LOGGER.Info(fmt.Sprintf("URL: %s, Queue size: %d\n", url, len(ch)))
 	}
 }
 
@@ -123,15 +124,16 @@ func (controller *Controller) worker(url string, ctx context.Context) {
 	for {
 		select {
 		case <-ctx.Done():
-			fmt.Printf("Worker for %s stopped\n", url)
+			internal.LOGGER.Info(fmt.Sprintf("Worker for %s stopped\n", url))
 			controller.workersWg.Done()
 			return
 		case <-controller.workerChannels[url]:
 			resp, err := controller.HTTPService.CheckUrl(url)
 			if err != nil {
-				fmt.Fprintf(os.Stderr, "Error when requesting %s: %s", url, err)
+				internal.LOGGER.Error(fmt.Sprintf("Error when requesting %s: %s", url, err))
 			}
-			controller.Store.SaveResult(url, *resp)
+			controller.Store.SaveResult(url, resp)
+			controller.View.Render(controller.Store.GetLatestResults())
 		}
 
 	}
