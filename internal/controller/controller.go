@@ -19,6 +19,7 @@ type Controller struct {
 	View           view.View
 	workersWg      sync.WaitGroup
 	workerChannels map[string]chan struct{}
+	channelsMutex  sync.RWMutex
 	settings       model.AppSettings
 }
 
@@ -34,24 +35,20 @@ func NewController(
 		View:           view,
 		workersWg:      sync.WaitGroup{},
 		workerChannels: make(map[string]chan struct{}),
+		channelsMutex:  sync.RWMutex{},
 		settings:       settings,
 	}
 }
 
-func (controller *Controller) handleError(err error) {
-	// print to stderr
-	fmt.Fprintln(os.Stderr, "Error:", err)
-	os.Exit(1)
-}
-
-func (controller *Controller) Start() {
+func (controller *Controller) Start() error {
 	// Parse args and load them to Store
 	ticker := time.NewTicker(time.Duration(controller.settings.PollingInterval) * time.Second)
 	defer ticker.Stop()
 
 	err := controller.ParseArgs()
 	if err != nil {
-		controller.handleError(err)
+		fmt.Fprintln(os.Stderr, "Error:", err)
+		return err
 	}
 	internal.LOGGER.Info("Starting loop (press Ctrl+C to stop)...")
 	// Add elements to Queues
@@ -64,7 +61,7 @@ func (controller *Controller) Start() {
 			internal.LOGGER.Info("Gracefully exiting...")
 			cancel() // Cancel worker context
 			controller.Stop()
-			return
+			return nil
 		case <-ticker.C:
 			// every 5 seconds we add to the channels
 			controller.addToQueue()
@@ -76,7 +73,6 @@ func (controller *Controller) Stop() {
 	// Wait for all workers to finish
 	controller.workersWg.Wait()
 	controller.View.RenderMetrics(controller.Store.GetMetrics())
-	os.Exit(0)
 }
 
 func (controller *Controller) ParseArgs() error {
@@ -95,6 +91,9 @@ func (controller *Controller) ParseArgs() error {
 }
 
 func (controller *Controller) addToQueue() {
+	controller.channelsMutex.Lock()
+	defer controller.channelsMutex.Unlock()
+
 	// Add elements to Queues
 	for _, url := range controller.Store.GetURLs() {
 		if _, exists := controller.workerChannels[url]; !exists {
@@ -113,14 +112,18 @@ func (controller *Controller) addToQueue() {
 }
 
 func (controller *Controller) worker(url string, ctx context.Context) {
-	// consume from the channel
 	for {
 		select {
 		case <-ctx.Done():
 			internal.LOGGER.Info(fmt.Sprintf("Worker for %s stopped\n", url))
 			controller.workersWg.Done()
 			return
-		case <-controller.workerChannels[url]:
+		case <-func() chan struct{} {
+			controller.channelsMutex.RLock()
+			ch := controller.workerChannels[url]
+			controller.channelsMutex.RUnlock()
+			return ch
+		}():
 			resp, err := controller.HTTPService.CheckUrl(url)
 			if err != nil {
 				internal.LOGGER.Error(fmt.Sprintf("Error when requesting %s: %s", url, err))
@@ -128,7 +131,6 @@ func (controller *Controller) worker(url string, ctx context.Context) {
 			controller.Store.SaveResult(url, resp)
 			controller.View.Render(controller.Store.GetLatestResults())
 		}
-
 	}
 }
 

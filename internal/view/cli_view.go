@@ -3,11 +3,10 @@ package view
 import (
 	"GoHealthChecker/internal/model"
 	"fmt"
+	"github.com/jedib0t/go-pretty/table"
 	"io"
 	"sort"
 	"strings"
-
-	"github.com/jedib0t/go-pretty/table"
 )
 
 // CLIView TODO: Change current implementation to use better terminal GUI library
@@ -95,7 +94,7 @@ func (v *CLIView) RenderMetrics(results map[string]model.Metrics) {
 }
 
 func (v *CLIView) clearTerminal() {
-	fmt.Fprint(v.output, "\033[H\033[2J")
+	_, _ = fmt.Fprint(v.output, "\033[H\033[2J")
 }
 
 func addSuffix(data float64, suffix string) string {
