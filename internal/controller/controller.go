@@ -38,20 +38,15 @@ func NewController(
 	}
 }
 
-func (controller *Controller) handleError(err error) {
-	// print to stderr
-	fmt.Fprintln(os.Stderr, "Error:", err)
-	os.Exit(1)
-}
-
-func (controller *Controller) Start() {
+func (controller *Controller) Start() error {
 	// Parse args and load them to Store
 	ticker := time.NewTicker(time.Duration(controller.settings.PollingInterval) * time.Second)
 	defer ticker.Stop()
 
 	err := controller.ParseArgs()
 	if err != nil {
-		controller.handleError(err)
+		fmt.Fprintln(os.Stderr, "Error:", err)
+		return err
 	}
 	internal.LOGGER.Info("Starting loop (press Ctrl+C to stop)...")
 	// Add elements to Queues
@@ -64,7 +59,7 @@ func (controller *Controller) Start() {
 			internal.LOGGER.Info("Gracefully exiting...")
 			cancel() // Cancel worker context
 			controller.Stop()
-			return
+			return nil
 		case <-ticker.C:
 			// every 5 seconds we add to the channels
 			controller.addToQueue()
@@ -76,7 +71,6 @@ func (controller *Controller) Stop() {
 	// Wait for all workers to finish
 	controller.workersWg.Wait()
 	controller.View.RenderMetrics(controller.Store.GetMetrics())
-	os.Exit(0)
 }
 
 func (controller *Controller) ParseArgs() error {

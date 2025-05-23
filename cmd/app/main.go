@@ -45,5 +45,10 @@ func main() {
 	appController := controller.NewController(inMemoryStore, CLIView, HTTPService, settings)
 
 	internal.LOGGER.Info("Starting the app.")
-	appController.Start()
+	err := appController.Start()
+	if err != nil {
+		internal.LOGGER.Error("Error starting the app:" + err.Error())
+		os.Exit(1)
+	}
+	os.Exit(0)
 }
