@@ -2,6 +2,7 @@ package internal
 
 import "go.uber.org/zap"
 
+// TODO: Not exactly sure if this is the best way to create logger, it introduces global state
 var LOGGER *zap.Logger = NewLogger()
 
 func NewLogger() *zap.Logger {

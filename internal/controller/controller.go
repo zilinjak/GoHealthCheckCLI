@@ -2,6 +2,7 @@ package controller
 
 import (
 	"GoHealthChecker/internal"
+	"GoHealthChecker/internal/model"
 	"GoHealthChecker/internal/service"
 	"GoHealthChecker/internal/store"
 	"GoHealthChecker/internal/view"
@@ -18,14 +19,14 @@ type Controller struct {
 	View           view.View
 	workersWg      sync.WaitGroup
 	workerChannels map[string]chan struct{}
-	rootCtx        context.Context
+	settings       model.AppSettings
 }
 
 func NewController(
 	store store.Store,
 	view view.View,
 	service service.Service,
-	ctx context.Context,
+	settings model.AppSettings,
 ) *Controller {
 	return &Controller{
 		HTTPService:    service,
@@ -33,7 +34,7 @@ func NewController(
 		View:           view,
 		workersWg:      sync.WaitGroup{},
 		workerChannels: make(map[string]chan struct{}),
-		rootCtx:        ctx,
+		settings:       settings,
 	}
 }
 
@@ -45,7 +46,7 @@ func (controller *Controller) handleError(err error) {
 
 func (controller *Controller) Start() {
 	// Parse args and load them to Store
-	ticker := time.NewTicker(5 * time.Second)
+	ticker := time.NewTicker(time.Duration(controller.settings.PoolingInterval) * time.Second)
 	defer ticker.Stop()
 
 	err := controller.ParseArgs()
@@ -55,16 +56,11 @@ func (controller *Controller) Start() {
 	internal.LOGGER.Info("Starting loop (press Ctrl+C to stop)...")
 	// Add elements to Queues
 	internal.LOGGER.Info("Spawning workers for each URL")
-	ctx, cancel := context.WithCancel(controller.rootCtx)
-	for _, url := range controller.Store.GetURLs() {
-		controller.workersWg.Add(1)
-		go controller.worker(url, ctx)
-	}
-	// initial queue filling
+	_, cancel := controller.startWorkers()
 	controller.addToQueue()
 	for {
 		select {
-		case <-controller.rootCtx.Done():
+		case <-controller.settings.Context.Done():
 			internal.LOGGER.Info("Gracefully exiting...")
 			cancel() // Cancel worker context
 			controller.Stop()
@@ -134,4 +130,15 @@ func (controller *Controller) worker(url string, ctx context.Context) {
 		}
 
 	}
+}
+
+func (controller *Controller) startWorkers() (context.Context, context.CancelFunc) {
+	// Add elements to Queues
+	internal.LOGGER.Info("Spawning workers for each URL")
+	workerCtx, cancel := context.WithCancel(controller.settings.Context)
+	for _, url := range controller.Store.GetURLs() {
+		controller.workersWg.Add(1)
+		go controller.worker(url, workerCtx)
+	}
+	return workerCtx, cancel
 }

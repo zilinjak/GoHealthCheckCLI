@@ -17,14 +17,14 @@ type HTTPService struct {
 	client *http.Client
 }
 
-func NewHTTPService(timeout int) *HTTPService {
+func NewHTTPService(settings model.AppSettings) *HTTPService {
 	return &HTTPService{
 		client: &http.Client{
 			// disable follow redirects
 			CheckRedirect: func(req *http.Request, via []*http.Request) error {
 				return http.ErrUseLastResponse
 			},
-			Timeout: time.Duration(timeout) * time.Second, // Default timeout
+			Timeout: time.Duration(settings.Timeout) * time.Second, // Default timeout
 		},
 	}
 }
