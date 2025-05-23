@@ -30,21 +30,20 @@ func signalHandler() (context.Context, context.CancelFunc) {
 }
 
 func main() {
-	TIMEOUT := 10
-	POOLING_INTERVAL := 1
 	ctx, _ := signalHandler()
 
 	settings := model.AppSettings{
-		Timeout:         TIMEOUT,
-		PoolingInterval: POOLING_INTERVAL,
+		Timeout:         10,
+		PollingInterval: 1,
 		Context:         ctx,
+		OutputStream:    os.Stdout,
 	}
 
 	inMemoryStore := store.NewInMemoryStore()
-	CLIView := view.NewCLIView()
+	CLIView := view.NewCLIView(settings)
 	HTTPService := service.NewHTTPService(settings)
-
 	appController := controller.NewController(inMemoryStore, CLIView, HTTPService, settings)
+
 	internal.LOGGER.Info("Starting the app.")
 	appController.Start()
 }

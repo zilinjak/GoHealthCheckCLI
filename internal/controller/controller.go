@@ -46,7 +46,7 @@ func (controller *Controller) handleError(err error) {
 
 func (controller *Controller) Start() {
 	// Parse args and load them to Store
-	ticker := time.NewTicker(time.Duration(controller.settings.PoolingInterval) * time.Second)
+	ticker := time.NewTicker(time.Duration(controller.settings.PollingInterval) * time.Second)
 	defer ticker.Stop()
 
 	err := controller.ParseArgs()

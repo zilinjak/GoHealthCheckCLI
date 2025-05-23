@@ -3,7 +3,7 @@ package view
 import (
 	"GoHealthChecker/internal/model"
 	"fmt"
-	"os"
+	"io"
 	"sort"
 	"strings"
 
@@ -12,18 +12,21 @@ import (
 
 // CLIView TODO: Change current implementation to use better terminal GUI library
 type CLIView struct {
+	output io.Writer
 }
 
-func NewCLIView() *CLIView {
-	instance := &CLIView{}
+func NewCLIView(appSettings model.AppSettings) *CLIView {
+	instance := &CLIView{
+		output: appSettings.OutputStream,
+	}
 	return instance
 }
 
 func (v *CLIView) Render(results map[string]model.HealthCheckResult) {
-	clearTerminal()
+	v.clearTerminal()
 
 	t := table.NewWriter()
-	t.SetOutputMirror(os.Stdout)
+	t.SetOutputMirror(v.output)
 	t.AppendHeader(table.Row{"URL", "Status", "StatusCode", "Latency", "Size", "Timestamp"})
 
 	// Extract and sort the URLs
@@ -55,10 +58,10 @@ func (v *CLIView) Render(results map[string]model.HealthCheckResult) {
 }
 
 func (v *CLIView) RenderMetrics(results map[string]model.Metrics) {
-	clearTerminal()
+	v.clearTerminal()
 
 	t := table.NewWriter()
-	t.SetOutputMirror(os.Stdout)
+	t.SetOutputMirror(v.output)
 	t.AppendHeader(table.Row{
 		"URL", "Success/Failed", "Uptime",
 		"Avg. Latency", "Avg. Size",
@@ -91,8 +94,8 @@ func (v *CLIView) RenderMetrics(results map[string]model.Metrics) {
 	t.Render()
 }
 
-func clearTerminal() {
-	fmt.Print("\033[H\033[2J")
+func (v *CLIView) clearTerminal() {
+	fmt.Fprint(v.output, "\033[H\033[2J")
 }
 
 func addSuffix(data float64, suffix string) string {

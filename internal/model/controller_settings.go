@@ -1,9 +1,13 @@
 package model
 
-import "context"
+import (
+	"context"
+	"io"
+)
 
 type AppSettings struct {
 	Timeout         int
-	PoolingInterval int
+	PollingInterval int
 	Context         context.Context
+	OutputStream    io.Writer
 }
