@@ -8,7 +8,6 @@ import (
 	"context"
 	"fmt"
 	"os"
-	"os/signal"
 	"sync"
 	"time"
 )
@@ -19,12 +18,14 @@ type Controller struct {
 	View           view.View
 	workersWg      sync.WaitGroup
 	workerChannels map[string]chan struct{}
+	rootCtx        context.Context
 }
 
 func NewController(
 	store store.Store,
 	view view.View,
 	service service.Service,
+	ctx context.Context,
 ) *Controller {
 	return &Controller{
 		HTTPService:    service,
@@ -32,6 +33,7 @@ func NewController(
 		View:           view,
 		workersWg:      sync.WaitGroup{},
 		workerChannels: make(map[string]chan struct{}),
+		rootCtx:        ctx,
 	}
 }
 
@@ -43,23 +45,17 @@ func (controller *Controller) handleError(err error) {
 
 func (controller *Controller) Start() {
 	// Parse args and load them to Store
+	ticker := time.NewTicker(5 * time.Second)
+	defer ticker.Stop()
 
 	err := controller.ParseArgs()
 	if err != nil {
 		controller.handleError(err)
 	}
-
-	stop := make(chan os.Signal, 1)
-	signal.Notify(stop, os.Interrupt)
-
-	ticker := time.NewTicker(5 * time.Second)
-	defer ticker.Stop()
-
-	// Main loop
 	internal.LOGGER.Info("Starting loop (press Ctrl+C to stop)...")
 	// Add elements to Queues
 	internal.LOGGER.Info("Spawning workers for each URL")
-	ctx, cancel := context.WithCancel(context.Background())
+	ctx, cancel := context.WithCancel(controller.rootCtx)
 	for _, url := range controller.Store.GetURLs() {
 		controller.workersWg.Add(1)
 		go controller.worker(url, ctx)
@@ -68,10 +64,11 @@ func (controller *Controller) Start() {
 	controller.addToQueue()
 	for {
 		select {
-		case <-stop:
+		case <-controller.rootCtx.Done():
 			internal.LOGGER.Info("Gracefully exiting...")
-			cancel()
+			cancel() // Cancel worker context
 			controller.Stop()
+			return
 		case <-ticker.C:
 			// every 5 seconds we add to the channels
 			controller.addToQueue()
