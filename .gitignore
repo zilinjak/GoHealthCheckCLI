@@ -26,3 +26,6 @@ go.work.sum
 
 # IDE stuff
 .idea/
+
+# LOG Stuff
+*.log
