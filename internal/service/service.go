@@ -29,15 +29,23 @@ func NewHTTPService(settings model.AppSettings) *HTTPService {
 	}
 }
 
+func NewHTTPServiceWithClient(client *http.Client) *HTTPService {
+	return &HTTPService{
+		client: client,
+	}
+}
+
 func (H HTTPService) CheckUrl(url string) (model.HealthCheckResult, error) {
+	internal.LOGGER.Info(fmt.Sprintf("Checking %s\n", url))
 	start := time.Now()
 	resp, err := H.client.Get(url)
 	duration := time.Since(start)
-	internal.LOGGER.Info(fmt.Sprintf("%s: %s\n", url, duration.String()))
 
 	if err != nil {
 		return model.HealthCheckResult{}, err
 	}
+	internal.LOGGER.Info(fmt.Sprintf("%s -> %d: %s\n", url, resp.StatusCode, duration.String()))
+
 	data, err := io.ReadAll(resp.Body)
 	if err != nil {
 		return model.HealthCheckResult{}, err

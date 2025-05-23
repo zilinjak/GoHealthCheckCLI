@@ -3,11 +3,10 @@ package view
 import (
 	"GoHealthChecker/internal/model"
 	"fmt"
+	"github.com/jedib0t/go-pretty/table"
 	"io"
 	"sort"
 	"strings"
-
-	"github.com/jedib0t/go-pretty/table"
 )
 
 // CLIView TODO: Change current implementation to use better terminal GUI library

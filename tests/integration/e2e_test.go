@@ -6,6 +6,7 @@ import (
 	"GoHealthChecker/internal/store"
 	"GoHealthChecker/internal/view"
 	"GoHealthChecker/tests"
+	"net/http"
 	"os"
 	"strings"
 	"testing"
@@ -20,6 +21,7 @@ func TestOneWorking(t *testing.T) {
 	// Enable HTTP mocking
 	// Register mock responses
 	httpmockTransport := httpmock.NewMockTransport()
+	defer httpmockTransport.Reset() // Cleanup after test
 	httpmockTransport.RegisterResponder("GET", "https://example1.com",
 		httpmock.NewStringResponder(200, "<html><body>Example Domain</body></html>").Delay(100*time.Millisecond),
 	)
@@ -34,12 +36,18 @@ func TestOneWorking(t *testing.T) {
 	// Initialize app components
 	inMemoryStore := store.NewInMemoryStore()
 	cliView := view.NewCLIView(settings)
-	httpService := service.NewHTTPService(settings)
+	httpService := service.NewHTTPServiceWithClient(
+		&http.Client{
+			Transport: httpmockTransport,
+		},
+	)
 	appController := controller.NewController(inMemoryStore, cliView, httpService, settings)
+	done := make(chan struct{})
 
 	// Run the app in a goroutine
 	go func() {
 		_ = appController.Start()
+		close(done) // Signal that the app has finished
 	}()
 
 	// Let it run for a short time
@@ -50,9 +58,8 @@ func TestOneWorking(t *testing.T) {
 	// Stop the app
 	cancel()
 
-	// Wait for the app to finish
-	time.Sleep(2 * time.Second)
-
+	<-done
+	info := httpmockTransport.GetCallCountInfo()
 	contentStr := output.String()
 	contentStr = strings.ReplaceAll(contentStr, "\u001B[H\u001B[2J", "")
 	exampleCalls := tests.ParseLinesForURL(contentStr, "https://example1.com")
@@ -64,7 +71,6 @@ func TestOneWorking(t *testing.T) {
 	}
 	tests.VerifyMetricsTable(t, exampleCalls[6], "6/0", "100.0%", 100.00, 40, 100.00, 40, 100.00, 40)
 	// Verify HTTP mock was actually called
-	info := httpmockTransport.GetCallCountInfo()
 	// only 6 calls are done, the 7th record is the last rerender with the table result
 	assert.Equal(t, 6, info["GET https://example1.com"])
 }
@@ -74,6 +80,7 @@ func TestTwoWorking(t *testing.T) {
 
 	// Enable HTTP mocking
 	httpmockTransport := httpmock.NewMockTransport()
+	defer httpmockTransport.Reset() // Cleanup after test
 
 	// Register mock responses
 	httpmockTransport.RegisterResponder("GET", "https://example2.com",
@@ -94,7 +101,11 @@ func TestTwoWorking(t *testing.T) {
 	// Initialize app components
 	inMemoryStore := store.NewInMemoryStore()
 	cliView := view.NewCLIView(settings)
-	httpService := service.NewHTTPService(settings)
+	httpService := service.NewHTTPServiceWithClient(
+		&http.Client{
+			Transport: httpmockTransport,
+		},
+	)
 	appController := controller.NewController(inMemoryStore, cliView, httpService, settings)
 
 	// Run the app in a goroutine
@@ -111,7 +122,7 @@ func TestTwoWorking(t *testing.T) {
 	cancel()
 
 	// Wait for the app to finish
-	time.Sleep(2 * time.Second)
+	time.Sleep(10 * time.Second)
 
 	contentStr := output.String()
 	contentStr = strings.ReplaceAll(contentStr, "\u001B[H\u001B[2J", "")
