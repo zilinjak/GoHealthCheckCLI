@@ -16,18 +16,17 @@ import (
 )
 
 func TestOneWorking(t *testing.T) {
+	t.Parallel()
 	// Enable HTTP mocking
-	httpmock.Activate()
-	defer httpmock.DeactivateAndReset()
-
 	// Register mock responses
-	httpmock.RegisterResponder("GET", "https://example.com",
+	httpmockTransport := httpmock.NewMockTransport()
+	httpmockTransport.RegisterResponder("GET", "https://example1.com",
 		httpmock.NewStringResponder(200, "<html><body>Example Domain</body></html>").Delay(100*time.Millisecond),
 	)
 
 	os.Args = []string{
 		"",
-		"https://example.com",
+		"https://example1.com",
 	}
 	// the app will ping servers each second
 	output, _, cancel, settings := tests.CreateConfiguration(1, 1)
@@ -56,7 +55,7 @@ func TestOneWorking(t *testing.T) {
 
 	contentStr := output.String()
 	contentStr = strings.ReplaceAll(contentStr, "\u001B[H\u001B[2J", "")
-	exampleCalls := tests.ParseLinesForURL(contentStr, "https://example.com")
+	exampleCalls := tests.ParseLinesForURL(contentStr, "https://example1.com")
 
 	// 6 rerenders happened
 	assert.Equal(t, 7, len(exampleCalls))
@@ -65,28 +64,29 @@ func TestOneWorking(t *testing.T) {
 	}
 	tests.VerifyMetricsTable(t, exampleCalls[6], "6/0", "100.0%", 100.00, 40, 100.00, 40, 100.00, 40)
 	// Verify HTTP mock was actually called
-	info := httpmock.GetCallCountInfo()
+	info := httpmockTransport.GetCallCountInfo()
 	// only 6 calls are done, the 7th record is the last rerender with the table result
-	assert.Equal(t, 6, info["GET https://example.com"])
+	assert.Equal(t, 6, info["GET https://example1.com"])
 }
 
 func TestTwoWorking(t *testing.T) {
+	t.Parallel()
+
 	// Enable HTTP mocking
-	httpmock.Activate()
-	defer httpmock.DeactivateAndReset()
+	httpmockTransport := httpmock.NewMockTransport()
 
 	// Register mock responses
-	httpmock.RegisterResponder("GET", "https://example.com",
+	httpmockTransport.RegisterResponder("GET", "https://example2.com",
 		httpmock.NewStringResponder(200, "<html><body>Example Domain</body></html>").Delay(100*time.Millisecond),
 	)
-	httpmock.RegisterResponder("GET", "https://example.org",
+	httpmockTransport.RegisterResponder("GET", "https://example2.org",
 		httpmock.NewStringResponder(200, "<html><body>Example Domain</body></html>").Delay(100*time.Millisecond),
 	)
 
 	os.Args = []string{
 		"",
-		"https://example.com",
-		"https://example.org",
+		"https://example2.com",
+		"https://example2.org",
 	}
 	// the app will ping servers each second
 	output, _, cancel, settings := tests.CreateConfiguration(1, 1)
@@ -115,22 +115,23 @@ func TestTwoWorking(t *testing.T) {
 
 	contentStr := output.String()
 	contentStr = strings.ReplaceAll(contentStr, "\u001B[H\u001B[2J", "")
-	exampleCalls := tests.ParseLinesForURL(contentStr, "https://example.com")
-	exampleOrgCalls := tests.ParseLinesForURL(contentStr, "https://example.com")
+	exampleCalls := tests.ParseLinesForURL(contentStr, "https://example2.com")
+	exampleOrgCalls := tests.ParseLinesForURL(contentStr, "https://example2.org")
 
-	// 6 rerenders happened
+	// 6 rerenders happened, verify
 	for i := 0; i < len(exampleCalls)-1; i++ {
 		tests.VerifyRerenders(t, exampleCalls[i], "UP", "200", 100.00, 40)
 	}
+	// 6 rerenders happened, verify example2.org
 	for i := 0; i < len(exampleOrgCalls)-1; i++ {
 		tests.VerifyRerenders(t, exampleOrgCalls[i], "UP", "200", 100.00, 40)
 	}
-
+	// verify resulting metrics
 	tests.VerifyMetricsTable(t, exampleCalls[len(exampleCalls)-1], "6/0", "100.0%", 100.00, 40, 100.00, 40, 100.00, 40)
 	tests.VerifyMetricsTable(t, exampleOrgCalls[len(exampleOrgCalls)-1], "6/0", "100.0%", 100.00, 40, 100.00, 40, 100.00, 40)
 	// Verify HTTP mock was actually called
-	info := httpmock.GetCallCountInfo()
+	info := httpmockTransport.GetCallCountInfo()
 	// only 6 calls are done, the 7th record is the last rerender with the table result
-	assert.Equal(t, 6, info["GET https://example.com"])
-	assert.Equal(t, 6, info["GET https://example.org"])
+	assert.Equal(t, 6, info["GET https://example2.com"])
+	assert.Equal(t, 6, info["GET https://example2.org"])
 }

@@ -19,6 +19,7 @@ type Controller struct {
 	View           view.View
 	workersWg      sync.WaitGroup
 	workerChannels map[string]chan struct{}
+	channelsMutex  sync.RWMutex
 	settings       model.AppSettings
 }
 
@@ -34,6 +35,7 @@ func NewController(
 		View:           view,
 		workersWg:      sync.WaitGroup{},
 		workerChannels: make(map[string]chan struct{}),
+		channelsMutex:  sync.RWMutex{},
 		settings:       settings,
 	}
 }
@@ -89,6 +91,9 @@ func (controller *Controller) ParseArgs() error {
 }
 
 func (controller *Controller) addToQueue() {
+	controller.channelsMutex.Lock()
+	defer controller.channelsMutex.Unlock()
+
 	// Add elements to Queues
 	for _, url := range controller.Store.GetURLs() {
 		if _, exists := controller.workerChannels[url]; !exists {
@@ -107,14 +112,18 @@ func (controller *Controller) addToQueue() {
 }
 
 func (controller *Controller) worker(url string, ctx context.Context) {
-	// consume from the channel
 	for {
 		select {
 		case <-ctx.Done():
 			internal.LOGGER.Info(fmt.Sprintf("Worker for %s stopped\n", url))
 			controller.workersWg.Done()
 			return
-		case <-controller.workerChannels[url]:
+		case <-func() chan struct{} {
+			controller.channelsMutex.RLock()
+			ch := controller.workerChannels[url]
+			controller.channelsMutex.RUnlock()
+			return ch
+		}():
 			resp, err := controller.HTTPService.CheckUrl(url)
 			if err != nil {
 				internal.LOGGER.Error(fmt.Sprintf("Error when requesting %s: %s", url, err))
@@ -122,7 +131,6 @@ func (controller *Controller) worker(url string, ctx context.Context) {
 			controller.Store.SaveResult(url, resp)
 			controller.View.Render(controller.Store.GetLatestResults())
 		}
-
 	}
 }
 
