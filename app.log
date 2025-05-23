@@ -1,0 +1,740 @@
+{"level":"info","ts":1747999891.858506,"caller":"app/main.go:19","msg":"Starting the app."}
+{"level":"info","ts":1747999891.858856,"caller":"controller/controller.go:59","msg":"Starting loop (press Ctrl+C to stop)..."}
+{"level":"info","ts":1747999891.8588989,"caller":"controller/controller.go:61","msg":"Spawning workers for each URL"}
+{"level":"info","ts":1747999891.858923,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 1\n"}
+{"level":"info","ts":1747999891.983037,"caller":"service/service.go:35","msg":"https://www.google.com: 124.070792ms\n"}
+{"level":"info","ts":1747999900.983665,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 1\n"}
+{"level":"info","ts":1747999901.0430012,"caller":"service/service.go:35","msg":"https://www.google.com: 59.072875ms\n"}
+{"level":"info","ts":1747999916.716613,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 1\n"}
+{"level":"info","ts":1747999916.787661,"caller":"service/service.go:35","msg":"https://www.google.com: 70.879709ms\n"}
+{"level":"info","ts":1747999919.611766,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 1\n"}
+{"level":"info","ts":1747999919.675602,"caller":"service/service.go:35","msg":"https://www.google.com: 63.690125ms\n"}
+{"level":"info","ts":1747999921.859193,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1747999921.922723,"caller":"service/service.go:35","msg":"https://www.google.com: 63.490792ms\n"}
+{"level":"info","ts":1747999925.4185758,"caller":"controller/controller.go:72","msg":"Gracefully exiting..."}
+{"level":"info","ts":1747999925.418678,"caller":"controller/controller.go:127","msg":"Worker for https://www.google.com stopped\n"}
+{"level":"info","ts":1747999939.3489192,"caller":"app/main.go:19","msg":"Starting the app."}
+{"level":"info","ts":1747999939.349516,"caller":"controller/controller.go:59","msg":"Starting loop (press Ctrl+C to stop)..."}
+{"level":"info","ts":1747999939.349566,"caller":"controller/controller.go:61","msg":"Spawning workers for each URL"}
+{"level":"info","ts":1747999939.3495932,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 1\n"}
+{"level":"info","ts":1747999939.349599,"caller":"controller/controller.go:118","msg":"URL: https://www.seznam.cz, Queue size: 1\n"}
+{"level":"info","ts":1747999939.4468648,"caller":"service/service.go:35","msg":"https://www.seznam.cz: 97.244625ms\n"}
+{"level":"info","ts":1747999939.4602618,"caller":"service/service.go:35","msg":"https://www.google.com: 110.636625ms\n"}
+{"level":"info","ts":1747999944.350572,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1747999944.350731,"caller":"controller/controller.go:118","msg":"URL: https://www.seznam.cz, Queue size: 0\n"}
+{"level":"info","ts":1747999944.3836339,"caller":"service/service.go:35","msg":"https://www.seznam.cz: 33.07625ms\n"}
+{"level":"info","ts":1747999944.41754,"caller":"service/service.go:35","msg":"https://www.google.com: 67.018292ms\n"}
+{"level":"info","ts":1747999949.350527,"caller":"controller/controller.go:118","msg":"URL: https://www.seznam.cz, Queue size: 0\n"}
+{"level":"info","ts":1747999949.35073,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1747999949.41286,"caller":"service/service.go:35","msg":"https://www.google.com: 62.211417ms\n"}
+{"level":"info","ts":1747999949.434963,"caller":"service/service.go:35","msg":"https://www.seznam.cz: 84.381167ms\n"}
+{"level":"info","ts":1747999954.350299,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1747999954.350496,"caller":"controller/controller.go:118","msg":"URL: https://www.seznam.cz, Queue size: 0\n"}
+{"level":"info","ts":1747999954.402621,"caller":"service/service.go:35","msg":"https://www.seznam.cz: 52.168875ms\n"}
+{"level":"info","ts":1747999954.423137,"caller":"service/service.go:35","msg":"https://www.google.com: 72.770833ms\n"}
+{"level":"info","ts":1747999955.1047528,"caller":"controller/controller.go:72","msg":"Gracefully exiting..."}
+{"level":"info","ts":1747999955.10498,"caller":"controller/controller.go:127","msg":"Worker for https://www.seznam.cz stopped\n"}
+{"level":"info","ts":1747999955.105016,"caller":"controller/controller.go:127","msg":"Worker for https://www.google.com stopped\n"}
+{"level":"info","ts":1747999991.7691011,"caller":"app/main.go:19","msg":"Starting the app."}
+{"level":"info","ts":1747999991.769346,"caller":"controller/controller.go:59","msg":"Starting loop (press Ctrl+C to stop)..."}
+{"level":"info","ts":1747999991.769383,"caller":"controller/controller.go:61","msg":"Spawning workers for each URL"}
+{"level":"info","ts":1747999991.769404,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 1\n"}
+{"level":"info","ts":1747999991.885579,"caller":"service/service.go:35","msg":"https://www.google.com: 116.140292ms\n"}
+{"level":"info","ts":1748000008.663296,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 1\n"}
+{"level":"info","ts":1748000310.857043,"caller":"app/main.go:19","msg":"Starting the app."}
+{"level":"info","ts":1748000310.857697,"caller":"controller/controller.go:59","msg":"Starting loop (press Ctrl+C to stop)..."}
+{"level":"info","ts":1748000310.857742,"caller":"controller/controller.go:61","msg":"Spawning workers for each URL"}
+{"level":"info","ts":1748000310.857759,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 1\n"}
+{"level":"info","ts":1748000310.857766,"caller":"controller/controller.go:118","msg":"URL: https://www.seznam.cz, Queue size: 1\n"}
+{"level":"info","ts":1748000310.976299,"caller":"service/service.go:36","msg":"https://www.google.com: 118.507375ms\n"}
+{"level":"info","ts":1748000315.8588018,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748000315.8590238,"caller":"controller/controller.go:118","msg":"URL: https://www.seznam.cz, Queue size: 1\n"}
+{"level":"info","ts":1748000315.918495,"caller":"service/service.go:36","msg":"https://www.google.com: 59.7525ms\n"}
+{"level":"info","ts":1748000320.8588889,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748000320.859088,"caller":"controller/controller.go:118","msg":"URL: https://www.seznam.cz, Queue size: 2\n"}
+{"level":"info","ts":1748000320.8589299,"caller":"service/service.go:36","msg":"https://www.seznam.cz: 10.001342459s\n"}
+{"level":"error","ts":1748000320.859188,"caller":"controller/controller.go:133","msg":"Error when requesting https://www.seznam.cz: Get \"https://www.seznam.cz\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)","stacktrace":"GoHealthChecker/internal/controller.(*Controller).worker\n\t/Users/jakubzilinek/Work/Own/GoHealthChecker/internal/controller/controller.go:133"}
+{"level":"info","ts":1748000350.285847,"caller":"app/main.go:19","msg":"Starting the app."}
+{"level":"info","ts":1748000350.286487,"caller":"controller/controller.go:59","msg":"Starting loop (press Ctrl+C to stop)..."}
+{"level":"info","ts":1748000350.286525,"caller":"controller/controller.go:61","msg":"Spawning workers for each URL"}
+{"level":"info","ts":1748000350.286537,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 1\n"}
+{"level":"info","ts":1748000350.2865438,"caller":"controller/controller.go:118","msg":"URL: https://www.seznam.cz, Queue size: 1\n"}
+{"level":"info","ts":1748000350.4066482,"caller":"service/service.go:36","msg":"https://www.google.com: 120.081666ms\n"}
+{"level":"info","ts":1748000355.2875829,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748000355.287785,"caller":"controller/controller.go:118","msg":"URL: https://www.seznam.cz, Queue size: 1\n"}
+{"level":"info","ts":1748000355.34967,"caller":"service/service.go:36","msg":"https://www.google.com: 62.041042ms\n"}
+{"level":"info","ts":1748000360.287561,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748000360.287717,"caller":"controller/controller.go:118","msg":"URL: https://www.seznam.cz, Queue size: 2\n"}
+{"level":"info","ts":1748000360.287596,"caller":"service/service.go:36","msg":"https://www.seznam.cz: 10.00123875s\n"}
+{"level":"error","ts":1748000360.287819,"caller":"controller/controller.go:133","msg":"Error when requesting https://www.seznam.cz: Get \"https://www.seznam.cz\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)","stacktrace":"GoHealthChecker/internal/controller.(*Controller).worker\n\t/Users/jakubzilinek/Work/Own/GoHealthChecker/internal/controller/controller.go:133"}
+{"level":"info","ts":1748000383.019268,"caller":"app/main.go:19","msg":"Starting the app."}
+{"level":"info","ts":1748000383.019667,"caller":"controller/controller.go:59","msg":"Starting loop (press Ctrl+C to stop)..."}
+{"level":"info","ts":1748000383.0197241,"caller":"controller/controller.go:61","msg":"Spawning workers for each URL"}
+{"level":"info","ts":1748000383.0197408,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 1\n"}
+{"level":"info","ts":1748000383.12326,"caller":"service/service.go:36","msg":"https://www.google.com: 103.470125ms\n"}
+{"level":"info","ts":1748000391.215198,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 1\n"}
+{"level":"info","ts":1748000391.2865531,"caller":"service/service.go:36","msg":"https://www.google.com: 71.161875ms\n"}
+{"level":"info","ts":1748000393.0206609,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748000393.088377,"caller":"service/service.go:36","msg":"https://www.google.com: 67.735416ms\n"}
+{"level":"info","ts":1748000398.019657,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748000398.090625,"caller":"service/service.go:36","msg":"https://www.google.com: 70.917667ms\n"}
+{"level":"info","ts":1748000403.01967,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748000403.0873759,"caller":"service/service.go:36","msg":"https://www.google.com: 67.693333ms\n"}
+{"level":"info","ts":1748000408.019659,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748000408.086045,"caller":"service/service.go:36","msg":"https://www.google.com: 66.270125ms\n"}
+{"level":"info","ts":1748000413.020319,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748000413.091177,"caller":"service/service.go:36","msg":"https://www.google.com: 70.787125ms\n"}
+{"level":"info","ts":1748000418.0201411,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748000418.080648,"caller":"service/service.go:36","msg":"https://www.google.com: 60.468ms\n"}
+{"level":"info","ts":1748000423.0196118,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748000423.092551,"caller":"service/service.go:36","msg":"https://www.google.com: 72.878375ms\n"}
+{"level":"info","ts":1748000428.019231,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748000428.0899572,"caller":"service/service.go:36","msg":"https://www.google.com: 70.702416ms\n"}
+{"level":"info","ts":1748000433.019871,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748000433.086869,"caller":"service/service.go:36","msg":"https://www.google.com: 66.959958ms\n"}
+{"level":"info","ts":1748000438.019716,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748000438.086595,"caller":"service/service.go:36","msg":"https://www.google.com: 66.710542ms\n"}
+{"level":"info","ts":1748000438.899359,"caller":"controller/controller.go:72","msg":"Gracefully exiting..."}
+{"level":"info","ts":1748000438.899413,"caller":"controller/controller.go:127","msg":"Worker for https://www.google.com stopped\n"}
+{"level":"info","ts":1748000498.71255,"caller":"app/main.go:19","msg":"Starting the app."}
+{"level":"info","ts":1748000498.7131479,"caller":"controller/controller.go:59","msg":"Starting loop (press Ctrl+C to stop)..."}
+{"level":"info","ts":1748000498.7131891,"caller":"controller/controller.go:61","msg":"Spawning workers for each URL"}
+{"level":"info","ts":1748000498.713206,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 1\n"}
+{"level":"info","ts":1748000498.713213,"caller":"controller/controller.go:118","msg":"URL: https://www.seznam.cz, Queue size: 1\n"}
+{"level":"info","ts":1748000498.825019,"caller":"service/service.go:36","msg":"https://www.google.com: 111.756625ms\n"}
+{"level":"info","ts":1748000503.7143009,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748000503.7145998,"caller":"controller/controller.go:118","msg":"URL: https://www.seznam.cz, Queue size: 1\n"}
+{"level":"info","ts":1748000503.865599,"caller":"service/service.go:36","msg":"https://www.google.com: 151.274375ms\n"}
+{"level":"info","ts":1748000508.713828,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748000508.714036,"caller":"controller/controller.go:118","msg":"URL: https://www.seznam.cz, Queue size: 2\n"}
+{"level":"info","ts":1748000508.7140028,"caller":"service/service.go:36","msg":"https://www.seznam.cz: 10.000966208s\n"}
+{"level":"error","ts":1748000508.714144,"caller":"controller/controller.go:133","msg":"Error when requesting https://www.seznam.cz: Get \"https://www.seznam.cz\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)","stacktrace":"GoHealthChecker/internal/controller.(*Controller).worker\n\t/Users/jakubzilinek/Work/Own/GoHealthChecker/internal/controller/controller.go:133"}
+{"level":"info","ts":1748000510.914408,"caller":"app/main.go:19","msg":"Starting the app."}
+{"level":"info","ts":1748000510.914874,"caller":"controller/controller.go:59","msg":"Starting loop (press Ctrl+C to stop)..."}
+{"level":"info","ts":1748000510.914955,"caller":"controller/controller.go:61","msg":"Spawning workers for each URL"}
+{"level":"info","ts":1748000510.914987,"caller":"controller/controller.go:118","msg":"URL: https://www.seznam.cz, Queue size: 1\n"}
+{"level":"info","ts":1748000510.915004,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 1\n"}
+{"level":"info","ts":1748000511.127934,"caller":"service/service.go:36","msg":"https://www.google.com: 212.881ms\n"}
+{"level":"info","ts":1748000515.916054,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748000515.916338,"caller":"controller/controller.go:118","msg":"URL: https://www.seznam.cz, Queue size: 1\n"}
+{"level":"info","ts":1748000515.989315,"caller":"service/service.go:36","msg":"https://www.google.com: 73.158875ms\n"}
+{"level":"info","ts":1748000516.568755,"caller":"controller/controller.go:72","msg":"Gracefully exiting..."}
+{"level":"info","ts":1748000516.5689752,"caller":"controller/controller.go:127","msg":"Worker for https://www.google.com stopped\n"}
+{"level":"info","ts":1748000520.9159522,"caller":"service/service.go:36","msg":"https://www.seznam.cz: 10.001107291s\n"}
+{"level":"error","ts":1748000520.91622,"caller":"controller/controller.go:133","msg":"Error when requesting https://www.seznam.cz: Get \"https://www.seznam.cz\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)","stacktrace":"GoHealthChecker/internal/controller.(*Controller).worker\n\t/Users/jakubzilinek/Work/Own/GoHealthChecker/internal/controller/controller.go:133"}
+{"level":"info","ts":1748001325.664487,"caller":"app/main.go:19","msg":"Starting the app."}
+{"level":"info","ts":1748001325.66533,"caller":"controller/controller.go:59","msg":"Starting loop (press Ctrl+C to stop)..."}
+{"level":"info","ts":1748001325.6653728,"caller":"controller/controller.go:61","msg":"Spawning workers for each URL"}
+{"level":"info","ts":1748001325.665403,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 1\n"}
+{"level":"info","ts":1748001325.66541,"caller":"controller/controller.go:118","msg":"URL: https://www.seznam.cz, Queue size: 1\n"}
+{"level":"info","ts":1748001325.8238451,"caller":"service/service.go:36","msg":"https://www.google.com: 158.416542ms\n"}
+{"level":"info","ts":1748001330.666472,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748001330.6666749,"caller":"controller/controller.go:118","msg":"URL: https://www.seznam.cz, Queue size: 1\n"}
+{"level":"info","ts":1748001330.673434,"caller":"service/service.go:36","msg":"https://www.seznam.cz: 5.008080458s\n"}
+{"level":"error","ts":1748001330.673617,"caller":"controller/controller.go:133","msg":"Error when requesting https://www.seznam.cz: Get \"https://www.seznam.cz\": dial tcp [2a02:598:a::79:222]:443: connect: no route to host","stacktrace":"GoHealthChecker/internal/controller.(*Controller).worker\n\t/Users/jakubzilinek/Work/Own/GoHealthChecker/internal/controller/controller.go:133"}
+{"level":"info","ts":1748002434.509423,"caller":"app/main.go:19","msg":"Starting the app."}
+{"level":"info","ts":1748002434.5100129,"caller":"controller/controller.go:59","msg":"Starting loop (press Ctrl+C to stop)..."}
+{"level":"info","ts":1748002434.5100951,"caller":"controller/controller.go:61","msg":"Spawning workers for each URL"}
+{"level":"info","ts":1748002434.5101418,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 1\n"}
+{"level":"info","ts":1748002434.510189,"caller":"controller/controller.go:118","msg":"URL: https://www.seznam.cz, Queue size: 1\n"}
+{"level":"info","ts":1748002434.6315598,"caller":"service/service.go:36","msg":"https://www.google.com: 121.338ms\n"}
+{"level":"info","ts":1748002439.510734,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748002439.5109801,"caller":"controller/controller.go:118","msg":"URL: https://www.seznam.cz, Queue size: 1\n"}
+{"level":"info","ts":1748002439.574215,"caller":"service/service.go:36","msg":"https://www.google.com: 63.287792ms\n"}
+{"level":"info","ts":1748002444.5105941,"caller":"service/service.go:36","msg":"https://www.seznam.cz: 10.000242791s\n"}
+{"level":"info","ts":1748002444.5105941,"caller":"controller/controller.go:118","msg":"URL: https://www.seznam.cz, Queue size: 2\n"}
+{"level":"info","ts":1748002444.510829,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"error","ts":1748002444.510821,"caller":"controller/controller.go:133","msg":"Error when requesting https://www.seznam.cz: Get \"https://www.seznam.cz\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)","stacktrace":"GoHealthChecker/internal/controller.(*Controller).worker\n\t/Users/jakubzilinek/Work/Own/GoHealthChecker/internal/controller/controller.go:133"}
+{"level":"info","ts":1748002444.578198,"caller":"service/service.go:36","msg":"https://www.google.com: 67.539084ms\n"}
+{"level":"info","ts":1748002449.510925,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748002449.511039,"caller":"controller/controller.go:118","msg":"URL: https://www.seznam.cz, Queue size: 2\n"}
+{"level":"info","ts":1748002449.576148,"caller":"service/service.go:36","msg":"https://www.google.com: 65.192ms\n"}
+{"level":"info","ts":1748002454.51138,"caller":"service/service.go:36","msg":"https://www.seznam.cz: 10.000488417s\n"}
+{"level":"info","ts":1748002454.511281,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748002454.51164,"caller":"controller/controller.go:118","msg":"URL: https://www.seznam.cz, Queue size: 3\n"}
+{"level":"error","ts":1748002454.51158,"caller":"controller/controller.go:133","msg":"Error when requesting https://www.seznam.cz: Get \"https://www.seznam.cz\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)","stacktrace":"GoHealthChecker/internal/controller.(*Controller).worker\n\t/Users/jakubzilinek/Work/Own/GoHealthChecker/internal/controller/controller.go:133"}
+{"level":"info","ts":1748002454.5781639,"caller":"service/service.go:36","msg":"https://www.google.com: 66.872875ms\n"}
+{"level":"info","ts":1748002459.510185,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748002459.510313,"caller":"controller/controller.go:118","msg":"URL: https://www.seznam.cz, Queue size: 3\n"}
+{"level":"info","ts":1748002459.568554,"caller":"service/service.go:36","msg":"https://www.google.com: 58.284958ms\n"}
+{"level":"info","ts":1748002464.51072,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748002464.510901,"caller":"controller/controller.go:118","msg":"URL: https://www.seznam.cz, Queue size: 4\n"}
+{"level":"info","ts":1748002464.51198,"caller":"service/service.go:36","msg":"https://www.seznam.cz: 10.000176375s\n"}
+{"level":"error","ts":1748002464.5121238,"caller":"controller/controller.go:133","msg":"Error when requesting https://www.seznam.cz: Get \"https://www.seznam.cz\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)","stacktrace":"GoHealthChecker/internal/controller.(*Controller).worker\n\t/Users/jakubzilinek/Work/Own/GoHealthChecker/internal/controller/controller.go:133"}
+{"level":"info","ts":1748002464.573778,"caller":"service/service.go:36","msg":"https://www.google.com: 63.041792ms\n"}
+{"level":"info","ts":1748002464.583659,"caller":"service/service.go:36","msg":"https://www.seznam.cz: 71.330709ms\n"}
+{"level":"info","ts":1748002464.866053,"caller":"service/service.go:36","msg":"https://www.seznam.cz: 49.605792ms\n"}
+{"level":"info","ts":1748002465.1431072,"caller":"service/service.go:36","msg":"https://www.seznam.cz: 52.664041ms\n"}
+{"level":"info","ts":1748002465.424314,"caller":"service/service.go:36","msg":"https://www.seznam.cz: 37.414709ms\n"}
+{"level":"info","ts":1748002469.510347,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748002469.510575,"caller":"controller/controller.go:118","msg":"URL: https://www.seznam.cz, Queue size: 0\n"}
+{"level":"info","ts":1748002469.553776,"caller":"service/service.go:36","msg":"https://www.seznam.cz: 43.283584ms\n"}
+{"level":"info","ts":1748002469.570983,"caller":"service/service.go:36","msg":"https://www.google.com: 60.600042ms\n"}
+{"level":"info","ts":1748002474.510537,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748002474.511276,"caller":"controller/controller.go:118","msg":"URL: https://www.seznam.cz, Queue size: 0\n"}
+{"level":"info","ts":1748002474.537599,"caller":"service/service.go:36","msg":"https://www.seznam.cz: 25.963291ms\n"}
+{"level":"info","ts":1748002474.578279,"caller":"service/service.go:36","msg":"https://www.google.com: 66.931417ms\n"}
+{"level":"info","ts":1748002479.510507,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748002479.510758,"caller":"controller/controller.go:118","msg":"URL: https://www.seznam.cz, Queue size: 0\n"}
+{"level":"info","ts":1748002479.5481029,"caller":"service/service.go:36","msg":"https://www.seznam.cz: 37.563958ms\n"}
+{"level":"info","ts":1748002479.5798311,"caller":"service/service.go:36","msg":"https://www.google.com: 69.3275ms\n"}
+{"level":"info","ts":1748002484.510334,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748002484.5105448,"caller":"controller/controller.go:118","msg":"URL: https://www.seznam.cz, Queue size: 0\n"}
+{"level":"info","ts":1748002484.763362,"caller":"service/service.go:36","msg":"https://www.seznam.cz: 252.952208ms\n"}
+{"level":"info","ts":1748002484.7634492,"caller":"service/service.go:36","msg":"https://www.google.com: 253.094666ms\n"}
+{"level":"info","ts":1748002489.5103512,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748002489.5105689,"caller":"controller/controller.go:118","msg":"URL: https://www.seznam.cz, Queue size: 0\n"}
+{"level":"info","ts":1748002489.5459998,"caller":"service/service.go:36","msg":"https://www.seznam.cz: 35.554667ms\n"}
+{"level":"info","ts":1748002489.577837,"caller":"service/service.go:36","msg":"https://www.google.com: 67.467459ms\n"}
+{"level":"info","ts":1748002494.510283,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748002494.510538,"caller":"controller/controller.go:118","msg":"URL: https://www.seznam.cz, Queue size: 0\n"}
+{"level":"info","ts":1748002494.5454879,"caller":"service/service.go:36","msg":"https://www.seznam.cz: 35.073459ms\n"}
+{"level":"info","ts":1748002494.578779,"caller":"service/service.go:36","msg":"https://www.google.com: 68.449875ms\n"}
+{"level":"info","ts":1748002499.509599,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748002499.509865,"caller":"controller/controller.go:118","msg":"URL: https://www.seznam.cz, Queue size: 0\n"}
+{"level":"info","ts":1748002499.551744,"caller":"service/service.go:36","msg":"https://www.seznam.cz: 41.8165ms\n"}
+{"level":"info","ts":1748002499.569275,"caller":"service/service.go:36","msg":"https://www.google.com: 59.439ms\n"}
+{"level":"info","ts":1748002504.509321,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748002504.5099032,"caller":"controller/controller.go:118","msg":"URL: https://www.seznam.cz, Queue size: 0\n"}
+{"level":"info","ts":1748002504.548131,"caller":"service/service.go:36","msg":"https://www.seznam.cz: 38.788125ms\n"}
+{"level":"info","ts":1748002504.581263,"caller":"service/service.go:36","msg":"https://www.google.com: 71.933417ms\n"}
+{"level":"info","ts":1748002507.2312121,"caller":"controller/controller.go:72","msg":"Gracefully exiting..."}
+{"level":"info","ts":1748002507.2313752,"caller":"controller/controller.go:127","msg":"Worker for https://www.google.com stopped\n"}
+{"level":"info","ts":1748002507.231394,"caller":"controller/controller.go:127","msg":"Worker for https://www.seznam.cz stopped\n"}
+{"level":"info","ts":1748002537.317855,"caller":"app/main.go:19","msg":"Starting the app."}
+{"level":"info","ts":1748002537.318271,"caller":"controller/controller.go:59","msg":"Starting loop (press Ctrl+C to stop)..."}
+{"level":"info","ts":1748002537.3183072,"caller":"controller/controller.go:61","msg":"Spawning workers for each URL"}
+{"level":"info","ts":1748002537.3183281,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 1\n"}
+{"level":"info","ts":1748002537.473514,"caller":"service/service.go:36","msg":"https://www.google.com: 155.139792ms\n"}
+{"level":"info","ts":1748002542.3194199,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748002542.392543,"caller":"service/service.go:36","msg":"https://www.google.com: 73.076458ms\n"}
+{"level":"info","ts":1748002547.319118,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748002547.3836238,"caller":"service/service.go:36","msg":"https://www.google.com: 64.477625ms\n"}
+{"level":"info","ts":1748002552.319204,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748002552.391372,"caller":"service/service.go:36","msg":"https://www.google.com: 72.122333ms\n"}
+{"level":"info","ts":1748002553.2691798,"caller":"controller/controller.go:72","msg":"Gracefully exiting..."}
+{"level":"info","ts":1748002553.269249,"caller":"controller/controller.go:127","msg":"Worker for https://www.google.com stopped\n"}
+{"level":"info","ts":1748002569.0458739,"caller":"app/main.go:19","msg":"Starting the app."}
+{"level":"info","ts":1748002569.046447,"caller":"controller/controller.go:59","msg":"Starting loop (press Ctrl+C to stop)..."}
+{"level":"info","ts":1748002569.0464818,"caller":"controller/controller.go:61","msg":"Spawning workers for each URL"}
+{"level":"info","ts":1748002569.0465028,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 1\n"}
+{"level":"info","ts":1748002569.171805,"caller":"service/service.go:36","msg":"https://www.google.com: 125.261083ms\n"}
+{"level":"info","ts":1748002571.618122,"caller":"controller/controller.go:72","msg":"Gracefully exiting..."}
+{"level":"info","ts":1748002571.618187,"caller":"controller/controller.go:127","msg":"Worker for https://www.google.com stopped\n"}
+{"level":"info","ts":1748002733.162373,"caller":"app/main.go:19","msg":"Starting the app."}
+{"level":"info","ts":1748002733.1627772,"caller":"controller/controller.go:59","msg":"Starting loop (press Ctrl+C to stop)..."}
+{"level":"info","ts":1748002733.162817,"caller":"controller/controller.go:61","msg":"Spawning workers for each URL"}
+{"level":"info","ts":1748002733.162834,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 1\n"}
+{"level":"info","ts":1748002733.162849,"caller":"controller/controller.go:118","msg":"URL: https://www.seznam.cz, Queue size: 1\n"}
+{"level":"info","ts":1748002733.272727,"caller":"service/service.go:36","msg":"https://www.google.com: 109.799792ms\n"}
+{"level":"info","ts":1748002738.163841,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748002738.1640499,"caller":"controller/controller.go:118","msg":"URL: https://www.seznam.cz, Queue size: 1\n"}
+{"level":"info","ts":1748002738.229722,"caller":"service/service.go:36","msg":"https://www.google.com: 65.836791ms\n"}
+{"level":"info","ts":1748002743.163435,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748002743.1636102,"caller":"controller/controller.go:118","msg":"URL: https://www.seznam.cz, Queue size: 2\n"}
+{"level":"info","ts":1748002743.163458,"caller":"service/service.go:36","msg":"https://www.seznam.cz: 10.000647s\n"}
+{"level":"error","ts":1748002743.163682,"caller":"controller/controller.go:133","msg":"Error when requesting https://www.seznam.cz: Get \"https://www.seznam.cz\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)","stacktrace":"GoHealthChecker/internal/controller.(*Controller).worker\n\t/Users/jakubzilinek/Work/Own/GoHealthChecker/internal/controller/controller.go:133"}
+{"level":"info","ts":1748002743.23107,"caller":"service/service.go:36","msg":"https://www.google.com: 67.5865ms\n"}
+{"level":"info","ts":1748002748.16383,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748002748.163973,"caller":"controller/controller.go:118","msg":"URL: https://www.seznam.cz, Queue size: 2\n"}
+{"level":"info","ts":1748002748.3280609,"caller":"service/service.go:36","msg":"https://www.google.com: 164.201083ms\n"}
+{"level":"info","ts":1748002753.163081,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748002753.1632588,"caller":"controller/controller.go:118","msg":"URL: https://www.seznam.cz, Queue size: 3\n"}
+{"level":"info","ts":1748002753.1639419,"caller":"service/service.go:36","msg":"https://www.seznam.cz: 10.00022825s\n"}
+{"level":"error","ts":1748002753.164741,"caller":"controller/controller.go:133","msg":"Error when requesting https://www.seznam.cz: Get \"https://www.seznam.cz\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)","stacktrace":"GoHealthChecker/internal/controller.(*Controller).worker\n\t/Users/jakubzilinek/Work/Own/GoHealthChecker/internal/controller/controller.go:133"}
+{"level":"info","ts":1748002753.227464,"caller":"service/service.go:36","msg":"https://www.google.com: 64.211959ms\n"}
+{"level":"info","ts":1748002758.1634638,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748002758.1641011,"caller":"controller/controller.go:118","msg":"URL: https://www.seznam.cz, Queue size: 3\n"}
+{"level":"info","ts":1748002758.230495,"caller":"service/service.go:36","msg":"https://www.google.com: 66.989084ms\n"}
+{"level":"info","ts":1748002763.159154,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748002763.159343,"caller":"controller/controller.go:118","msg":"URL: https://www.seznam.cz, Queue size: 4\n"}
+{"level":"info","ts":1748002763.161082,"caller":"service/service.go:36","msg":"https://www.seznam.cz: 10.000177917s\n"}
+{"level":"error","ts":1748002763.16118,"caller":"controller/controller.go:133","msg":"Error when requesting https://www.seznam.cz: Get \"https://www.seznam.cz\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)","stacktrace":"GoHealthChecker/internal/controller.(*Controller).worker\n\t/Users/jakubzilinek/Work/Own/GoHealthChecker/internal/controller/controller.go:133"}
+{"level":"info","ts":1748002763.223493,"caller":"service/service.go:36","msg":"https://www.google.com: 64.333292ms\n"}
+{"level":"info","ts":1748002763.233958,"caller":"service/service.go:36","msg":"https://www.seznam.cz: 72.6495ms\n"}
+{"level":"info","ts":1748002763.539217,"caller":"service/service.go:36","msg":"https://www.seznam.cz: 34.702625ms\n"}
+{"level":"info","ts":1748002763.7395682,"caller":"service/service.go:36","msg":"https://www.seznam.cz: 31.74375ms\n"}
+{"level":"info","ts":1748002763.883181,"caller":"service/service.go:36","msg":"https://www.seznam.cz: 35.123ms\n"}
+{"level":"info","ts":1748002768.155745,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748002768.156712,"caller":"controller/controller.go:118","msg":"URL: https://www.seznam.cz, Queue size: 0\n"}
+{"level":"info","ts":1748002768.19039,"caller":"service/service.go:36","msg":"https://www.seznam.cz: 34.582ms\n"}
+{"level":"info","ts":1748002768.235529,"caller":"service/service.go:36","msg":"https://www.google.com: 79.7995ms\n"}
+{"level":"info","ts":1748002773.154031,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748002773.1542342,"caller":"controller/controller.go:118","msg":"URL: https://www.seznam.cz, Queue size: 0\n"}
+{"level":"info","ts":1748002773.308318,"caller":"service/service.go:36","msg":"https://www.seznam.cz: 154.100583ms\n"}
+{"level":"info","ts":1748002773.396491,"caller":"service/service.go:36","msg":"https://www.google.com: 242.0815ms\n"}
+{"level":"info","ts":1748002775.7105181,"caller":"controller/controller.go:72","msg":"Gracefully exiting..."}
+{"level":"info","ts":1748002775.7106838,"caller":"controller/controller.go:127","msg":"Worker for https://www.google.com stopped\n"}
+{"level":"info","ts":1748002775.710708,"caller":"controller/controller.go:127","msg":"Worker for https://www.seznam.cz stopped\n"}
+{"level":"info","ts":1748002801.273824,"caller":"app/main.go:19","msg":"Starting the app."}
+{"level":"info","ts":1748002801.274373,"caller":"controller/controller.go:59","msg":"Starting loop (press Ctrl+C to stop)..."}
+{"level":"info","ts":1748002801.274404,"caller":"controller/controller.go:61","msg":"Spawning workers for each URL"}
+{"level":"info","ts":1748002801.274414,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 1\n"}
+{"level":"info","ts":1748002801.27443,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 1\n"}
+{"level":"info","ts":1748002801.274436,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 1\n"}
+{"level":"info","ts":1748002801.360351,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 85.747875ms\n"}
+{"level":"info","ts":1748002801.4161541,"caller":"service/service.go:36","msg":"https://www.google.com: 141.638583ms\n"}
+{"level":"info","ts":1748002801.439755,"caller":"service/service.go:36","msg":"https://www.youtube.com: 165.242417ms\n"}
+{"level":"info","ts":1748002806.274357,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748002806.274644,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748002806.274678,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748002806.283818,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 9.304834ms\n"}
+{"level":"info","ts":1748002806.3397,"caller":"service/service.go:36","msg":"https://www.google.com: 65.336417ms\n"}
+{"level":"info","ts":1748002806.367411,"caller":"service/service.go:36","msg":"https://www.youtube.com: 92.962958ms\n"}
+{"level":"info","ts":1748002811.274858,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748002811.275462,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748002811.275489,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748002811.2835772,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 8.638792ms\n"}
+{"level":"info","ts":1748002811.3469949,"caller":"service/service.go:36","msg":"https://www.google.com: 72.143375ms\n"}
+{"level":"info","ts":1748002811.363599,"caller":"service/service.go:36","msg":"https://www.youtube.com: 88.734125ms\n"}
+{"level":"info","ts":1748002816.274571,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748002816.274771,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748002816.274807,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748002816.282563,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 7.831041ms\n"}
+{"level":"info","ts":1748002816.3368661,"caller":"service/service.go:36","msg":"https://www.google.com: 62.292834ms\n"}
+{"level":"info","ts":1748002816.369792,"caller":"service/service.go:36","msg":"https://www.youtube.com: 95.227792ms\n"}
+{"level":"info","ts":1748002816.6066968,"caller":"controller/controller.go:72","msg":"Gracefully exiting..."}
+{"level":"info","ts":1748002816.606852,"caller":"controller/controller.go:127","msg":"Worker for https://www.cdn77.com stopped\n"}
+{"level":"info","ts":1748002816.6068769,"caller":"controller/controller.go:127","msg":"Worker for https://www.youtube.com stopped\n"}
+{"level":"info","ts":1748002816.6068952,"caller":"controller/controller.go:127","msg":"Worker for https://www.google.com stopped\n"}
+{"level":"info","ts":1748003493.846282,"caller":"app/main.go:19","msg":"Starting the app."}
+{"level":"info","ts":1748003493.846868,"caller":"controller/controller.go:59","msg":"Starting loop (press Ctrl+C to stop)..."}
+{"level":"info","ts":1748003493.846903,"caller":"controller/controller.go:61","msg":"Spawning workers for each URL"}
+{"level":"info","ts":1748003493.846915,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 1\n"}
+{"level":"info","ts":1748003493.846943,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 1\n"}
+{"level":"info","ts":1748003493.8469481,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 1\n"}
+{"level":"info","ts":1748003493.8857868,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 38.740167ms\n"}
+{"level":"info","ts":1748003493.97741,"caller":"service/service.go:36","msg":"https://www.google.com: 130.372083ms\n"}
+{"level":"info","ts":1748003494.0083468,"caller":"service/service.go:36","msg":"https://www.youtube.com: 161.214042ms\n"}
+{"level":"info","ts":1748003498.847334,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003498.8477829,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003498.847818,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003498.8634748,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 15.610458ms\n"}
+{"level":"info","ts":1748003498.920507,"caller":"service/service.go:36","msg":"https://www.google.com: 73.160375ms\n"}
+{"level":"info","ts":1748003498.979281,"caller":"service/service.go:36","msg":"https://www.youtube.com: 131.063417ms\n"}
+{"level":"info","ts":1748003503.8525949,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003503.852741,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003503.8527591,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003503.860671,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 7.886791ms\n"}
+{"level":"info","ts":1748003503.913036,"caller":"service/service.go:36","msg":"https://www.google.com: 60.454708ms\n"}
+{"level":"info","ts":1748003503.944438,"caller":"service/service.go:36","msg":"https://www.youtube.com: 91.496459ms\n"}
+{"level":"info","ts":1748003508.8478248,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003508.848096,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003508.848128,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003508.856481,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 8.317083ms\n"}
+{"level":"info","ts":1748003508.918143,"caller":"service/service.go:36","msg":"https://www.google.com: 70.161458ms\n"}
+{"level":"info","ts":1748003508.9485881,"caller":"service/service.go:36","msg":"https://www.youtube.com: 100.206334ms\n"}
+{"level":"info","ts":1748003513.8470871,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003513.847284,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003513.847314,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003513.870444,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 23.084042ms\n"}
+{"level":"info","ts":1748003513.9130828,"caller":"service/service.go:36","msg":"https://www.google.com: 65.984291ms\n"}
+{"level":"info","ts":1748003513.951838,"caller":"service/service.go:36","msg":"https://www.youtube.com: 104.137167ms\n"}
+{"level":"info","ts":1748003518.847122,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003518.8474329,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003518.84755,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003518.8620899,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 14.629292ms\n"}
+{"level":"info","ts":1748003518.9055161,"caller":"service/service.go:36","msg":"https://www.google.com: 57.776583ms\n"}
+{"level":"info","ts":1748003518.951295,"caller":"service/service.go:36","msg":"https://www.youtube.com: 103.616834ms\n"}
+{"level":"info","ts":1748003523.8560278,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003523.8561978,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003523.856213,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003523.868453,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 12.210167ms\n"}
+{"level":"info","ts":1748003523.919402,"caller":"service/service.go:36","msg":"https://www.google.com: 63.362916ms\n"}
+{"level":"info","ts":1748003523.95447,"caller":"service/service.go:36","msg":"https://www.youtube.com: 98.212ms\n"}
+{"level":"info","ts":1748003528.8465412,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003528.8466911,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003528.846721,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003528.860856,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 14.116208ms\n"}
+{"level":"info","ts":1748003528.9126542,"caller":"service/service.go:36","msg":"https://www.google.com: 66.095292ms\n"}
+{"level":"info","ts":1748003528.968287,"caller":"service/service.go:36","msg":"https://www.youtube.com: 121.639333ms\n"}
+{"level":"info","ts":1748003533.847157,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003533.847448,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003533.84761,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003533.8572001,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 8.824334ms\n"}
+{"level":"info","ts":1748003533.9075682,"caller":"service/service.go:36","msg":"https://www.google.com: 59.887ms\n"}
+{"level":"info","ts":1748003533.9406452,"caller":"service/service.go:36","msg":"https://www.youtube.com: 92.131917ms\n"}
+{"level":"info","ts":1748003538.847063,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003538.847187,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003538.8472168,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003538.8611898,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 14.056125ms\n"}
+{"level":"info","ts":1748003538.916307,"caller":"service/service.go:36","msg":"https://www.google.com: 69.24075ms\n"}
+{"level":"info","ts":1748003538.929866,"caller":"service/service.go:36","msg":"https://www.youtube.com: 82.786458ms\n"}
+{"level":"info","ts":1748003543.846949,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003543.8471098,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003543.8471448,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003543.862669,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 15.561666ms\n"}
+{"level":"info","ts":1748003543.906199,"caller":"service/service.go:36","msg":"https://www.google.com: 59.2255ms\n"}
+{"level":"info","ts":1748003543.9579232,"caller":"service/service.go:36","msg":"https://www.youtube.com: 110.900666ms\n"}
+{"level":"info","ts":1748003548.846854,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003548.84697,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003548.846987,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003548.894202,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 47.382458ms\n"}
+{"level":"info","ts":1748003549.073822,"caller":"service/service.go:36","msg":"https://www.google.com: 226.991167ms\n"}
+{"level":"info","ts":1748003549.0738409,"caller":"service/service.go:36","msg":"https://www.youtube.com: 226.95225ms\n"}
+{"level":"info","ts":1748003553.8467069,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003553.846889,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003553.84691,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003553.862489,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 15.672167ms\n"}
+{"level":"info","ts":1748003553.913719,"caller":"service/service.go:36","msg":"https://www.google.com: 66.993209ms\n"}
+{"level":"info","ts":1748003553.939751,"caller":"service/service.go:36","msg":"https://www.youtube.com: 92.991458ms\n"}
+{"level":"info","ts":1748003558.846553,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003558.84673,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003558.8467488,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003558.864992,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 18.202959ms\n"}
+{"level":"info","ts":1748003558.9154282,"caller":"service/service.go:36","msg":"https://www.google.com: 68.85175ms\n"}
+{"level":"info","ts":1748003558.949374,"caller":"service/service.go:36","msg":"https://www.youtube.com: 102.258959ms\n"}
+{"level":"info","ts":1748003563.84687,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003563.849144,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003563.849161,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003563.8546822,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 8.15075ms\n"}
+{"level":"info","ts":1748003563.9045172,"caller":"service/service.go:36","msg":"https://www.google.com: 57.948125ms\n"}
+{"level":"info","ts":1748003563.913439,"caller":"service/service.go:36","msg":"https://www.youtube.com: 64.881208ms\n"}
+{"level":"info","ts":1748003568.845855,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003568.846068,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003568.846099,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003568.8642821,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 18.122084ms\n"}
+{"level":"info","ts":1748003568.9151008,"caller":"service/service.go:36","msg":"https://www.google.com: 68.781959ms\n"}
+{"level":"info","ts":1748003568.958963,"caller":"service/service.go:36","msg":"https://www.youtube.com: 112.427875ms\n"}
+{"level":"info","ts":1748003573.846367,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003573.84656,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003573.8465889,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003573.8544571,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 7.364208ms\n"}
+{"level":"info","ts":1748003573.920151,"caller":"service/service.go:36","msg":"https://www.google.com: 73.7525ms\n"}
+{"level":"info","ts":1748003573.942006,"caller":"service/service.go:36","msg":"https://www.youtube.com: 95.363292ms\n"}
+{"level":"info","ts":1748003578.846227,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003578.8464599,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003578.846498,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003578.858463,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 11.911667ms\n"}
+{"level":"info","ts":1748003578.913294,"caller":"service/service.go:36","msg":"https://www.youtube.com: 66.516208ms\n"}
+{"level":"info","ts":1748003578.918605,"caller":"service/service.go:36","msg":"https://www.google.com: 72.326458ms\n"}
+{"level":"info","ts":1748003583.846138,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003583.846328,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003583.846366,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003583.860363,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 13.945792ms\n"}
+{"level":"info","ts":1748003583.915655,"caller":"service/service.go:36","msg":"https://www.google.com: 69.479792ms\n"}
+{"level":"info","ts":1748003583.974473,"caller":"service/service.go:36","msg":"https://www.youtube.com: 127.997ms\n"}
+{"level":"info","ts":1748003588.8460531,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003588.846273,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003588.8463402,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003588.863541,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 17.148708ms\n"}
+{"level":"info","ts":1748003588.91789,"caller":"service/service.go:36","msg":"https://www.google.com: 71.4605ms\n"}
+{"level":"info","ts":1748003588.942542,"caller":"service/service.go:36","msg":"https://www.youtube.com: 94.879125ms\n"}
+{"level":"info","ts":1748003593.846756,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003593.8470259,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003593.847065,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003593.868746,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 21.625458ms\n"}
+{"level":"info","ts":1748003593.9136581,"caller":"service/service.go:36","msg":"https://www.google.com: 66.887125ms\n"}
+{"level":"info","ts":1748003593.947639,"caller":"service/service.go:36","msg":"https://www.youtube.com: 100.215334ms\n"}
+{"level":"info","ts":1748003598.8462222,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003598.846447,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003598.846486,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003598.8587961,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 11.941333ms\n"}
+{"level":"info","ts":1748003598.9035761,"caller":"service/service.go:36","msg":"https://www.google.com: 57.078667ms\n"}
+{"level":"info","ts":1748003598.9422662,"caller":"service/service.go:36","msg":"https://www.youtube.com: 95.723ms\n"}
+{"level":"info","ts":1748003603.8456461,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003603.84654,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003603.846565,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003603.8537521,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 8.0555ms\n"}
+{"level":"info","ts":1748003603.902456,"caller":"service/service.go:36","msg":"https://www.google.com: 56.788958ms\n"}
+{"level":"info","ts":1748003603.9549382,"caller":"service/service.go:36","msg":"https://www.youtube.com: 109.217833ms\n"}
+{"level":"info","ts":1748003608.84556,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003608.846143,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003608.846206,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003608.860065,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 14.450459ms\n"}
+{"level":"info","ts":1748003608.915115,"caller":"service/service.go:36","msg":"https://www.google.com: 69.521708ms\n"}
+{"level":"info","ts":1748003608.96529,"caller":"service/service.go:36","msg":"https://www.youtube.com: 119.673625ms\n"}
+{"level":"info","ts":1748003613.845633,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003613.846005,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003613.8460531,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003613.854293,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 7.917333ms\n"}
+{"level":"info","ts":1748003613.907766,"caller":"service/service.go:36","msg":"https://www.google.com: 61.738333ms\n"}
+{"level":"info","ts":1748003613.959739,"caller":"service/service.go:36","msg":"https://www.youtube.com: 113.632541ms\n"}
+{"level":"info","ts":1748003618.8455412,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003618.845768,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003618.8458061,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003618.85972,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 14.317459ms\n"}
+{"level":"info","ts":1748003618.909525,"caller":"service/service.go:36","msg":"https://www.google.com: 64.093541ms\n"}
+{"level":"info","ts":1748003618.947573,"caller":"service/service.go:36","msg":"https://www.youtube.com: 101.679292ms\n"}
+{"level":"info","ts":1748003623.844769,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003623.8450181,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003623.84512,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003623.8820732,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 36.886291ms\n"}
+{"level":"info","ts":1748003623.967349,"caller":"service/service.go:36","msg":"https://www.google.com: 121.999291ms\n"}
+{"level":"info","ts":1748003623.9730089,"caller":"service/service.go:36","msg":"https://www.youtube.com: 127.645709ms\n"}
+{"level":"info","ts":1748003628.845172,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003628.8454132,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003628.845451,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003628.858902,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 12.933459ms\n"}
+{"level":"info","ts":1748003628.907849,"caller":"service/service.go:36","msg":"https://www.google.com: 62.648042ms\n"}
+{"level":"info","ts":1748003628.9157681,"caller":"service/service.go:36","msg":"https://www.youtube.com: 70.270041ms\n"}
+{"level":"info","ts":1748003633.845045,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003633.845115,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003633.8451278,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003633.858801,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 13.783959ms\n"}
+{"level":"info","ts":1748003633.9116302,"caller":"service/service.go:36","msg":"https://www.google.com: 66.595458ms\n"}
+{"level":"info","ts":1748003633.9498382,"caller":"service/service.go:36","msg":"https://www.youtube.com: 104.7195ms\n"}
+{"level":"info","ts":1748003638.844388,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003638.8446321,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003638.844671,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003638.8526678,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 7.950584ms\n"}
+{"level":"info","ts":1748003638.905202,"caller":"service/service.go:36","msg":"https://www.google.com: 60.072875ms\n"}
+{"level":"info","ts":1748003638.945782,"caller":"service/service.go:36","msg":"https://www.youtube.com: 100.539708ms\n"}
+{"level":"info","ts":1748003643.844904,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003643.845149,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003643.845189,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003643.855309,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 9.91575ms\n"}
+{"level":"info","ts":1748003643.902373,"caller":"service/service.go:36","msg":"https://www.google.com: 57.457334ms\n"}
+{"level":"info","ts":1748003643.9111738,"caller":"service/service.go:36","msg":"https://www.youtube.com: 65.929667ms\n"}
+{"level":"info","ts":1748003648.844836,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003648.8449779,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003648.845152,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003648.859124,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 14.123708ms\n"}
+{"level":"info","ts":1748003648.9180968,"caller":"service/service.go:36","msg":"https://www.google.com: 73.263208ms\n"}
+{"level":"info","ts":1748003648.939771,"caller":"service/service.go:36","msg":"https://www.youtube.com: 94.915041ms\n"}
+{"level":"info","ts":1748003653.844851,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003653.845043,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003653.845082,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003653.853398,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 8.119625ms\n"}
+{"level":"info","ts":1748003653.906517,"caller":"service/service.go:36","msg":"https://www.google.com: 61.623792ms\n"}
+{"level":"info","ts":1748003653.937612,"caller":"service/service.go:36","msg":"https://www.youtube.com: 92.48675ms\n"}
+{"level":"info","ts":1748003658.844629,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003658.844876,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003658.844967,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003658.855744,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 10.35475ms\n"}
+{"level":"info","ts":1748003658.904722,"caller":"service/service.go:36","msg":"https://www.google.com: 59.856417ms\n"}
+{"level":"info","ts":1748003658.949673,"caller":"service/service.go:36","msg":"https://www.youtube.com: 104.650917ms\n"}
+{"level":"info","ts":1748003663.8436968,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003663.84386,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003663.843903,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003663.851274,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 7.202ms\n"}
+{"level":"info","ts":1748003663.90691,"caller":"service/service.go:36","msg":"https://www.google.com: 63.073ms\n"}
+{"level":"info","ts":1748003663.94731,"caller":"service/service.go:36","msg":"https://www.youtube.com: 103.183917ms\n"}
+{"level":"info","ts":1748003668.8443651,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003668.846802,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003668.84693,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003668.852619,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 6.839542ms\n"}
+{"level":"info","ts":1748003668.90549,"caller":"service/service.go:36","msg":"https://www.google.com: 61.086875ms\n"}
+{"level":"info","ts":1748003668.959137,"caller":"service/service.go:36","msg":"https://www.youtube.com: 114.376084ms\n"}
+{"level":"info","ts":1748003673.8442922,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003673.844529,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003673.844566,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003673.853824,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 9.21125ms\n"}
+{"level":"info","ts":1748003673.904594,"caller":"service/service.go:36","msg":"https://www.google.com: 60.31475ms\n"}
+{"level":"info","ts":1748003673.9346812,"caller":"service/service.go:36","msg":"https://www.youtube.com: 89.7315ms\n"}
+{"level":"info","ts":1748003678.844136,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003678.844359,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003678.844397,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003678.852051,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 7.605417ms\n"}
+{"level":"info","ts":1748003679.027456,"caller":"service/service.go:36","msg":"https://www.youtube.com: 182.748833ms\n"}
+{"level":"info","ts":1748003679.027481,"caller":"service/service.go:36","msg":"https://www.google.com: 183.321083ms\n"}
+{"level":"info","ts":1748003683.8439791,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003683.844057,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003683.84407,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003683.8615968,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 17.512375ms\n"}
+{"level":"info","ts":1748003683.908339,"caller":"service/service.go:36","msg":"https://www.google.com: 64.335834ms\n"}
+{"level":"info","ts":1748003683.938624,"caller":"service/service.go:36","msg":"https://www.youtube.com: 94.583459ms\n"}
+{"level":"info","ts":1748003688.8438451,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003688.8439171,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003688.843929,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003688.852418,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 8.527083ms\n"}
+{"level":"info","ts":1748003688.906195,"caller":"service/service.go:36","msg":"https://www.google.com: 62.331375ms\n"}
+{"level":"info","ts":1748003688.93773,"caller":"service/service.go:36","msg":"https://www.youtube.com: 93.771958ms\n"}
+{"level":"info","ts":1748003693.843754,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003693.844037,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003693.844058,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003693.861773,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 17.977958ms\n"}
+{"level":"info","ts":1748003693.911514,"caller":"service/service.go:36","msg":"https://www.google.com: 67.657166ms\n"}
+{"level":"info","ts":1748003693.93997,"caller":"service/service.go:36","msg":"https://www.youtube.com: 96.063625ms\n"}
+{"level":"info","ts":1748003698.843738,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003698.8447108,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003698.8448582,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003698.8523982,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 7.066833ms\n"}
+{"level":"info","ts":1748003698.899341,"caller":"service/service.go:36","msg":"https://www.google.com: 54.421542ms\n"}
+{"level":"info","ts":1748003698.9369469,"caller":"service/service.go:36","msg":"https://www.youtube.com: 91.683375ms\n"}
+{"level":"info","ts":1748003703.8435478,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003703.843651,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003703.8436658,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003703.935091,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 91.51625ms\n"}
+{"level":"info","ts":1748003704.039356,"caller":"service/service.go:36","msg":"https://www.google.com: 195.787916ms\n"}
+{"level":"info","ts":1748003704.039377,"caller":"service/service.go:36","msg":"https://www.youtube.com: 195.687791ms\n"}
+{"level":"info","ts":1748003708.8434958,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003708.843636,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003708.843659,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003708.8534179,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 9.7135ms\n"}
+{"level":"info","ts":1748003708.902403,"caller":"service/service.go:36","msg":"https://www.google.com: 58.902875ms\n"}
+{"level":"info","ts":1748003708.9611788,"caller":"service/service.go:36","msg":"https://www.youtube.com: 117.362833ms\n"}
+{"level":"info","ts":1748003713.8434298,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003713.84361,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003713.843648,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003713.854748,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 10.41425ms\n"}
+{"level":"info","ts":1748003713.907056,"caller":"service/service.go:36","msg":"https://www.google.com: 63.562709ms\n"}
+{"level":"info","ts":1748003713.945486,"caller":"service/service.go:36","msg":"https://www.youtube.com: 101.780042ms\n"}
+{"level":"info","ts":1748003718.8431768,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003718.843352,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003718.84339,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003718.8554502,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 12.005708ms\n"}
+{"level":"info","ts":1748003718.911506,"caller":"service/service.go:36","msg":"https://www.google.com: 68.306042ms\n"}
+{"level":"info","ts":1748003718.945438,"caller":"service/service.go:36","msg":"https://www.youtube.com: 101.807625ms\n"}
+{"level":"info","ts":1748003723.843231,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003723.843429,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003723.843467,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003723.860488,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 16.969792ms\n"}
+{"level":"info","ts":1748003723.908043,"caller":"service/service.go:36","msg":"https://www.google.com: 64.784459ms\n"}
+{"level":"info","ts":1748003723.950432,"caller":"service/service.go:36","msg":"https://www.youtube.com: 106.304875ms\n"}
+{"level":"info","ts":1748003728.843951,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003728.84511,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003728.845184,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003728.859244,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 14.580292ms\n"}
+{"level":"info","ts":1748003728.9118552,"caller":"service/service.go:36","msg":"https://www.google.com: 67.628167ms\n"}
+{"level":"info","ts":1748003728.951786,"caller":"service/service.go:36","msg":"https://www.youtube.com: 107.226833ms\n"}
+{"level":"info","ts":1748003733.842232,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003733.842402,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003733.842609,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003733.8605251,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 17.867459ms\n"}
+{"level":"info","ts":1748003733.913845,"caller":"service/service.go:36","msg":"https://www.google.com: 71.58375ms\n"}
+{"level":"info","ts":1748003733.9592729,"caller":"service/service.go:36","msg":"https://www.youtube.com: 116.634583ms\n"}
+{"level":"info","ts":1748003738.842921,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003738.8436742,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003738.843751,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003738.854899,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 11.235833ms\n"}
+{"level":"info","ts":1748003738.9057732,"caller":"service/service.go:36","msg":"https://www.google.com: 62.848792ms\n"}
+{"level":"info","ts":1748003738.939023,"caller":"service/service.go:36","msg":"https://www.youtube.com: 95.642708ms\n"}
+{"level":"info","ts":1748003743.842742,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003743.842805,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003743.842814,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003743.858885,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 16.111ms\n"}
+{"level":"info","ts":1748003743.905258,"caller":"service/service.go:36","msg":"https://www.google.com: 62.519083ms\n"}
+{"level":"info","ts":1748003743.933534,"caller":"service/service.go:36","msg":"https://www.youtube.com: 90.786292ms\n"}
+{"level":"info","ts":1748003748.842623,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003748.842728,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003748.8427498,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003748.859026,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 16.334792ms\n"}
+{"level":"info","ts":1748003748.9063401,"caller":"service/service.go:36","msg":"https://www.google.com: 63.693459ms\n"}
+{"level":"info","ts":1748003748.950297,"caller":"service/service.go:36","msg":"https://www.youtube.com: 107.605458ms\n"}
+{"level":"info","ts":1748003752.37769,"caller":"controller/controller.go:72","msg":"Gracefully exiting..."}
+{"level":"info","ts":1748003752.3778691,"caller":"controller/controller.go:127","msg":"Worker for https://www.cdn77.com stopped\n"}
+{"level":"info","ts":1748003752.377874,"caller":"controller/controller.go:127","msg":"Worker for https://www.youtube.com stopped\n"}
+{"level":"info","ts":1748003752.3778849,"caller":"controller/controller.go:127","msg":"Worker for https://www.google.com stopped\n"}
+{"level":"info","ts":1748003762.029595,"caller":"app/main.go:19","msg":"Starting the app."}
+{"level":"info","ts":1748003762.0301042,"caller":"controller/controller.go:59","msg":"Starting loop (press Ctrl+C to stop)..."}
+{"level":"info","ts":1748003762.030236,"caller":"controller/controller.go:61","msg":"Spawning workers for each URL"}
+{"level":"info","ts":1748003762.030268,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 1\n"}
+{"level":"info","ts":1748003762.030314,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 1\n"}
+{"level":"info","ts":1748003762.0304,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 1\n"}
+{"level":"info","ts":1748003762.117495,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 86.905875ms\n"}
+{"level":"info","ts":1748003762.167616,"caller":"service/service.go:36","msg":"https://www.google.com: 137.060375ms\n"}
+{"level":"info","ts":1748003762.198556,"caller":"service/service.go:36","msg":"https://www.youtube.com: 167.697417ms\n"}
+{"level":"info","ts":1748003767.031222,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003767.031533,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003767.0315871,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003767.04236,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 10.989458ms\n"}
+{"level":"info","ts":1748003767.091569,"caller":"service/service.go:36","msg":"https://www.google.com: 60.348542ms\n"}
+{"level":"info","ts":1748003767.1363468,"caller":"service/service.go:36","msg":"https://www.youtube.com: 105.042375ms\n"}
+{"level":"info","ts":1748003772.031222,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003772.0314372,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003772.031473,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003772.040715,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 9.402291ms\n"}
+{"level":"info","ts":1748003772.095466,"caller":"service/service.go:36","msg":"https://www.google.com: 64.218084ms\n"}
+{"level":"info","ts":1748003772.130699,"caller":"service/service.go:36","msg":"https://www.youtube.com: 99.443416ms\n"}
+{"level":"info","ts":1748003777.0309381,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003777.03114,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003777.031181,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003777.045281,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 14.026166ms\n"}
+{"level":"info","ts":1748003777.097501,"caller":"service/service.go:36","msg":"https://www.google.com: 66.522959ms\n"}
+{"level":"info","ts":1748003777.133879,"caller":"service/service.go:36","msg":"https://www.youtube.com: 102.845ms\n"}
+{"level":"info","ts":1748003782.0308511,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003782.031104,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003782.03116,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003782.081922,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 50.89225ms\n"}
+{"level":"info","ts":1748003782.2531662,"caller":"service/service.go:36","msg":"https://www.google.com: 222.288416ms\n"}
+{"level":"info","ts":1748003782.253623,"caller":"service/service.go:36","msg":"https://www.youtube.com: 222.703583ms\n"}
+{"level":"info","ts":1748003787.030735,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003787.03187,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003787.03217,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003787.041023,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 9.62325ms\n"}
+{"level":"info","ts":1748003787.182567,"caller":"service/service.go:36","msg":"https://www.youtube.com: 151.758209ms\n"}
+{"level":"info","ts":1748003787.185021,"caller":"service/service.go:36","msg":"https://www.google.com: 154.273375ms\n"}
+{"level":"info","ts":1748003792.030645,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003792.030884,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003792.030941,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003792.04745,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 16.554333ms\n"}
+{"level":"info","ts":1748003792.094955,"caller":"service/service.go:36","msg":"https://www.google.com: 64.284625ms\n"}
+{"level":"info","ts":1748003792.1351502,"caller":"service/service.go:36","msg":"https://www.youtube.com: 104.435333ms\n"}
+{"level":"info","ts":1748003797.0296378,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003797.029972,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003797.030008,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003797.046255,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 16.524125ms\n"}
+{"level":"info","ts":1748003797.102145,"caller":"service/service.go:36","msg":"https://www.google.com: 72.474125ms\n"}
+{"level":"info","ts":1748003797.1423051,"caller":"service/service.go:36","msg":"https://www.youtube.com: 112.605875ms\n"}
+{"level":"info","ts":1748003799.994724,"caller":"controller/controller.go:72","msg":"Gracefully exiting..."}
+{"level":"info","ts":1748003799.9949481,"caller":"controller/controller.go:127","msg":"Worker for https://www.cdn77.com stopped\n"}
+{"level":"info","ts":1748003799.994976,"caller":"controller/controller.go:127","msg":"Worker for https://www.youtube.com stopped\n"}
+{"level":"info","ts":1748003799.994998,"caller":"controller/controller.go:127","msg":"Worker for https://www.google.com stopped\n"}
+{"level":"info","ts":1748003824.67354,"caller":"app/main.go:19","msg":"Starting the app."}
+{"level":"info","ts":1748003824.674077,"caller":"controller/controller.go:59","msg":"Starting loop (press Ctrl+C to stop)..."}
+{"level":"info","ts":1748003824.674119,"caller":"controller/controller.go:61","msg":"Spawning workers for each URL"}
+{"level":"info","ts":1748003824.674142,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 1\n"}
+{"level":"info","ts":1748003824.674152,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 1\n"}
+{"level":"info","ts":1748003824.674162,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 1\n"}
+{"level":"info","ts":1748003824.741117,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 66.855209ms\n"}
+{"level":"info","ts":1748003824.780222,"caller":"service/service.go:36","msg":"https://www.google.com: 105.98125ms\n"}
+{"level":"info","ts":1748003824.826163,"caller":"service/service.go:36","msg":"https://www.youtube.com: 151.741708ms\n"}
+{"level":"info","ts":1748003829.675267,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003829.675519,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003829.67556,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003829.695456,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 20.099375ms\n"}
+{"level":"info","ts":1748003829.745733,"caller":"service/service.go:36","msg":"https://www.google.com: 70.48425ms\n"}
+{"level":"info","ts":1748003829.750647,"caller":"service/service.go:36","msg":"https://www.youtube.com: 75.363709ms\n"}
+{"level":"info","ts":1748003834.6752,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003834.6754282,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003834.675464,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003834.689635,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 14.362875ms\n"}
+{"level":"info","ts":1748003834.7384698,"caller":"service/service.go:36","msg":"https://www.google.com: 63.257875ms\n"}
+{"level":"info","ts":1748003834.780401,"caller":"service/service.go:36","msg":"https://www.youtube.com: 105.189375ms\n"}
+{"level":"info","ts":1748003839.6749701,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003839.6752079,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003839.675262,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003839.688719,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 13.579291ms\n"}
+{"level":"info","ts":1748003839.75071,"caller":"service/service.go:36","msg":"https://www.google.com: 75.700583ms\n"}
+{"level":"info","ts":1748003839.785347,"caller":"service/service.go:36","msg":"https://www.youtube.com: 110.235917ms\n"}
+{"level":"info","ts":1748003844.674129,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003844.6742861,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003844.674324,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003844.6859531,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 11.574167ms\n"}
+{"level":"info","ts":1748003844.7378402,"caller":"service/service.go:36","msg":"https://www.google.com: 63.666042ms\n"}
+{"level":"info","ts":1748003844.78389,"caller":"service/service.go:36","msg":"https://www.youtube.com: 109.635167ms\n"}
+{"level":"info","ts":1748003849.674817,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003849.676095,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003849.676148,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003849.692102,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 17.13375ms\n"}
+{"level":"info","ts":1748003849.742826,"caller":"service/service.go:36","msg":"https://www.google.com: 68.009083ms\n"}
+{"level":"info","ts":1748003849.7803211,"caller":"service/service.go:36","msg":"https://www.youtube.com: 105.465792ms\n"}
+{"level":"info","ts":1748003854.674003,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003854.674291,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003854.674366,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003854.691919,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 17.395ms\n"}
+{"level":"info","ts":1748003854.7432802,"caller":"service/service.go:36","msg":"https://www.google.com: 69.209209ms\n"}
+{"level":"info","ts":1748003854.774446,"caller":"service/service.go:36","msg":"https://www.youtube.com: 99.737209ms\n"}
+{"level":"info","ts":1748003859.674496,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003859.674668,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003859.674711,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003859.6911,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 16.323ms\n"}
+{"level":"info","ts":1748003859.743505,"caller":"service/service.go:36","msg":"https://www.google.com: 68.994166ms\n"}
+{"level":"info","ts":1748003859.783757,"caller":"service/service.go:36","msg":"https://www.youtube.com: 109.117333ms\n"}
+{"level":"info","ts":1748003864.6737359,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003864.6738958,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003864.6739352,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003864.690044,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 16.176458ms\n"}
+{"level":"info","ts":1748003864.737068,"caller":"service/service.go:36","msg":"https://www.google.com: 63.28925ms\n"}
+{"level":"info","ts":1748003864.777791,"caller":"service/service.go:36","msg":"https://www.youtube.com: 103.96675ms\n"}
+{"level":"info","ts":1748003869.674332,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748003869.674565,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748003869.674593,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748003869.68319,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 8.538542ms\n"}
+{"level":"info","ts":1748003869.743041,"caller":"service/service.go:36","msg":"https://www.google.com: 68.741916ms\n"}
+{"level":"info","ts":1748003869.779212,"caller":"controller/controller.go:72","msg":"Gracefully exiting..."}
+{"level":"info","ts":1748003869.779326,"caller":"controller/controller.go:127","msg":"Worker for https://www.cdn77.com stopped\n"}
+{"level":"info","ts":1748003869.779331,"caller":"service/service.go:36","msg":"https://www.youtube.com: 104.997917ms\n"}
+{"level":"info","ts":1748003869.779347,"caller":"controller/controller.go:127","msg":"Worker for https://www.google.com stopped\n"}
+{"level":"info","ts":1748003869.870806,"caller":"controller/controller.go:127","msg":"Worker for https://www.youtube.com stopped\n"}

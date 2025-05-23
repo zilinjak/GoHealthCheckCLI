@@ -4,27 +4,26 @@ import (
 	"time"
 )
 
-// HealthCheckResult represents the outcome of a single health check
 type HealthCheckResult struct {
-	URL        string        `json:"url"`         // Checked URL
-	Status     string        `json:"status"`      // "UP", "DOWN", or "TIMEOUT"
 	StatusCode int           `json:"status_code"` // HTTP status code (0 if network error)
 	Latency    time.Duration `json:"latency"`     // Request duration
 	Timestamp  time.Time     `json:"timestamp"`   // When check occurred
+	IsOk       bool          `json:"isOk"`        // Is the URL healthy
+	Size       uint64        `json:"size"`        // Size of the response
 }
 
-// NewHealthCheckResult constructor for safe initialization
 func NewHealthCheckResult(
-	url string,
-	status string,
 	statusCode int,
 	latency time.Duration,
+	sizeOfResponse uint64,
 ) HealthCheckResult {
+	isOk := statusCode >= 200 && statusCode < 400
+
 	return HealthCheckResult{
-		URL:        url,
-		Status:     status,
+		IsOk:       isOk,
 		StatusCode: statusCode,
 		Latency:    latency,
 		Timestamp:  time.Now().UTC(),
+		Size:       sizeOfResponse,
 	}
 }
