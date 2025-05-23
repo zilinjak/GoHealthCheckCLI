@@ -95,7 +95,7 @@ func (v *CLIView) RenderMetrics(results map[string]model.Metrics) {
 }
 
 func (v *CLIView) clearTerminal() {
-	fmt.Fprint(v.output, "\033[H\033[2J")
+	_, _ = fmt.Fprint(v.output, "\033[H\033[2J")
 }
 
 func addSuffix(data float64, suffix string) string {
