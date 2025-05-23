@@ -738,3 +738,1375 @@
 {"level":"info","ts":1748003869.779331,"caller":"service/service.go:36","msg":"https://www.youtube.com: 104.997917ms\n"}
 {"level":"info","ts":1748003869.779347,"caller":"controller/controller.go:127","msg":"Worker for https://www.google.com stopped\n"}
 {"level":"info","ts":1748003869.870806,"caller":"controller/controller.go:127","msg":"Worker for https://www.youtube.com stopped\n"}
+{"level":"info","ts":1748004363.427804,"caller":"app/main.go:19","msg":"Starting the app."}
+{"level":"info","ts":1748004363.4281821,"caller":"controller/controller.go:59","msg":"Starting loop (press Ctrl+C to stop)..."}
+{"level":"info","ts":1748004363.428234,"caller":"controller/controller.go:61","msg":"Spawning workers for each URL"}
+{"level":"info","ts":1748004363.428255,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 1\n"}
+{"level":"info","ts":1748004363.428272,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 1\n"}
+{"level":"info","ts":1748004363.428278,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 1\n"}
+{"level":"info","ts":1748004363.4844968,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 56.150208ms\n"}
+{"level":"info","ts":1748004363.5443358,"caller":"service/service.go:36","msg":"https://www.google.com: 115.999708ms\n"}
+{"level":"info","ts":1748004363.575352,"caller":"service/service.go:36","msg":"https://www.youtube.com: 146.997459ms\n"}
+{"level":"info","ts":1748004368.429238,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004368.429415,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004368.429451,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004368.439393,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 9.895208ms\n"}
+{"level":"info","ts":1748004368.490294,"caller":"service/service.go:36","msg":"https://www.google.com: 61.054875ms\n"}
+{"level":"info","ts":1748004368.521377,"caller":"service/service.go:36","msg":"https://www.youtube.com: 92.086666ms\n"}
+{"level":"info","ts":1748004373.429235,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004373.429485,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004373.429525,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004373.437176,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 7.808958ms\n"}
+{"level":"info","ts":1748004373.49543,"caller":"service/service.go:36","msg":"https://www.google.com: 66.18425ms\n"}
+{"level":"info","ts":1748004373.527266,"caller":"service/service.go:36","msg":"https://www.youtube.com: 97.966541ms\n"}
+{"level":"info","ts":1748004378.428976,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004378.429475,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004378.429526,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004378.43766,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 8.623709ms\n"}
+{"level":"info","ts":1748004378.498147,"caller":"service/service.go:36","msg":"https://www.google.com: 69.162417ms\n"}
+{"level":"info","ts":1748004378.542611,"caller":"service/service.go:36","msg":"https://www.youtube.com: 113.594292ms\n"}
+{"level":"info","ts":1748004383.428902,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004383.429184,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004383.429238,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004383.4872682,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 58.272667ms\n"}
+{"level":"info","ts":1748004383.600426,"caller":"service/service.go:36","msg":"https://www.google.com: 171.501916ms\n"}
+{"level":"info","ts":1748004383.6022882,"caller":"service/service.go:36","msg":"https://www.youtube.com: 173.33275ms\n"}
+{"level":"info","ts":1748004388.4294531,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004388.432271,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004388.43232,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004388.516963,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 85.405166ms\n"}
+{"level":"info","ts":1748004388.561507,"caller":"service/service.go:36","msg":"https://www.google.com: 131.870958ms\n"}
+{"level":"info","ts":1748004388.6285062,"caller":"service/service.go:36","msg":"https://www.youtube.com: 198.749ms\n"}
+{"level":"info","ts":1748004393.428638,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004393.428715,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004393.42873,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004393.439681,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 10.940542ms\n"}
+{"level":"info","ts":1748004393.4863622,"caller":"service/service.go:36","msg":"https://www.google.com: 57.684458ms\n"}
+{"level":"info","ts":1748004393.530655,"caller":"service/service.go:36","msg":"https://www.youtube.com: 101.964792ms\n"}
+{"level":"info","ts":1748004398.428643,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004398.4288561,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004398.428894,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004398.4370508,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 8.183083ms\n"}
+{"level":"info","ts":1748004398.4862452,"caller":"service/service.go:36","msg":"https://www.google.com: 57.579083ms\n"}
+{"level":"info","ts":1748004398.5353322,"caller":"service/service.go:36","msg":"https://www.youtube.com: 106.622833ms\n"}
+{"level":"info","ts":1748004403.4285,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004403.428616,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004403.428685,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004403.436746,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 8.297708ms\n"}
+{"level":"info","ts":1748004403.486944,"caller":"service/service.go:36","msg":"https://www.google.com: 58.473125ms\n"}
+{"level":"info","ts":1748004403.52157,"caller":"service/service.go:36","msg":"https://www.youtube.com: 93.056334ms\n"}
+{"level":"info","ts":1748004408.428055,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004408.428822,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004408.4289489,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004408.446082,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 17.485167ms\n"}
+{"level":"info","ts":1748004408.5000598,"caller":"service/service.go:36","msg":"https://www.google.com: 72.001125ms\n"}
+{"level":"info","ts":1748004408.53181,"caller":"service/service.go:36","msg":"https://www.youtube.com: 103.708333ms\n"}
+{"level":"info","ts":1748004413.427451,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004413.427684,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004413.427722,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004413.442508,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 14.927958ms\n"}
+{"level":"info","ts":1748004413.612728,"caller":"service/service.go:36","msg":"https://www.google.com: 185.24625ms\n"}
+{"level":"info","ts":1748004413.612918,"caller":"service/service.go:36","msg":"https://www.youtube.com: 185.399625ms\n"}
+{"level":"info","ts":1748004418.42814,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004418.428301,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004418.4283378,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004418.4391801,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 10.936625ms\n"}
+{"level":"info","ts":1748004418.49068,"caller":"service/service.go:36","msg":"https://www.google.com: 62.5165ms\n"}
+{"level":"info","ts":1748004418.520973,"caller":"service/service.go:36","msg":"https://www.youtube.com: 92.80075ms\n"}
+{"level":"info","ts":1748004423.428017,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004423.428187,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004423.428224,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004423.437783,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 9.508292ms\n"}
+{"level":"info","ts":1748004423.490658,"caller":"service/service.go:36","msg":"https://www.google.com: 62.577958ms\n"}
+{"level":"info","ts":1748004423.520195,"caller":"service/service.go:36","msg":"https://www.youtube.com: 92.087042ms\n"}
+{"level":"info","ts":1748004428.428072,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004428.428277,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004428.428315,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004428.436641,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 8.341667ms\n"}
+{"level":"info","ts":1748004428.482649,"caller":"service/service.go:36","msg":"https://www.google.com: 54.615542ms\n"}
+{"level":"info","ts":1748004428.523954,"caller":"service/service.go:36","msg":"https://www.youtube.com: 95.912542ms\n"}
+{"level":"info","ts":1748004433.426954,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004433.42724,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004433.42728,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004433.435203,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 8.184333ms\n"}
+{"level":"info","ts":1748004433.507612,"caller":"service/service.go:36","msg":"https://www.google.com: 80.553125ms\n"}
+{"level":"info","ts":1748004433.532533,"caller":"service/service.go:36","msg":"https://www.youtube.com: 105.483375ms\n"}
+{"level":"info","ts":1748004438.4277592,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004438.427982,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004438.428534,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004438.4443169,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 16.331ms\n"}
+{"level":"info","ts":1748004438.493719,"caller":"service/service.go:36","msg":"https://www.google.com: 65.925709ms\n"}
+{"level":"info","ts":1748004438.531453,"caller":"service/service.go:36","msg":"https://www.youtube.com: 103.458375ms\n"}
+{"level":"info","ts":1748004443.427834,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004443.428031,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004443.428069,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004443.443291,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 15.408875ms\n"}
+{"level":"info","ts":1748004443.494654,"caller":"service/service.go:36","msg":"https://www.google.com: 66.82975ms\n"}
+{"level":"info","ts":1748004443.5429142,"caller":"service/service.go:36","msg":"https://www.youtube.com: 115.072166ms\n"}
+{"level":"info","ts":1748004448.427566,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004448.427787,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004448.427837,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004448.439233,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 11.5125ms\n"}
+{"level":"info","ts":1748004448.49459,"caller":"service/service.go:36","msg":"https://www.google.com: 67.013708ms\n"}
+{"level":"info","ts":1748004448.5286632,"caller":"service/service.go:36","msg":"https://www.youtube.com: 101.045833ms\n"}
+{"level":"info","ts":1748004453.426592,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004453.426794,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004453.426852,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004453.447053,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 20.198708ms\n"}
+{"level":"info","ts":1748004453.496253,"caller":"service/service.go:36","msg":"https://www.google.com: 69.627167ms\n"}
+{"level":"info","ts":1748004453.5077791,"caller":"service/service.go:36","msg":"https://www.youtube.com: 81.117875ms\n"}
+{"level":"info","ts":1748004458.4268758,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004458.427117,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004458.4271731,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004458.443847,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 16.782333ms\n"}
+{"level":"info","ts":1748004458.492298,"caller":"service/service.go:36","msg":"https://www.google.com: 65.395125ms\n"}
+{"level":"info","ts":1748004458.5447,"caller":"service/service.go:36","msg":"https://www.youtube.com: 117.7535ms\n"}
+{"level":"info","ts":1748004463.426802,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004463.4270248,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004463.4270651,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004463.436939,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 10.046459ms\n"}
+{"level":"info","ts":1748004463.485208,"caller":"service/service.go:36","msg":"https://www.google.com: 58.394ms\n"}
+{"level":"info","ts":1748004463.514067,"caller":"service/service.go:36","msg":"https://www.youtube.com: 87.247084ms\n"}
+{"level":"info","ts":1748004468.427225,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004468.428291,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004468.428344,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004468.4440022,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 14.869375ms\n"}
+{"level":"info","ts":1748004468.4985678,"caller":"service/service.go:36","msg":"https://www.google.com: 71.356375ms\n"}
+{"level":"info","ts":1748004468.5367239,"caller":"service/service.go:36","msg":"https://www.youtube.com: 108.38ms\n"}
+{"level":"info","ts":1748004473.427121,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004473.427338,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004473.4273741,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004473.4493032,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 22.108709ms\n"}
+{"level":"info","ts":1748004473.4879842,"caller":"service/service.go:36","msg":"https://www.google.com: 60.849792ms\n"}
+{"level":"info","ts":1748004473.536149,"caller":"service/service.go:36","msg":"https://www.youtube.com: 108.997084ms\n"}
+{"level":"info","ts":1748004478.4268532,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004478.4269261,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004478.426935,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004478.441851,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 14.908083ms\n"}
+{"level":"info","ts":1748004478.494098,"caller":"service/service.go:36","msg":"https://www.google.com: 67.19575ms\n"}
+{"level":"info","ts":1748004478.528878,"caller":"service/service.go:36","msg":"https://www.youtube.com: 101.951042ms\n"}
+{"level":"info","ts":1748004483.4259021,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004483.426008,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004483.426027,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004483.481622,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 55.641333ms\n"}
+{"level":"info","ts":1748004483.592021,"caller":"service/service.go:36","msg":"https://www.google.com: 166.109541ms\n"}
+{"level":"info","ts":1748004483.592749,"caller":"service/service.go:36","msg":"https://www.youtube.com: 166.791875ms\n"}
+{"level":"info","ts":1748004488.426157,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004488.4263759,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004488.426414,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004488.459805,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 33.540709ms\n"}
+{"level":"info","ts":1748004488.511382,"caller":"service/service.go:36","msg":"https://www.google.com: 85.234625ms\n"}
+{"level":"info","ts":1748004488.549022,"caller":"service/service.go:36","msg":"https://www.youtube.com: 122.826ms\n"}
+{"level":"info","ts":1748004493.42669,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004493.4278731,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004493.427943,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004493.435269,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 8.488083ms\n"}
+{"level":"info","ts":1748004493.4912581,"caller":"service/service.go:36","msg":"https://www.google.com: 64.567583ms\n"}
+{"level":"info","ts":1748004493.519569,"caller":"service/service.go:36","msg":"https://www.youtube.com: 92.868625ms\n"}
+{"level":"info","ts":1748004498.426511,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004498.4267268,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004498.426763,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004498.435352,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 8.715167ms\n"}
+{"level":"info","ts":1748004498.4865868,"caller":"service/service.go:36","msg":"https://www.google.com: 60.055ms\n"}
+{"level":"info","ts":1748004498.5333729,"caller":"service/service.go:36","msg":"https://www.youtube.com: 106.783958ms\n"}
+{"level":"info","ts":1748004503.4259179,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004503.42659,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004503.426667,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004503.433784,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 7.603167ms\n"}
+{"level":"info","ts":1748004503.4872708,"caller":"service/service.go:36","msg":"https://www.google.com: 61.323959ms\n"}
+{"level":"info","ts":1748004503.520843,"caller":"service/service.go:36","msg":"https://www.youtube.com: 94.832583ms\n"}
+{"level":"info","ts":1748004508.426336,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004508.426602,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004508.426653,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004508.43443,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 8.006459ms\n"}
+{"level":"info","ts":1748004508.4861429,"caller":"service/service.go:36","msg":"https://www.google.com: 59.786458ms\n"}
+{"level":"info","ts":1748004508.530999,"caller":"service/service.go:36","msg":"https://www.youtube.com: 104.601625ms\n"}
+{"level":"info","ts":1748004513.426134,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004513.426581,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004513.426655,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004513.458142,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 31.884125ms\n"}
+{"level":"info","ts":1748004513.623095,"caller":"service/service.go:36","msg":"https://www.youtube.com: 196.905417ms\n"}
+{"level":"info","ts":1748004513.623245,"caller":"service/service.go:36","msg":"https://www.google.com: 197.078375ms\n"}
+{"level":"info","ts":1748004518.426023,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004518.4260821,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004518.426094,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004518.4340081,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 7.94725ms\n"}
+{"level":"info","ts":1748004518.483372,"caller":"service/service.go:36","msg":"https://www.google.com: 57.306ms\n"}
+{"level":"info","ts":1748004518.529351,"caller":"service/service.go:36","msg":"https://www.youtube.com: 103.244084ms\n"}
+{"level":"info","ts":1748004523.426036,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004523.4265559,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004523.426604,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004523.4426,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 16.599542ms\n"}
+{"level":"info","ts":1748004523.494496,"caller":"service/service.go:36","msg":"https://www.google.com: 68.497ms\n"}
+{"level":"info","ts":1748004523.526219,"caller":"service/service.go:36","msg":"https://www.youtube.com: 100.11ms\n"}
+{"level":"info","ts":1748004528.42591,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004528.4261498,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004528.426202,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004528.442352,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 16.293541ms\n"}
+{"level":"info","ts":1748004528.498316,"caller":"service/service.go:36","msg":"https://www.google.com: 72.35575ms\n"}
+{"level":"info","ts":1748004528.5344121,"caller":"service/service.go:36","msg":"https://www.youtube.com: 108.419417ms\n"}
+{"level":"info","ts":1748004533.425051,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004533.425219,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004533.4255302,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004533.440316,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 15.140708ms\n"}
+{"level":"info","ts":1748004533.492279,"caller":"service/service.go:36","msg":"https://www.google.com: 67.201417ms\n"}
+{"level":"info","ts":1748004533.524462,"caller":"service/service.go:36","msg":"https://www.youtube.com: 99.343541ms\n"}
+{"level":"info","ts":1748004538.425688,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004538.4259012,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004538.425956,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004538.4455419,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 19.709833ms\n"}
+{"level":"info","ts":1748004538.49472,"caller":"service/service.go:36","msg":"https://www.google.com: 69.006083ms\n"}
+{"level":"info","ts":1748004538.494853,"caller":"service/service.go:36","msg":"https://www.youtube.com: 69.083459ms\n"}
+{"level":"info","ts":1748004543.424663,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004543.425411,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004543.4254878,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004543.439426,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 14.606708ms\n"}
+{"level":"info","ts":1748004543.493547,"caller":"service/service.go:36","msg":"https://www.google.com: 68.852458ms\n"}
+{"level":"info","ts":1748004543.5178611,"caller":"service/service.go:36","msg":"https://www.youtube.com: 93.128584ms\n"}
+{"level":"info","ts":1748004548.425468,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004548.426144,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004548.426235,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004548.4436522,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 17.990042ms\n"}
+{"level":"info","ts":1748004548.4968991,"caller":"service/service.go:36","msg":"https://www.google.com: 71.404625ms\n"}
+{"level":"info","ts":1748004548.526332,"caller":"service/service.go:36","msg":"https://www.youtube.com: 100.780458ms\n"}
+{"level":"info","ts":1748004553.42515,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004553.425384,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004553.4254222,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004553.4402618,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 15.028333ms\n"}
+{"level":"info","ts":1748004553.490554,"caller":"service/service.go:36","msg":"https://www.google.com: 65.382166ms\n"}
+{"level":"info","ts":1748004553.522843,"caller":"service/service.go:36","msg":"https://www.youtube.com: 97.669958ms\n"}
+{"level":"info","ts":1748004558.424552,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004558.424738,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004558.4247758,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004558.4356742,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 11.170333ms\n"}
+{"level":"info","ts":1748004558.486891,"caller":"service/service.go:36","msg":"https://www.google.com: 62.353458ms\n"}
+{"level":"info","ts":1748004558.525397,"caller":"service/service.go:36","msg":"https://www.youtube.com: 100.727667ms\n"}
+{"level":"info","ts":1748004563.4252741,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004563.425795,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004563.425847,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004563.4337192,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 8.230042ms\n"}
+{"level":"info","ts":1748004563.4841201,"caller":"service/service.go:36","msg":"https://www.google.com: 58.844625ms\n"}
+{"level":"info","ts":1748004563.514963,"caller":"service/service.go:36","msg":"https://www.youtube.com: 89.655625ms\n"}
+{"level":"info","ts":1748004568.424594,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004568.4247859,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004568.424823,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004568.433012,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 8.28125ms\n"}
+{"level":"info","ts":1748004568.482663,"caller":"service/service.go:36","msg":"https://www.google.com: 58.066083ms\n"}
+{"level":"info","ts":1748004568.5293288,"caller":"service/service.go:36","msg":"https://www.youtube.com: 104.648708ms\n"}
+{"level":"info","ts":1748004573.42496,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004573.425664,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004573.425761,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004573.440313,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 15.210375ms\n"}
+{"level":"info","ts":1748004573.505588,"caller":"service/service.go:36","msg":"https://www.google.com: 80.581ms\n"}
+{"level":"info","ts":1748004573.546298,"caller":"service/service.go:36","msg":"https://www.youtube.com: 121.248583ms\n"}
+{"level":"info","ts":1748004578.424931,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004578.425844,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004578.425916,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004578.445087,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 20.094375ms\n"}
+{"level":"info","ts":1748004578.4912589,"caller":"service/service.go:36","msg":"https://www.google.com: 66.324166ms\n"}
+{"level":"info","ts":1748004578.533462,"caller":"service/service.go:36","msg":"https://www.youtube.com: 108.510584ms\n"}
+{"level":"info","ts":1748004583.424792,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004583.4249768,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004583.4250822,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004583.440053,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 15.090541ms\n"}
+{"level":"info","ts":1748004583.490387,"caller":"service/service.go:36","msg":"https://www.google.com: 65.558416ms\n"}
+{"level":"info","ts":1748004583.5309691,"caller":"service/service.go:36","msg":"https://www.youtube.com: 106.089375ms\n"}
+{"level":"info","ts":1748004588.423868,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004588.4240682,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004588.424105,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004588.51343,"caller":"service/service.go:36","msg":"https://www.youtube.com: 89.541875ms\n"}
+{"level":"info","ts":1748004588.537794,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 113.867541ms\n"}
+{"level":"info","ts":1748004588.5916722,"caller":"service/service.go:36","msg":"https://www.google.com: 167.8015ms\n"}
+{"level":"info","ts":1748004593.4236538,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004593.423845,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004593.423883,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004593.434985,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 11.199042ms\n"}
+{"level":"info","ts":1748004593.4858902,"caller":"service/service.go:36","msg":"https://www.google.com: 62.192667ms\n"}
+{"level":"info","ts":1748004593.518309,"caller":"service/service.go:36","msg":"https://www.youtube.com: 94.570166ms\n"}
+{"level":"info","ts":1748004598.424428,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004598.4246452,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004598.424683,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004598.435203,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 10.577292ms\n"}
+{"level":"info","ts":1748004598.488817,"caller":"service/service.go:36","msg":"https://www.google.com: 64.368209ms\n"}
+{"level":"info","ts":1748004598.525619,"caller":"service/service.go:36","msg":"https://www.youtube.com: 101.095708ms\n"}
+{"level":"info","ts":1748004603.4238222,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004603.424693,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004603.424788,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004603.4467788,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 22.604667ms\n"}
+{"level":"info","ts":1748004603.5008168,"caller":"service/service.go:36","msg":"https://www.google.com: 76.981458ms\n"}
+{"level":"info","ts":1748004603.543513,"caller":"service/service.go:36","msg":"https://www.youtube.com: 119.51125ms\n"}
+{"level":"info","ts":1748004608.424265,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004608.4245949,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004608.4246469,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004608.433279,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 8.719708ms\n"}
+{"level":"info","ts":1748004608.497122,"caller":"service/service.go:36","msg":"https://www.google.com: 72.736208ms\n"}
+{"level":"info","ts":1748004608.5132182,"caller":"service/service.go:36","msg":"https://www.youtube.com: 88.763833ms\n"}
+{"level":"info","ts":1748004613.424248,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004613.425385,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004613.4254458,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004613.433644,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 9.335708ms\n"}
+{"level":"info","ts":1748004613.5958269,"caller":"service/service.go:36","msg":"https://www.google.com: 171.597916ms\n"}
+{"level":"info","ts":1748004613.595979,"caller":"service/service.go:36","msg":"https://www.youtube.com: 171.739125ms\n"}
+{"level":"info","ts":1748004618.423991,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004618.424211,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004618.424246,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004618.4336672,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 9.537875ms\n"}
+{"level":"info","ts":1748004618.485682,"caller":"service/service.go:36","msg":"https://www.google.com: 61.616625ms\n"}
+{"level":"info","ts":1748004618.541858,"caller":"service/service.go:36","msg":"https://www.youtube.com: 117.769459ms\n"}
+{"level":"info","ts":1748004623.4233909,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004623.4235551,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004623.423585,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004623.432817,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 9.192ms\n"}
+{"level":"info","ts":1748004623.4850502,"caller":"service/service.go:36","msg":"https://www.google.com: 61.650875ms\n"}
+{"level":"info","ts":1748004623.522929,"caller":"service/service.go:36","msg":"https://www.youtube.com: 99.488416ms\n"}
+{"level":"info","ts":1748004628.422936,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004628.423757,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004628.423775,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004628.4303958,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 7.349291ms\n"}
+{"level":"info","ts":1748004628.487135,"caller":"service/service.go:36","msg":"https://www.google.com: 64.171125ms\n"}
+{"level":"info","ts":1748004628.5206149,"caller":"service/service.go:36","msg":"https://www.youtube.com: 97.634917ms\n"}
+{"level":"info","ts":1748004633.4227781,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004633.422997,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004633.42305,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004633.438904,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 15.975083ms\n"}
+{"level":"info","ts":1748004633.4921532,"caller":"service/service.go:36","msg":"https://www.google.com: 69.3425ms\n"}
+{"level":"info","ts":1748004633.5292401,"caller":"service/service.go:36","msg":"https://www.youtube.com: 106.400292ms\n"}
+{"level":"info","ts":1748004638.4239218,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004638.4243798,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004638.4244218,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004638.443359,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 19.592625ms\n"}
+{"level":"info","ts":1748004638.4976268,"caller":"service/service.go:36","msg":"https://www.google.com: 73.923625ms\n"}
+{"level":"info","ts":1748004638.535488,"caller":"service/service.go:36","msg":"https://www.youtube.com: 111.760334ms\n"}
+{"level":"info","ts":1748004643.423566,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004643.424722,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004643.424768,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004643.438327,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 14.707209ms\n"}
+{"level":"info","ts":1748004643.48955,"caller":"service/service.go:36","msg":"https://www.google.com: 65.988584ms\n"}
+{"level":"info","ts":1748004643.524477,"caller":"service/service.go:36","msg":"https://www.youtube.com: 100.89525ms\n"}
+{"level":"info","ts":1748004648.42346,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004648.423648,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004648.423685,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004648.431392,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 7.996792ms\n"}
+{"level":"info","ts":1748004648.485994,"caller":"service/service.go:36","msg":"https://www.google.com: 62.572833ms\n"}
+{"level":"info","ts":1748004648.526906,"caller":"service/service.go:36","msg":"https://www.youtube.com: 103.361583ms\n"}
+{"level":"info","ts":1748004653.4233038,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004653.423954,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004653.4240289,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004653.435389,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 11.892166ms\n"}
+{"level":"info","ts":1748004653.535655,"caller":"service/service.go:36","msg":"https://www.youtube.com: 112.275125ms\n"}
+{"level":"info","ts":1748004653.5563872,"caller":"service/service.go:36","msg":"https://www.google.com: 133.063834ms\n"}
+{"level":"info","ts":1748004658.4231858,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004658.4233909,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004658.423449,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004658.443284,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 19.755875ms\n"}
+{"level":"info","ts":1748004658.494127,"caller":"service/service.go:36","msg":"https://www.google.com: 70.892ms\n"}
+{"level":"info","ts":1748004658.524956,"caller":"service/service.go:36","msg":"https://www.youtube.com: 101.426667ms\n"}
+{"level":"info","ts":1748004663.4227571,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004663.423448,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004663.423501,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004663.433643,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 10.983125ms\n"}
+{"level":"info","ts":1748004663.482579,"caller":"service/service.go:36","msg":"https://www.google.com: 59.883167ms\n"}
+{"level":"info","ts":1748004663.525496,"caller":"service/service.go:36","msg":"https://www.youtube.com: 102.627292ms\n"}
+{"level":"info","ts":1748004668.422545,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004668.422814,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004668.422876,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004668.431812,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 8.950917ms\n"}
+{"level":"info","ts":1748004668.4838028,"caller":"service/service.go:36","msg":"https://www.google.com: 61.267583ms\n"}
+{"level":"info","ts":1748004668.486086,"caller":"service/service.go:36","msg":"https://www.youtube.com: 63.506542ms\n"}
+{"level":"info","ts":1748004681.640824,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004681.6413162,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004681.641365,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004681.6489978,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 8.261ms\n"}
+{"level":"info","ts":1748004681.6996129,"caller":"service/service.go:36","msg":"https://www.google.com: 58.857958ms\n"}
+{"level":"info","ts":1748004681.732003,"caller":"service/service.go:36","msg":"https://www.youtube.com: 91.111458ms\n"}
+{"level":"info","ts":1748004686.6587179,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004686.658796,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004686.658819,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004686.668111,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 9.275625ms\n"}
+{"level":"info","ts":1748004686.7157152,"caller":"service/service.go:36","msg":"https://www.google.com: 56.977791ms\n"}
+{"level":"info","ts":1748004686.764609,"caller":"service/service.go:36","msg":"https://www.youtube.com: 105.814833ms\n"}
+{"level":"info","ts":1748004691.6406589,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004691.640909,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004691.640924,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004691.6485581,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 7.820459ms\n"}
+{"level":"info","ts":1748004691.700011,"caller":"service/service.go:36","msg":"https://www.google.com: 59.354791ms\n"}
+{"level":"info","ts":1748004691.7406359,"caller":"service/service.go:36","msg":"https://www.youtube.com: 99.97025ms\n"}
+{"level":"info","ts":1748004696.6403341,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004696.640414,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004696.6404212,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004696.648011,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 7.589375ms\n"}
+{"level":"info","ts":1748004696.702108,"caller":"service/service.go:36","msg":"https://www.google.com: 61.754625ms\n"}
+{"level":"info","ts":1748004696.733345,"caller":"service/service.go:36","msg":"https://www.youtube.com: 92.971458ms\n"}
+{"level":"info","ts":1748004701.6398048,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004701.640089,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004701.640116,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004701.648741,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 8.59125ms\n"}
+{"level":"info","ts":1748004701.70309,"caller":"service/service.go:36","msg":"https://www.google.com: 63.294417ms\n"}
+{"level":"info","ts":1748004701.723835,"caller":"service/service.go:36","msg":"https://www.youtube.com: 83.75475ms\n"}
+{"level":"info","ts":1748004706.639916,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004706.64016,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004706.640216,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004706.6523268,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 12.174667ms\n"}
+{"level":"info","ts":1748004706.7007842,"caller":"service/service.go:36","msg":"https://www.google.com: 60.867625ms\n"}
+{"level":"info","ts":1748004706.738167,"caller":"service/service.go:36","msg":"https://www.youtube.com: 98.173166ms\n"}
+{"level":"info","ts":1748004711.639713,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004711.6400158,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004711.64004,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004711.705636,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 65.894333ms\n"}
+{"level":"info","ts":1748004711.879895,"caller":"service/service.go:36","msg":"https://www.google.com: 240.164333ms\n"}
+{"level":"info","ts":1748004711.879959,"caller":"service/service.go:36","msg":"https://www.youtube.com: 240.216875ms\n"}
+{"level":"info","ts":1748004716.639509,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004716.6396532,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004716.639675,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004716.647846,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 8.137791ms\n"}
+{"level":"info","ts":1748004716.703291,"caller":"service/service.go:36","msg":"https://www.google.com: 63.7635ms\n"}
+{"level":"info","ts":1748004716.713218,"caller":"service/service.go:36","msg":"https://www.youtube.com: 73.666625ms\n"}
+{"level":"info","ts":1748004721.6389399,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004721.639199,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004721.6392379,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004721.654666,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 15.699541ms\n"}
+{"level":"info","ts":1748004721.715921,"caller":"service/service.go:36","msg":"https://www.google.com: 76.929167ms\n"}
+{"level":"info","ts":1748004721.7396622,"caller":"service/service.go:36","msg":"https://www.youtube.com: 100.644416ms\n"}
+{"level":"info","ts":1748004726.638453,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004726.638567,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004726.638582,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004726.64697,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 8.455333ms\n"}
+{"level":"info","ts":1748004726.702157,"caller":"service/service.go:36","msg":"https://www.google.com: 63.675916ms\n"}
+{"level":"info","ts":1748004726.729589,"caller":"service/service.go:36","msg":"https://www.youtube.com: 91.061333ms\n"}
+{"level":"info","ts":1748004731.6391098,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004731.6392949,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004731.639334,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004731.655178,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 16.113ms\n"}
+{"level":"info","ts":1748004731.707489,"caller":"service/service.go:36","msg":"https://www.google.com: 68.367291ms\n"}
+{"level":"info","ts":1748004731.73759,"caller":"service/service.go:36","msg":"https://www.youtube.com: 98.454166ms\n"}
+{"level":"info","ts":1748004736.6389608,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004736.639167,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004736.639196,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004736.73355,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 94.480458ms\n"}
+{"level":"info","ts":1748004736.827529,"caller":"service/service.go:36","msg":"https://www.google.com: 188.53175ms\n"}
+{"level":"info","ts":1748004736.827529,"caller":"service/service.go:36","msg":"https://www.youtube.com: 188.515666ms\n"}
+{"level":"info","ts":1748004741.638771,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004741.638834,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004741.638846,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004741.6573582,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 18.513041ms\n"}
+{"level":"info","ts":1748004741.710989,"caller":"service/service.go:36","msg":"https://www.google.com: 72.189791ms\n"}
+{"level":"info","ts":1748004741.745152,"caller":"service/service.go:36","msg":"https://www.youtube.com: 106.26025ms\n"}
+{"level":"info","ts":1748004746.638755,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004746.6388988,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004746.638935,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004746.655618,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 16.624333ms\n"}
+{"level":"info","ts":1748004746.7087831,"caller":"service/service.go:36","msg":"https://www.google.com: 70.005875ms\n"}
+{"level":"info","ts":1748004746.7441611,"caller":"service/service.go:36","msg":"https://www.youtube.com: 105.324209ms\n"}
+{"level":"info","ts":1748004751.638608,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004751.6390321,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004751.639044,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004751.648122,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 9.431458ms\n"}
+{"level":"info","ts":1748004751.70403,"caller":"service/service.go:36","msg":"https://www.google.com: 65.377625ms\n"}
+{"level":"info","ts":1748004751.74131,"caller":"service/service.go:36","msg":"https://www.youtube.com: 102.658459ms\n"}
+{"level":"info","ts":1748004756.6380422,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004756.638282,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004756.6383228,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004756.648125,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 9.757875ms\n"}
+{"level":"info","ts":1748004756.7050261,"caller":"service/service.go:36","msg":"https://www.google.com: 66.96775ms\n"}
+{"level":"info","ts":1748004756.7337658,"caller":"service/service.go:36","msg":"https://www.youtube.com: 95.657042ms\n"}
+{"level":"info","ts":1748004761.638456,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004761.638665,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004761.638705,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004761.647415,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 8.82025ms\n"}
+{"level":"info","ts":1748004761.703682,"caller":"service/service.go:36","msg":"https://www.google.com: 65.216292ms\n"}
+{"level":"info","ts":1748004761.746871,"caller":"service/service.go:36","msg":"https://www.youtube.com: 108.377709ms\n"}
+{"level":"info","ts":1748004766.638386,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004766.638597,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004766.638636,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004766.656391,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 17.931041ms\n"}
+{"level":"info","ts":1748004766.709151,"caller":"service/service.go:36","msg":"https://www.youtube.com: 70.750916ms\n"}
+{"level":"info","ts":1748004766.7093408,"caller":"service/service.go:36","msg":"https://www.google.com: 70.955125ms\n"}
+{"level":"info","ts":1748004771.6380968,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004771.638168,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004771.638182,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004771.646379,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 8.187166ms\n"}
+{"level":"info","ts":1748004771.7115421,"caller":"service/service.go:36","msg":"https://www.google.com: 73.401875ms\n"}
+{"level":"info","ts":1748004771.730564,"caller":"service/service.go:36","msg":"https://www.youtube.com: 92.374708ms\n"}
+{"level":"info","ts":1748004776.637964,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004776.638023,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004776.6380339,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004776.652852,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 14.782125ms\n"}
+{"level":"info","ts":1748004776.706665,"caller":"service/service.go:36","msg":"https://www.google.com: 68.646416ms\n"}
+{"level":"info","ts":1748004776.7386408,"caller":"service/service.go:36","msg":"https://www.youtube.com: 100.594459ms\n"}
+{"level":"info","ts":1748004781.63798,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004781.63826,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004781.638298,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004781.73179,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 93.800584ms\n"}
+{"level":"info","ts":1748004781.904279,"caller":"service/service.go:36","msg":"https://www.google.com: 266.287708ms\n"}
+{"level":"info","ts":1748004781.904316,"caller":"service/service.go:36","msg":"https://www.youtube.com: 266.215ms\n"}
+{"level":"info","ts":1748004786.637802,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004786.63891,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004786.638936,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004786.6477172,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 9.797291ms\n"}
+{"level":"info","ts":1748004786.7043772,"caller":"service/service.go:36","msg":"https://www.google.com: 66.562959ms\n"}
+{"level":"info","ts":1748004786.7311091,"caller":"service/service.go:36","msg":"https://www.youtube.com: 93.261625ms\n"}
+{"level":"info","ts":1748004791.637703,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004791.6377652,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004791.637772,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004791.657255,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 19.465958ms\n"}
+{"level":"info","ts":1748004791.6978078,"caller":"service/service.go:36","msg":"https://www.google.com: 60.065625ms\n"}
+{"level":"info","ts":1748004791.721204,"caller":"service/service.go:36","msg":"https://www.youtube.com: 83.317292ms\n"}
+{"level":"info","ts":1748004796.637564,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004796.637753,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004796.637845,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004796.653703,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 15.928334ms\n"}
+{"level":"info","ts":1748004796.705396,"caller":"service/service.go:36","msg":"https://www.google.com: 67.798958ms\n"}
+{"level":"info","ts":1748004796.7435331,"caller":"service/service.go:36","msg":"https://www.youtube.com: 105.852458ms\n"}
+{"level":"info","ts":1748004801.637533,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004801.637726,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004801.637755,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004801.646025,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 8.383875ms\n"}
+{"level":"info","ts":1748004801.6964889,"caller":"service/service.go:36","msg":"https://www.google.com: 58.952334ms\n"}
+{"level":"info","ts":1748004801.731489,"caller":"service/service.go:36","msg":"https://www.youtube.com: 93.926167ms\n"}
+{"level":"info","ts":1748004806.637014,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004806.637223,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004806.637263,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004806.749967,"caller":"service/service.go:36","msg":"https://www.youtube.com: 112.8155ms\n"}
+{"level":"info","ts":1748004806.752105,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 115.177917ms\n"}
+{"level":"info","ts":1748004806.7521122,"caller":"service/service.go:36","msg":"https://www.google.com: 115.188042ms\n"}
+{"level":"info","ts":1748004811.6377401,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004811.638564,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004811.63863,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004811.6476412,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 10.406416ms\n"}
+{"level":"info","ts":1748004811.7011478,"caller":"service/service.go:36","msg":"https://www.google.com: 63.848375ms\n"}
+{"level":"info","ts":1748004811.738369,"caller":"service/service.go:36","msg":"https://www.youtube.com: 100.848625ms\n"}
+{"level":"info","ts":1748004816.637228,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004816.6378329,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004816.637876,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004816.652299,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 14.277208ms\n"}
+{"level":"info","ts":1748004816.7048588,"caller":"service/service.go:36","msg":"https://www.google.com: 67.608417ms\n"}
+{"level":"info","ts":1748004816.710088,"caller":"service/service.go:36","msg":"https://www.youtube.com: 72.831458ms\n"}
+{"level":"info","ts":1748004821.637084,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004821.6373582,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004821.6374102,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004821.654952,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 17.798292ms\n"}
+{"level":"info","ts":1748004821.705121,"caller":"service/service.go:36","msg":"https://www.google.com: 68.010875ms\n"}
+{"level":"info","ts":1748004821.7525,"caller":"service/service.go:36","msg":"https://www.youtube.com: 115.346ms\n"}
+{"level":"info","ts":1748004826.637016,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004826.63727,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004826.6373088,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004826.6446028,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 7.356333ms\n"}
+{"level":"info","ts":1748004826.696259,"caller":"service/service.go:36","msg":"https://www.google.com: 59.220125ms\n"}
+{"level":"info","ts":1748004826.747784,"caller":"service/service.go:36","msg":"https://www.youtube.com: 110.655917ms\n"}
+{"level":"info","ts":1748004831.636083,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004831.63614,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004831.636148,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004831.686934,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 50.777625ms\n"}
+{"level":"info","ts":1748004831.8394969,"caller":"service/service.go:36","msg":"https://www.youtube.com: 203.273625ms\n"}
+{"level":"info","ts":1748004831.839554,"caller":"service/service.go:36","msg":"https://www.google.com: 203.4345ms\n"}
+{"level":"info","ts":1748004836.6369028,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004836.6371012,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004836.6371431,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004836.6512809,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 14.100125ms\n"}
+{"level":"info","ts":1748004836.700352,"caller":"service/service.go:36","msg":"https://www.google.com: 63.370292ms\n"}
+{"level":"info","ts":1748004836.7348852,"caller":"service/service.go:36","msg":"https://www.youtube.com: 97.871542ms\n"}
+{"level":"info","ts":1748004841.6366,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004841.637047,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004841.637063,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004841.646006,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 9.283792ms\n"}
+{"level":"info","ts":1748004841.707154,"caller":"service/service.go:36","msg":"https://www.google.com: 70.560416ms\n"}
+{"level":"info","ts":1748004841.7285151,"caller":"service/service.go:36","msg":"https://www.youtube.com: 91.910875ms\n"}
+{"level":"info","ts":1748004846.636553,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004846.636786,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004846.636826,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004846.651772,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 15.10825ms\n"}
+{"level":"info","ts":1748004846.706611,"caller":"service/service.go:36","msg":"https://www.google.com: 70.056625ms\n"}
+{"level":"info","ts":1748004846.73746,"caller":"service/service.go:36","msg":"https://www.youtube.com: 100.848875ms\n"}
+{"level":"info","ts":1748004851.6363661,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004851.636749,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004851.636765,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004851.643518,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 7.044584ms\n"}
+{"level":"info","ts":1748004851.7008462,"caller":"service/service.go:36","msg":"https://www.google.com: 64.409959ms\n"}
+{"level":"info","ts":1748004851.735598,"caller":"service/service.go:36","msg":"https://www.youtube.com: 99.156375ms\n"}
+{"level":"info","ts":1748004856.635512,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004856.63571,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004856.635735,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004856.652118,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 16.355791ms\n"}
+{"level":"info","ts":1748004856.735784,"caller":"service/service.go:36","msg":"https://www.google.com: 100.265083ms\n"}
+{"level":"info","ts":1748004856.7358432,"caller":"service/service.go:36","msg":"https://www.youtube.com: 100.144458ms\n"}
+{"level":"info","ts":1748004861.636205,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004861.6364548,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004861.63651,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004861.6553862,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 18.964959ms\n"}
+{"level":"info","ts":1748004861.7051258,"caller":"service/service.go:36","msg":"https://www.google.com: 68.844333ms\n"}
+{"level":"info","ts":1748004861.747309,"caller":"service/service.go:36","msg":"https://www.youtube.com: 110.910417ms\n"}
+{"level":"info","ts":1748004866.636191,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004866.637556,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004866.6376839,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004866.644727,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 8.453334ms\n"}
+{"level":"info","ts":1748004866.704252,"caller":"service/service.go:36","msg":"https://www.google.com: 68.050625ms\n"}
+{"level":"info","ts":1748004866.7371671,"caller":"service/service.go:36","msg":"https://www.youtube.com: 100.943792ms\n"}
+{"level":"info","ts":1748004871.636003,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004871.6361961,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004871.636235,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004871.6546829,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 18.38925ms\n"}
+{"level":"info","ts":1748004871.702414,"caller":"service/service.go:36","msg":"https://www.google.com: 65.882459ms\n"}
+{"level":"info","ts":1748004871.762325,"caller":"service/service.go:36","msg":"https://www.youtube.com: 126.070916ms\n"}
+{"level":"info","ts":1748004876.635891,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004876.637165,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004876.6372569,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004876.646453,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 10.445292ms\n"}
+{"level":"info","ts":1748004876.6982248,"caller":"service/service.go:36","msg":"https://www.google.com: 62.315667ms\n"}
+{"level":"info","ts":1748004876.73271,"caller":"service/service.go:36","msg":"https://www.youtube.com: 96.757084ms\n"}
+{"level":"info","ts":1748004881.635861,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004881.6360571,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004881.636095,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004881.774573,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 138.74525ms\n"}
+{"level":"info","ts":1748004881.946996,"caller":"service/service.go:36","msg":"https://www.google.com: 311.181917ms\n"}
+{"level":"info","ts":1748004881.9475331,"caller":"service/service.go:36","msg":"https://www.youtube.com: 311.699042ms\n"}
+{"level":"info","ts":1748004886.635631,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004886.636099,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004886.636341,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004886.644595,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 8.462709ms\n"}
+{"level":"info","ts":1748004886.699123,"caller":"service/service.go:36","msg":"https://www.google.com: 63.485917ms\n"}
+{"level":"info","ts":1748004886.7578502,"caller":"service/service.go:36","msg":"https://www.youtube.com: 122.128417ms\n"}
+{"level":"info","ts":1748004891.634997,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004891.635124,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004891.6351428,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004891.650311,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 15.179792ms\n"}
+{"level":"info","ts":1748004891.7079942,"caller":"service/service.go:36","msg":"https://www.google.com: 72.884333ms\n"}
+{"level":"info","ts":1748004891.74218,"caller":"service/service.go:36","msg":"https://www.youtube.com: 107.152208ms\n"}
+{"level":"info","ts":1748004896.63572,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004896.6359522,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004896.635978,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004896.645754,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 10.082708ms\n"}
+{"level":"info","ts":1748004896.6979809,"caller":"service/service.go:36","msg":"https://www.google.com: 62.400084ms\n"}
+{"level":"info","ts":1748004896.723797,"caller":"service/service.go:36","msg":"https://www.youtube.com: 88.187ms\n"}
+{"level":"info","ts":1748004901.635316,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004901.635554,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004901.635694,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004901.647949,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 12.615541ms\n"}
+{"level":"info","ts":1748004901.7006981,"caller":"service/service.go:36","msg":"https://www.google.com: 65.374125ms\n"}
+{"level":"info","ts":1748004901.713042,"caller":"service/service.go:36","msg":"https://www.youtube.com: 77.714667ms\n"}
+{"level":"info","ts":1748004906.635185,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004906.635296,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004906.635318,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004906.689089,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 53.928792ms\n"}
+{"level":"info","ts":1748004906.8722801,"caller":"service/service.go:36","msg":"https://www.google.com: 237.118209ms\n"}
+{"level":"info","ts":1748004906.872308,"caller":"service/service.go:36","msg":"https://www.youtube.com: 237.106791ms\n"}
+{"level":"info","ts":1748004911.6351628,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004911.635402,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004911.635456,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004911.64552,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 10.074916ms\n"}
+{"level":"info","ts":1748004911.69728,"caller":"service/service.go:36","msg":"https://www.google.com: 62.117875ms\n"}
+{"level":"info","ts":1748004911.776683,"caller":"service/service.go:36","msg":"https://www.youtube.com: 141.461458ms\n"}
+{"level":"info","ts":1748004916.635028,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004916.635272,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004916.635351,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004916.6490712,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 13.74025ms\n"}
+{"level":"info","ts":1748004916.69838,"caller":"service/service.go:36","msg":"https://www.google.com: 63.304625ms\n"}
+{"level":"info","ts":1748004916.742261,"caller":"service/service.go:36","msg":"https://www.youtube.com: 107.074333ms\n"}
+{"level":"info","ts":1748004921.634491,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004921.634637,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004921.6346722,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004921.651906,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 17.33725ms\n"}
+{"level":"info","ts":1748004921.70946,"caller":"service/service.go:36","msg":"https://www.google.com: 74.95175ms\n"}
+{"level":"info","ts":1748004921.744245,"caller":"service/service.go:36","msg":"https://www.youtube.com: 109.715833ms\n"}
+{"level":"info","ts":1748004926.634954,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004926.635133,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004926.63517,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004926.647527,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 12.742708ms\n"}
+{"level":"info","ts":1748004926.695963,"caller":"service/service.go:36","msg":"https://www.google.com: 61.140084ms\n"}
+{"level":"info","ts":1748004926.7265909,"caller":"service/service.go:36","msg":"https://www.youtube.com: 91.650542ms\n"}
+{"level":"info","ts":1748004931.63385,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004931.634073,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004931.634112,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004931.764908,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 131.033375ms\n"}
+{"level":"info","ts":1748004931.816576,"caller":"service/service.go:36","msg":"https://www.google.com: 182.676834ms\n"}
+{"level":"info","ts":1748004931.850173,"caller":"service/service.go:36","msg":"https://www.youtube.com: 216.236125ms\n"}
+{"level":"info","ts":1748004936.634481,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004936.635395,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004936.635456,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004936.6500359,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 15.351292ms\n"}
+{"level":"info","ts":1748004936.702084,"caller":"service/service.go:36","msg":"https://www.google.com: 67.567125ms\n"}
+{"level":"info","ts":1748004936.712182,"caller":"service/service.go:36","msg":"https://www.youtube.com: 77.618834ms\n"}
+{"level":"info","ts":1748004941.634399,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004941.63456,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004941.634579,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004941.645442,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 10.994125ms\n"}
+{"level":"info","ts":1748004941.6942568,"caller":"service/service.go:36","msg":"https://www.google.com: 59.838458ms\n"}
+{"level":"info","ts":1748004941.729019,"caller":"service/service.go:36","msg":"https://www.youtube.com: 94.560417ms\n"}
+{"level":"info","ts":1748004946.634358,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004946.634472,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004946.63449,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004946.6555579,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 21.263417ms\n"}
+{"level":"info","ts":1748004946.7078688,"caller":"service/service.go:36","msg":"https://www.google.com: 73.543166ms\n"}
+{"level":"info","ts":1748004946.733302,"caller":"service/service.go:36","msg":"https://www.youtube.com: 98.889458ms\n"}
+{"level":"info","ts":1748004951.634284,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004951.634529,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004951.634571,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004951.644043,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 9.42375ms\n"}
+{"level":"info","ts":1748004951.695232,"caller":"service/service.go:36","msg":"https://www.google.com: 60.915792ms\n"}
+{"level":"info","ts":1748004951.728011,"caller":"service/service.go:36","msg":"https://www.youtube.com: 93.679958ms\n"}
+{"level":"info","ts":1748004956.634253,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004956.634397,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004956.634432,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004956.6425312,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 8.218833ms\n"}
+{"level":"info","ts":1748004956.696466,"caller":"service/service.go:36","msg":"https://www.google.com: 62.193583ms\n"}
+{"level":"info","ts":1748004956.7419,"caller":"service/service.go:36","msg":"https://www.youtube.com: 107.621833ms\n"}
+{"level":"info","ts":1748004961.634014,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004961.634235,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004961.634274,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004961.648593,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 14.471167ms\n"}
+{"level":"info","ts":1748004961.704187,"caller":"service/service.go:36","msg":"https://www.google.com: 70.173291ms\n"}
+{"level":"info","ts":1748004961.7362292,"caller":"service/service.go:36","msg":"https://www.youtube.com: 102.174625ms\n"}
+{"level":"info","ts":1748004966.63385,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004966.6339781,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004966.6340091,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004966.6502862,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 16.34875ms\n"}
+{"level":"info","ts":1748004966.702942,"caller":"service/service.go:36","msg":"https://www.google.com: 69.071959ms\n"}
+{"level":"info","ts":1748004966.7468412,"caller":"service/service.go:36","msg":"https://www.youtube.com: 112.934208ms\n"}
+{"level":"info","ts":1748004971.633472,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004971.633703,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004971.633829,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004971.652212,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 18.566375ms\n"}
+{"level":"info","ts":1748004971.700896,"caller":"service/service.go:36","msg":"https://www.google.com: 67.390333ms\n"}
+{"level":"info","ts":1748004971.734841,"caller":"service/service.go:36","msg":"https://www.youtube.com: 101.29825ms\n"}
+{"level":"info","ts":1748004976.6337311,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004976.633962,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004976.634003,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004976.6432471,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 9.384833ms\n"}
+{"level":"info","ts":1748004976.6948009,"caller":"service/service.go:36","msg":"https://www.google.com: 61.032334ms\n"}
+{"level":"info","ts":1748004976.725179,"caller":"service/service.go:36","msg":"https://www.youtube.com: 91.381459ms\n"}
+{"level":"info","ts":1748004981.6336489,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004981.63391,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004981.633952,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004981.650976,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 17.246ms\n"}
+{"level":"info","ts":1748004981.6998038,"caller":"service/service.go:36","msg":"https://www.google.com: 66.148917ms\n"}
+{"level":"info","ts":1748004981.747287,"caller":"service/service.go:36","msg":"https://www.youtube.com: 113.621167ms\n"}
+{"level":"info","ts":1748004986.6334321,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004986.633533,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004986.6335518,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004986.6413708,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 7.959292ms\n"}
+{"level":"info","ts":1748004986.697027,"caller":"service/service.go:36","msg":"https://www.google.com: 63.600834ms\n"}
+{"level":"info","ts":1748004986.729577,"caller":"service/service.go:36","msg":"https://www.youtube.com: 96.113792ms\n"}
+{"level":"info","ts":1748004991.633402,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004991.633642,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004991.633695,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004991.641719,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 8.119041ms\n"}
+{"level":"info","ts":1748004991.695932,"caller":"service/service.go:36","msg":"https://www.google.com: 62.464916ms\n"}
+{"level":"info","ts":1748004991.716662,"caller":"service/service.go:36","msg":"https://www.youtube.com: 83.15975ms\n"}
+{"level":"info","ts":1748004996.6332679,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748004996.633492,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748004996.6335309,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748004996.653698,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 20.306708ms\n"}
+{"level":"info","ts":1748004996.700429,"caller":"service/service.go:36","msg":"https://www.google.com: 67.116167ms\n"}
+{"level":"info","ts":1748004996.7415879,"caller":"service/service.go:36","msg":"https://www.youtube.com: 108.2505ms\n"}
+{"level":"info","ts":1748005001.633132,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005001.633562,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005001.633606,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005001.6409721,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 7.153917ms\n"}
+{"level":"info","ts":1748005001.7837398,"caller":"service/service.go:36","msg":"https://www.youtube.com: 150.062458ms\n"}
+{"level":"info","ts":1748005001.783828,"caller":"service/service.go:36","msg":"https://www.google.com: 150.676875ms\n"}
+{"level":"info","ts":1748005006.632061,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005006.63255,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005006.63261,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005006.644937,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 12.767583ms\n"}
+{"level":"info","ts":1748005006.696277,"caller":"service/service.go:36","msg":"https://www.google.com: 64.182208ms\n"}
+{"level":"info","ts":1748005006.749789,"caller":"service/service.go:36","msg":"https://www.youtube.com: 117.661584ms\n"}
+{"level":"info","ts":1748005011.6327648,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005011.632879,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005011.6329181,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005011.64163,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 8.819333ms\n"}
+{"level":"info","ts":1748005011.699082,"caller":"service/service.go:36","msg":"https://www.google.com: 66.208541ms\n"}
+{"level":"info","ts":1748005011.7306528,"caller":"service/service.go:36","msg":"https://www.youtube.com: 97.704ms\n"}
+{"level":"info","ts":1748005016.632778,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005016.633201,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005016.633236,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005016.6408908,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 8.060708ms\n"}
+{"level":"info","ts":1748005016.699426,"caller":"service/service.go:36","msg":"https://www.google.com: 66.648792ms\n"}
+{"level":"info","ts":1748005016.728713,"caller":"service/service.go:36","msg":"https://www.youtube.com: 95.909791ms\n"}
+{"level":"info","ts":1748005021.632757,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005021.632938,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005021.632958,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005021.647001,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 14.16875ms\n"}
+{"level":"info","ts":1748005021.698721,"caller":"service/service.go:36","msg":"https://www.google.com: 65.978791ms\n"}
+{"level":"info","ts":1748005021.7342021,"caller":"service/service.go:36","msg":"https://www.youtube.com: 101.4475ms\n"}
+{"level":"info","ts":1748005026.6325219,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005026.633485,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005026.633562,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005026.702333,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 69.767542ms\n"}
+{"level":"info","ts":1748005026.702383,"caller":"service/service.go:36","msg":"https://www.google.com: 69.848459ms\n"}
+{"level":"info","ts":1748005026.869063,"caller":"service/service.go:36","msg":"https://www.youtube.com: 236.286208ms\n"}
+{"level":"info","ts":1748005031.632434,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005031.63259,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005031.632611,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005031.6407838,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 8.146834ms\n"}
+{"level":"info","ts":1748005031.698884,"caller":"service/service.go:36","msg":"https://www.google.com: 66.378042ms\n"}
+{"level":"info","ts":1748005031.731134,"caller":"service/service.go:36","msg":"https://www.youtube.com: 98.536958ms\n"}
+{"level":"info","ts":1748005036.63209,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005036.632592,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005036.6326249,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005036.648114,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 15.828208ms\n"}
+{"level":"info","ts":1748005036.700617,"caller":"service/service.go:36","msg":"https://www.google.com: 68.524917ms\n"}
+{"level":"info","ts":1748005036.737396,"caller":"service/service.go:36","msg":"https://www.youtube.com: 105.277708ms\n"}
+{"level":"info","ts":1748005041.631744,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005041.6318521,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005041.6318731,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005041.648059,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 16.156291ms\n"}
+{"level":"info","ts":1748005041.705994,"caller":"service/service.go:36","msg":"https://www.google.com: 74.2385ms\n"}
+{"level":"info","ts":1748005041.742359,"caller":"service/service.go:36","msg":"https://www.youtube.com: 110.063541ms\n"}
+{"level":"info","ts":1748005046.633261,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005046.63374,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005046.633794,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005046.641794,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 8.904375ms\n"}
+{"level":"info","ts":1748005046.6979892,"caller":"service/service.go:36","msg":"https://www.google.com: 65.094292ms\n"}
+{"level":"info","ts":1748005046.726393,"caller":"service/service.go:36","msg":"https://www.youtube.com: 93.295542ms\n"}
+{"level":"info","ts":1748005051.632001,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005051.6321092,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005051.632127,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005051.674485,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 42.407958ms\n"}
+{"level":"info","ts":1748005051.760299,"caller":"service/service.go:36","msg":"https://www.google.com: 128.278916ms\n"}
+{"level":"info","ts":1748005051.766128,"caller":"service/service.go:36","msg":"https://www.youtube.com: 134.069208ms\n"}
+{"level":"info","ts":1748005056.6320472,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005056.6327438,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005056.6328058,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005056.649428,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 16.447041ms\n"}
+{"level":"info","ts":1748005056.696863,"caller":"service/service.go:36","msg":"https://www.google.com: 64.788167ms\n"}
+{"level":"info","ts":1748005056.7421582,"caller":"service/service.go:36","msg":"https://www.youtube.com: 110.0465ms\n"}
+{"level":"info","ts":1748005061.6318588,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005061.6320782,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005061.632133,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005061.647404,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 15.358625ms\n"}
+{"level":"info","ts":1748005061.7048059,"caller":"service/service.go:36","msg":"https://www.google.com: 72.921666ms\n"}
+{"level":"info","ts":1748005061.7333171,"caller":"service/service.go:36","msg":"https://www.youtube.com: 101.4025ms\n"}
+{"level":"info","ts":1748005066.631676,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005066.631781,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005066.631814,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005066.639831,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 8.043666ms\n"}
+{"level":"info","ts":1748005066.691085,"caller":"service/service.go:36","msg":"https://www.google.com: 59.364375ms\n"}
+{"level":"info","ts":1748005066.723731,"caller":"service/service.go:36","msg":"https://www.youtube.com: 91.951958ms\n"}
+{"level":"info","ts":1748005071.630801,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005071.63091,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005071.630925,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005071.642998,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 12.050416ms\n"}
+{"level":"info","ts":1748005071.6871428,"caller":"service/service.go:36","msg":"https://www.google.com: 56.342708ms\n"}
+{"level":"info","ts":1748005071.727093,"caller":"service/service.go:36","msg":"https://www.youtube.com: 96.287ms\n"}
+{"level":"info","ts":1748005076.631521,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005076.6317282,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005076.63176,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005076.645391,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 13.551625ms\n"}
+{"level":"info","ts":1748005076.6951418,"caller":"service/service.go:36","msg":"https://www.google.com: 63.027083ms\n"}
+{"level":"info","ts":1748005076.734037,"caller":"service/service.go:36","msg":"https://www.youtube.com: 102.4495ms\n"}
+{"level":"info","ts":1748005081.631528,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005081.6321049,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005081.63214,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005081.650151,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 17.72675ms\n"}
+{"level":"info","ts":1748005081.705736,"caller":"service/service.go:36","msg":"https://www.google.com: 74.192375ms\n"}
+{"level":"info","ts":1748005081.737438,"caller":"service/service.go:36","msg":"https://www.youtube.com: 105.887959ms\n"}
+{"level":"info","ts":1748005086.631318,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005086.631548,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005086.6316018,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005086.645699,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 14.15025ms\n"}
+{"level":"info","ts":1748005086.699656,"caller":"service/service.go:36","msg":"https://www.google.com: 68.30925ms\n"}
+{"level":"info","ts":1748005086.728919,"caller":"service/service.go:36","msg":"https://www.youtube.com: 97.391708ms\n"}
+{"level":"info","ts":1748005091.6312408,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005091.631437,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005091.63148,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005091.6426399,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 11.2795ms\n"}
+{"level":"info","ts":1748005091.696544,"caller":"service/service.go:36","msg":"https://www.google.com: 65.27975ms\n"}
+{"level":"info","ts":1748005091.6993878,"caller":"service/service.go:36","msg":"https://www.youtube.com: 68.094625ms\n"}
+{"level":"info","ts":1748005096.631107,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005096.6313221,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005096.631361,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005096.641521,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 10.261875ms\n"}
+{"level":"info","ts":1748005096.708859,"caller":"service/service.go:36","msg":"https://www.google.com: 77.742917ms\n"}
+{"level":"info","ts":1748005096.7258618,"caller":"service/service.go:36","msg":"https://www.youtube.com: 94.701833ms\n"}
+{"level":"info","ts":1748005101.630267,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005101.630462,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005101.630498,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005101.6404722,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 10.080833ms\n"}
+{"level":"info","ts":1748005101.802295,"caller":"service/service.go:36","msg":"https://www.google.com: 172.024125ms\n"}
+{"level":"info","ts":1748005101.8023522,"caller":"service/service.go:36","msg":"https://www.youtube.com: 172.048375ms\n"}
+{"level":"info","ts":1748005106.630882,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005106.631575,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005106.631635,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005106.6399071,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 8.883375ms\n"}
+{"level":"info","ts":1748005106.694156,"caller":"service/service.go:36","msg":"https://www.google.com: 63.247292ms\n"}
+{"level":"info","ts":1748005106.7456489,"caller":"service/service.go:36","msg":"https://www.youtube.com: 114.718208ms\n"}
+{"level":"info","ts":1748005111.629977,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005111.630176,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005111.6302311,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005111.6398442,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 9.719167ms\n"}
+{"level":"info","ts":1748005111.691155,"caller":"service/service.go:36","msg":"https://www.google.com: 61.142458ms\n"}
+{"level":"info","ts":1748005111.693016,"caller":"service/service.go:36","msg":"https://www.youtube.com: 62.980792ms\n"}
+{"level":"info","ts":1748005116.629979,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005116.63022,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005116.630273,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005116.64756,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 17.32975ms\n"}
+{"level":"info","ts":1748005116.701979,"caller":"service/service.go:36","msg":"https://www.google.com: 71.969292ms\n"}
+{"level":"info","ts":1748005116.736775,"caller":"service/service.go:36","msg":"https://www.youtube.com: 106.714792ms\n"}
+{"level":"info","ts":1748005121.62977,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005121.6299782,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005121.6300328,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005121.638328,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 8.39ms\n"}
+{"level":"info","ts":1748005121.694338,"caller":"service/service.go:36","msg":"https://www.google.com: 64.536708ms\n"}
+{"level":"info","ts":1748005121.7441568,"caller":"service/service.go:36","msg":"https://www.youtube.com: 114.326041ms\n"}
+{"level":"info","ts":1748005126.630486,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005126.6311638,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005126.6312299,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005126.802494,"caller":"service/service.go:36","msg":"https://www.google.com: 171.997333ms\n"}
+{"level":"info","ts":1748005126.80276,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 172.166458ms\n"}
+{"level":"info","ts":1748005126.942184,"caller":"service/service.go:36","msg":"https://www.youtube.com: 311.648166ms\n"}
+{"level":"info","ts":1748005131.6302888,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005131.6304262,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005131.630444,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005131.739396,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 109.06125ms\n"}
+{"level":"info","ts":1748005131.7946482,"caller":"service/service.go:36","msg":"https://www.google.com: 164.363458ms\n"}
+{"level":"info","ts":1748005131.828161,"caller":"service/service.go:36","msg":"https://www.youtube.com: 197.857583ms\n"}
+{"level":"info","ts":1748005136.630229,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005136.631447,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005136.6315,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005136.639157,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 8.823ms\n"}
+{"level":"info","ts":1748005136.697377,"caller":"service/service.go:36","msg":"https://www.google.com: 67.1455ms\n"}
+{"level":"info","ts":1748005136.72056,"caller":"service/service.go:36","msg":"https://www.youtube.com: 90.293333ms\n"}
+{"level":"info","ts":1748005141.62912,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005141.629217,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005141.629236,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005141.6371992,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 7.991792ms\n"}
+{"level":"info","ts":1748005141.693776,"caller":"service/service.go:36","msg":"https://www.google.com: 64.624292ms\n"}
+{"level":"info","ts":1748005141.7179,"caller":"service/service.go:36","msg":"https://www.youtube.com: 88.722208ms\n"}
+{"level":"info","ts":1748005146.629935,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005146.6303601,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005146.63042,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005146.645962,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 15.917292ms\n"}
+{"level":"info","ts":1748005146.698556,"caller":"service/service.go:36","msg":"https://www.google.com: 68.569875ms\n"}
+{"level":"info","ts":1748005146.731216,"caller":"service/service.go:36","msg":"https://www.youtube.com: 101.162708ms\n"}
+{"level":"info","ts":1748005151.629941,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005151.630125,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005151.6301482,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005151.760289,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 130.114708ms\n"}
+{"level":"info","ts":1748005151.940004,"caller":"service/service.go:36","msg":"https://www.google.com: 310.057667ms\n"}
+{"level":"info","ts":1748005151.940108,"caller":"service/service.go:36","msg":"https://www.youtube.com: 310.16625ms\n"}
+{"level":"info","ts":1748005156.629799,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005156.630016,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005156.6300569,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005156.653358,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 23.405875ms\n"}
+{"level":"info","ts":1748005156.69634,"caller":"service/service.go:36","msg":"https://www.google.com: 66.53575ms\n"}
+{"level":"info","ts":1748005156.739879,"caller":"service/service.go:36","msg":"https://www.youtube.com: 110.030167ms\n"}
+{"level":"info","ts":1748005161.6296,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005161.630502,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005161.6305401,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005161.647038,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 17.355292ms\n"}
+{"level":"info","ts":1748005161.722039,"caller":"service/service.go:36","msg":"https://www.google.com: 92.409709ms\n"}
+{"level":"info","ts":1748005161.74301,"caller":"service/service.go:36","msg":"https://www.youtube.com: 113.355583ms\n"}
+{"level":"info","ts":1748005166.6295521,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005166.6296818,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005166.6297002,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005166.64467,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 15.148541ms\n"}
+{"level":"info","ts":1748005166.6949818,"caller":"service/service.go:36","msg":"https://www.google.com: 65.440041ms\n"}
+{"level":"info","ts":1748005166.731149,"caller":"service/service.go:36","msg":"https://www.youtube.com: 101.579167ms\n"}
+{"level":"info","ts":1748005171.628918,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005171.6294668,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005171.6295092,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005171.636984,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 7.778791ms\n"}
+{"level":"info","ts":1748005171.7004218,"caller":"service/service.go:36","msg":"https://www.google.com: 71.446959ms\n"}
+{"level":"info","ts":1748005171.732277,"caller":"service/service.go:36","msg":"https://www.youtube.com: 103.229625ms\n"}
+{"level":"info","ts":1748005176.629314,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005176.629494,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005176.629546,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005176.637367,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 7.868041ms\n"}
+{"level":"info","ts":1748005176.691669,"caller":"service/service.go:36","msg":"https://www.google.com: 62.30475ms\n"}
+{"level":"info","ts":1748005176.726897,"caller":"service/service.go:36","msg":"https://www.youtube.com: 97.497625ms\n"}
+{"level":"info","ts":1748005181.629374,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005181.630581,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005181.6306372,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005181.6404328,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 11.008292ms\n"}
+{"level":"info","ts":1748005181.695036,"caller":"service/service.go:36","msg":"https://www.google.com: 65.68225ms\n"}
+{"level":"info","ts":1748005181.724991,"caller":"service/service.go:36","msg":"https://www.youtube.com: 95.641958ms\n"}
+{"level":"info","ts":1748005186.629125,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005186.629836,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005186.629888,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005186.649337,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 20.174792ms\n"}
+{"level":"info","ts":1748005186.699428,"caller":"service/service.go:36","msg":"https://www.google.com: 70.277ms\n"}
+{"level":"info","ts":1748005186.731529,"caller":"service/service.go:36","msg":"https://www.youtube.com: 102.305584ms\n"}
+{"level":"info","ts":1748005191.629054,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005191.6302578,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005191.630326,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005191.63785,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 8.680375ms\n"}
+{"level":"info","ts":1748005191.687595,"caller":"service/service.go:36","msg":"https://www.google.com: 58.52375ms\n"}
+{"level":"info","ts":1748005191.690235,"caller":"service/service.go:36","msg":"https://www.youtube.com: 61.125458ms\n"}
+{"level":"info","ts":1748005196.628851,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005196.62899,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005196.629026,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005196.645959,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 16.93875ms\n"}
+{"level":"info","ts":1748005196.697175,"caller":"service/service.go:36","msg":"https://www.google.com: 68.276625ms\n"}
+{"level":"info","ts":1748005196.737803,"caller":"service/service.go:36","msg":"https://www.youtube.com: 108.854583ms\n"}
+{"level":"info","ts":1748005201.628741,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005201.6292439,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005201.629316,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005201.6373382,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 8.495041ms\n"}
+{"level":"info","ts":1748005201.690138,"caller":"service/service.go:36","msg":"https://www.google.com: 61.345417ms\n"}
+{"level":"info","ts":1748005201.737132,"caller":"service/service.go:36","msg":"https://www.youtube.com: 108.294833ms\n"}
+{"level":"info","ts":1748005206.628672,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005206.6296651,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005206.629785,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005206.6379032,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 8.828334ms\n"}
+{"level":"info","ts":1748005206.689307,"caller":"service/service.go:36","msg":"https://www.google.com: 60.625ms\n"}
+{"level":"info","ts":1748005206.723897,"caller":"service/service.go:36","msg":"https://www.youtube.com: 94.969625ms\n"}
+{"level":"info","ts":1748005211.627895,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005211.6280708,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005211.628109,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005211.636102,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 8.100958ms\n"}
+{"level":"info","ts":1748005211.694117,"caller":"service/service.go:36","msg":"https://www.google.com: 66.208583ms\n"}
+{"level":"info","ts":1748005211.736129,"caller":"service/service.go:36","msg":"https://www.youtube.com: 108.180042ms\n"}
+{"level":"info","ts":1748005216.628879,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005216.6297631,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005216.629806,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005216.6457999,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 16.285ms\n"}
+{"level":"info","ts":1748005216.6993248,"caller":"service/service.go:36","msg":"https://www.google.com: 70.449459ms\n"}
+{"level":"info","ts":1748005216.737613,"caller":"service/service.go:36","msg":"https://www.youtube.com: 108.217334ms\n"}
+{"level":"info","ts":1748005221.628372,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005221.628654,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005221.628713,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005221.645142,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 16.694208ms\n"}
+{"level":"info","ts":1748005221.699718,"caller":"service/service.go:36","msg":"https://www.google.com: 71.355292ms\n"}
+{"level":"info","ts":1748005221.731361,"caller":"service/service.go:36","msg":"https://www.youtube.com: 102.975041ms\n"}
+{"level":"info","ts":1748005226.628184,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005226.6285892,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005226.6286552,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005226.636927,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 8.195ms\n"}
+{"level":"info","ts":1748005226.6973681,"caller":"service/service.go:36","msg":"https://www.google.com: 69.175875ms\n"}
+{"level":"info","ts":1748005226.7234209,"caller":"service/service.go:36","msg":"https://www.youtube.com: 95.203916ms\n"}
+{"level":"info","ts":1748005231.628156,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005231.6283991,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005231.628449,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005231.6363251,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 8.031458ms\n"}
+{"level":"info","ts":1748005231.686743,"caller":"service/service.go:36","msg":"https://www.google.com: 58.568917ms\n"}
+{"level":"info","ts":1748005231.729111,"caller":"service/service.go:36","msg":"https://www.youtube.com: 100.87125ms\n"}
+{"level":"info","ts":1748005236.628059,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005236.6283221,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005236.6283772,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005236.647476,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 19.332334ms\n"}
+{"level":"info","ts":1748005236.697247,"caller":"service/service.go:36","msg":"https://www.google.com: 69.160333ms\n"}
+{"level":"info","ts":1748005236.7834291,"caller":"service/service.go:36","msg":"https://www.youtube.com: 155.320833ms\n"}
+{"level":"info","ts":1748005241.627987,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005241.628212,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005241.6282508,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005241.6873071,"caller":"service/service.go:36","msg":"https://www.google.com: 59.335292ms\n"}
+{"level":"info","ts":1748005241.721206,"caller":"service/service.go:36","msg":"https://www.youtube.com: 93.134542ms\n"}
+{"level":"info","ts":1748005242.137727,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 509.749875ms\n"}
+{"level":"info","ts":1748005246.627839,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005246.6281018,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005246.628143,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005246.6954272,"caller":"service/service.go:36","msg":"https://www.google.com: 67.549167ms\n"}
+{"level":"info","ts":1748005246.7219908,"caller":"service/service.go:36","msg":"https://www.youtube.com: 94.08875ms\n"}
+{"level":"info","ts":1748005246.874906,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 246.99025ms\n"}
+{"level":"info","ts":1748005251.627627,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005251.627821,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005251.62785,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005251.637307,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 9.537041ms\n"}
+{"level":"info","ts":1748005251.685625,"caller":"service/service.go:36","msg":"https://www.google.com: 57.9745ms\n"}
+{"level":"info","ts":1748005251.7198138,"caller":"service/service.go:36","msg":"https://www.youtube.com: 92.11575ms\n"}
+{"level":"info","ts":1748005256.627597,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005256.627838,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005256.6278589,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005256.635408,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 7.7825ms\n"}
+{"level":"info","ts":1748005256.6853912,"caller":"service/service.go:36","msg":"https://www.google.com: 57.777792ms\n"}
+{"level":"info","ts":1748005256.721971,"caller":"service/service.go:36","msg":"https://www.youtube.com: 94.231583ms\n"}
+{"level":"info","ts":1748005261.6274629,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005261.628109,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005261.6281888,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005261.6410391,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 13.453458ms\n"}
+{"level":"info","ts":1748005261.693992,"caller":"service/service.go:36","msg":"https://www.google.com: 66.512375ms\n"}
+{"level":"info","ts":1748005261.7278059,"caller":"service/service.go:36","msg":"https://www.youtube.com: 100.295541ms\n"}
+{"level":"info","ts":1748005266.627372,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005266.627535,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005266.627569,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005266.6365561,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 9.04025ms\n"}
+{"level":"info","ts":1748005266.690058,"caller":"service/service.go:36","msg":"https://www.google.com: 62.6585ms\n"}
+{"level":"info","ts":1748005266.722584,"caller":"service/service.go:36","msg":"https://www.youtube.com: 95.153208ms\n"}
+{"level":"info","ts":1748005271.6272068,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005271.6280289,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005271.628063,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005271.63589,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 8.602166ms\n"}
+{"level":"info","ts":1748005271.688658,"caller":"service/service.go:36","msg":"https://www.google.com: 61.431916ms\n"}
+{"level":"info","ts":1748005271.7259,"caller":"service/service.go:36","msg":"https://www.youtube.com: 98.641209ms\n"}
+{"level":"info","ts":1748005276.6270878,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005276.6271942,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005276.627219,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005276.634304,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 7.144208ms\n"}
+{"level":"info","ts":1748005276.689567,"caller":"service/service.go:36","msg":"https://www.google.com: 62.4525ms\n"}
+{"level":"info","ts":1748005276.733876,"caller":"service/service.go:36","msg":"https://www.youtube.com: 106.724166ms\n"}
+{"level":"info","ts":1748005281.6269948,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005281.627101,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005281.627124,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005281.642625,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 15.504083ms\n"}
+{"level":"info","ts":1748005281.69583,"caller":"service/service.go:36","msg":"https://www.google.com: 68.832875ms\n"}
+{"level":"info","ts":1748005281.7476501,"caller":"service/service.go:36","msg":"https://www.youtube.com: 120.62875ms\n"}
+{"level":"info","ts":1748005286.626904,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005286.627411,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005286.6274712,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005286.634169,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 7.025667ms\n"}
+{"level":"info","ts":1748005286.687401,"caller":"service/service.go:36","msg":"https://www.google.com: 60.473708ms\n"}
+{"level":"info","ts":1748005286.719367,"caller":"service/service.go:36","msg":"https://www.youtube.com: 92.403458ms\n"}
+{"level":"info","ts":1748005291.626508,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005291.626653,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005291.626692,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005291.641846,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 15.113ms\n"}
+{"level":"info","ts":1748005291.688162,"caller":"service/service.go:36","msg":"https://www.google.com: 61.621458ms\n"}
+{"level":"info","ts":1748005291.7428858,"caller":"service/service.go:36","msg":"https://www.youtube.com: 115.911709ms\n"}
+{"level":"info","ts":1748005296.626098,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005296.626239,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005296.6262882,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005296.633385,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 7.1845ms\n"}
+{"level":"info","ts":1748005296.736284,"caller":"service/service.go:36","msg":"https://www.youtube.com: 110.089208ms\n"}
+{"level":"info","ts":1748005296.761693,"caller":"service/service.go:36","msg":"https://www.google.com: 135.56925ms\n"}
+{"level":"info","ts":1748005301.627075,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005301.627292,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005301.6273332,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005301.64144,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 14.74825ms\n"}
+{"level":"info","ts":1748005301.6869981,"caller":"service/service.go:36","msg":"https://www.google.com: 60.31525ms\n"}
+{"level":"info","ts":1748005301.7445152,"caller":"service/service.go:36","msg":"https://www.youtube.com: 117.834042ms\n"}
+{"level":"info","ts":1748005306.626451,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005306.6265512,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005306.6265678,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005306.633145,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 6.640458ms\n"}
+{"level":"info","ts":1748005306.69325,"caller":"service/service.go:36","msg":"https://www.google.com: 66.797334ms\n"}
+{"level":"info","ts":1748005306.717692,"caller":"service/service.go:36","msg":"https://www.youtube.com: 91.219542ms\n"}
+{"level":"info","ts":1748005311.626401,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005311.626636,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005311.626688,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005311.635531,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 8.98675ms\n"}
+{"level":"info","ts":1748005311.682969,"caller":"service/service.go:36","msg":"https://www.google.com: 56.547541ms\n"}
+{"level":"info","ts":1748005311.719556,"caller":"service/service.go:36","msg":"https://www.youtube.com: 93.09575ms\n"}
+{"level":"info","ts":1748005316.626216,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005316.6263318,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005316.626362,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005316.64843,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 22.025292ms\n"}
+{"level":"info","ts":1748005316.6940002,"caller":"service/service.go:36","msg":"https://www.google.com: 67.766417ms\n"}
+{"level":"info","ts":1748005316.744782,"caller":"service/service.go:36","msg":"https://www.youtube.com: 118.491791ms\n"}
+{"level":"info","ts":1748005321.626126,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005321.6262772,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005321.626327,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005321.649559,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 23.31ms\n"}
+{"level":"info","ts":1748005321.69228,"caller":"service/service.go:36","msg":"https://www.google.com: 66.116125ms\n"}
+{"level":"info","ts":1748005321.733741,"caller":"service/service.go:36","msg":"https://www.youtube.com: 107.513166ms\n"}
+{"level":"info","ts":1748005326.626024,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005326.626174,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005326.6262221,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005326.637632,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 11.490875ms\n"}
+{"level":"info","ts":1748005326.6878521,"caller":"service/service.go:36","msg":"https://www.google.com: 61.795375ms\n"}
+{"level":"info","ts":1748005326.807612,"caller":"service/service.go:36","msg":"https://www.youtube.com: 181.471042ms\n"}
+{"level":"info","ts":1748005331.625901,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005331.626011,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005331.6260328,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005331.642973,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 17.044792ms\n"}
+{"level":"info","ts":1748005331.691869,"caller":"service/service.go:36","msg":"https://www.google.com: 65.940542ms\n"}
+{"level":"info","ts":1748005331.728032,"caller":"service/service.go:36","msg":"https://www.youtube.com: 102.050041ms\n"}
+{"level":"info","ts":1748005336.62588,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005336.626103,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005336.626157,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005336.634549,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 8.504875ms\n"}
+{"level":"info","ts":1748005336.68567,"caller":"service/service.go:36","msg":"https://www.google.com: 59.783042ms\n"}
+{"level":"info","ts":1748005336.7374852,"caller":"service/service.go:36","msg":"https://www.youtube.com: 111.559459ms\n"}
+{"level":"info","ts":1748005341.625636,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005341.625849,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005341.625872,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005341.634486,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 8.575333ms\n"}
+{"level":"info","ts":1748005341.688664,"caller":"service/service.go:36","msg":"https://www.google.com: 63.010792ms\n"}
+{"level":"info","ts":1748005341.7344031,"caller":"service/service.go:36","msg":"https://www.youtube.com: 108.725584ms\n"}
+{"level":"info","ts":1748005346.625309,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005346.62555,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005346.625603,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005346.642199,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 16.732958ms\n"}
+{"level":"info","ts":1748005346.6960142,"caller":"service/service.go:36","msg":"https://www.google.com: 70.670791ms\n"}
+{"level":"info","ts":1748005346.733799,"caller":"service/service.go:36","msg":"https://www.youtube.com: 108.416458ms\n"}
+{"level":"info","ts":1748005351.6252642,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005351.6259751,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005351.626024,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005351.64253,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 17.152375ms\n"}
+{"level":"info","ts":1748005351.6940548,"caller":"service/service.go:36","msg":"https://www.google.com: 68.789917ms\n"}
+{"level":"info","ts":1748005351.742589,"caller":"service/service.go:36","msg":"https://www.youtube.com: 117.276625ms\n"}
+{"level":"info","ts":1748005356.625412,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005356.625579,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005356.625608,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005356.634646,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 8.995125ms\n"}
+{"level":"info","ts":1748005356.685087,"caller":"service/service.go:36","msg":"https://www.google.com: 59.670333ms\n"}
+{"level":"info","ts":1748005356.7249558,"caller":"service/service.go:36","msg":"https://www.youtube.com: 99.525708ms\n"}
+{"level":"info","ts":1748005361.625268,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005361.626448,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005361.626505,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005361.634474,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 8.807584ms\n"}
+{"level":"info","ts":1748005361.690252,"caller":"service/service.go:36","msg":"https://www.google.com: 64.976458ms\n"}
+{"level":"info","ts":1748005361.7243981,"caller":"service/service.go:36","msg":"https://www.youtube.com: 99.103083ms\n"}
+{"level":"info","ts":1748005366.625123,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005366.6252658,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005366.6252842,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005366.634329,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 9.168834ms\n"}
+{"level":"info","ts":1748005366.690494,"caller":"service/service.go:36","msg":"https://www.google.com: 65.341958ms\n"}
+{"level":"info","ts":1748005366.7177742,"caller":"service/service.go:36","msg":"https://www.youtube.com: 92.583208ms\n"}
+{"level":"info","ts":1748005371.625064,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005371.625201,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005371.62522,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005371.633368,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 8.30975ms\n"}
+{"level":"info","ts":1748005371.686156,"caller":"service/service.go:36","msg":"https://www.google.com: 61.105708ms\n"}
+{"level":"info","ts":1748005371.739713,"caller":"service/service.go:36","msg":"https://www.youtube.com: 114.625792ms\n"}
+{"level":"info","ts":1748005376.624941,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005376.625841,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005376.625885,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005376.632684,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 7.771833ms\n"}
+{"level":"info","ts":1748005376.69282,"caller":"service/service.go:36","msg":"https://www.google.com: 67.892458ms\n"}
+{"level":"info","ts":1748005376.7404852,"caller":"service/service.go:36","msg":"https://www.youtube.com: 115.509166ms\n"}
+{"level":"info","ts":1748005381.6247702,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005381.625095,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005381.6251352,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005381.6364229,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 11.561917ms\n"}
+{"level":"info","ts":1748005381.691911,"caller":"service/service.go:36","msg":"https://www.google.com: 67.102083ms\n"}
+{"level":"info","ts":1748005381.71827,"caller":"service/service.go:36","msg":"https://www.youtube.com: 93.448083ms\n"}
+{"level":"info","ts":1748005386.623882,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005386.623992,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005386.624019,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005386.632137,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 8.093875ms\n"}
+{"level":"info","ts":1748005386.6866581,"caller":"service/service.go:36","msg":"https://www.google.com: 62.768291ms\n"}
+{"level":"info","ts":1748005386.7442648,"caller":"service/service.go:36","msg":"https://www.youtube.com: 120.357292ms\n"}
+{"level":"info","ts":1748005391.624619,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005391.625529,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005391.625551,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005391.6325738,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 7.991459ms\n"}
+{"level":"info","ts":1748005391.699703,"caller":"service/service.go:36","msg":"https://www.google.com: 75.088125ms\n"}
+{"level":"info","ts":1748005391.7259781,"caller":"service/service.go:36","msg":"https://www.youtube.com: 101.305125ms\n"}
+{"level":"info","ts":1748005396.624615,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005396.624846,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005396.624885,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005396.635722,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 11.01625ms\n"}
+{"level":"info","ts":1748005396.6864982,"caller":"service/service.go:36","msg":"https://www.google.com: 61.865792ms\n"}
+{"level":"info","ts":1748005396.7270348,"caller":"service/service.go:36","msg":"https://www.youtube.com: 102.386125ms\n"}
+{"level":"info","ts":1748005401.624362,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005401.6245492,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005401.624604,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005401.632033,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 7.455208ms\n"}
+{"level":"info","ts":1748005401.685329,"caller":"service/service.go:36","msg":"https://www.google.com: 60.93325ms\n"}
+{"level":"info","ts":1748005401.751307,"caller":"service/service.go:36","msg":"https://www.youtube.com: 126.8565ms\n"}
+{"level":"info","ts":1748005406.6242828,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005406.624537,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005406.6245959,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005406.632231,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 7.993416ms\n"}
+{"level":"info","ts":1748005406.687419,"caller":"service/service.go:36","msg":"https://www.google.com: 63.165959ms\n"}
+{"level":"info","ts":1748005406.724132,"caller":"service/service.go:36","msg":"https://www.youtube.com: 99.83575ms\n"}
+{"level":"info","ts":1748005411.62415,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005411.624269,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005411.624293,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005411.631362,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 7.033375ms\n"}
+{"level":"info","ts":1748005411.683282,"caller":"service/service.go:36","msg":"https://www.google.com: 59.097959ms\n"}
+{"level":"info","ts":1748005411.718763,"caller":"service/service.go:36","msg":"https://www.youtube.com: 94.538583ms\n"}
+{"level":"info","ts":1748005416.624054,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005416.624269,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005416.6243079,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005416.633002,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 8.878334ms\n"}
+{"level":"info","ts":1748005416.686124,"caller":"service/service.go:36","msg":"https://www.google.com: 62.037ms\n"}
+{"level":"info","ts":1748005416.715534,"caller":"service/service.go:36","msg":"https://www.youtube.com: 91.419708ms\n"}
+{"level":"info","ts":1748005421.62364,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005421.623725,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005421.623743,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005421.687506,"caller":"service/service.go:36","msg":"https://www.google.com: 64.346375ms\n"}
+{"level":"info","ts":1748005421.728846,"caller":"service/service.go:36","msg":"https://www.youtube.com: 105.306833ms\n"}
+{"level":"info","ts":1748005421.740287,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 117.142167ms\n"}
+{"level":"info","ts":1748005426.623877,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005426.6240041,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005426.62404,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005426.631829,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 7.8305ms\n"}
+{"level":"info","ts":1748005426.6887228,"caller":"service/service.go:36","msg":"https://www.google.com: 64.840125ms\n"}
+{"level":"info","ts":1748005426.7266119,"caller":"service/service.go:36","msg":"https://www.youtube.com: 102.686583ms\n"}
+{"level":"info","ts":1748005431.623848,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005431.625033,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005431.625077,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005431.63248,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 8.57175ms\n"}
+{"level":"info","ts":1748005431.693552,"caller":"service/service.go:36","msg":"https://www.google.com: 69.701959ms\n"}
+{"level":"info","ts":1748005431.717511,"caller":"service/service.go:36","msg":"https://www.youtube.com: 93.636708ms\n"}
+{"level":"info","ts":1748005436.6235352,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005436.624133,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005436.624214,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005436.632965,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 9.2975ms\n"}
+{"level":"info","ts":1748005436.686729,"caller":"service/service.go:36","msg":"https://www.google.com: 63.183291ms\n"}
+{"level":"info","ts":1748005436.725695,"caller":"service/service.go:36","msg":"https://www.youtube.com: 102.107417ms\n"}
+{"level":"info","ts":1748005441.622782,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005441.62379,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005441.623821,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005441.6429372,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 20.103625ms\n"}
+{"level":"info","ts":1748005441.6910138,"caller":"service/service.go:36","msg":"https://www.google.com: 68.229042ms\n"}
+{"level":"info","ts":1748005441.721843,"caller":"service/service.go:36","msg":"https://www.youtube.com: 99.049125ms\n"}
+{"level":"info","ts":1748005446.623328,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005446.623466,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005446.6235058,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005446.632962,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 9.67775ms\n"}
+{"level":"info","ts":1748005446.6877708,"caller":"service/service.go:36","msg":"https://www.google.com: 64.464125ms\n"}
+{"level":"info","ts":1748005446.726215,"caller":"service/service.go:36","msg":"https://www.youtube.com: 102.845875ms\n"}
+{"level":"info","ts":1748005451.62332,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005451.623688,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005451.6237178,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005451.6320179,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 8.502417ms\n"}
+{"level":"info","ts":1748005451.6852028,"caller":"service/service.go:36","msg":"https://www.google.com: 61.875208ms\n"}
+{"level":"info","ts":1748005451.715015,"caller":"service/service.go:36","msg":"https://www.youtube.com: 91.680958ms\n"}
+{"level":"info","ts":1748005456.622438,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005456.622736,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005456.622798,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005456.631403,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 8.545375ms\n"}
+{"level":"info","ts":1748005456.686188,"caller":"service/service.go:36","msg":"https://www.google.com: 63.744291ms\n"}
+{"level":"info","ts":1748005456.722782,"caller":"service/service.go:36","msg":"https://www.youtube.com: 100.294291ms\n"}
+{"level":"info","ts":1748005461.623085,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005461.6232362,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005461.623254,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005461.654028,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 30.746458ms\n"}
+{"level":"info","ts":1748005461.6953259,"caller":"service/service.go:36","msg":"https://www.google.com: 72.236708ms\n"}
+{"level":"info","ts":1748005461.725534,"caller":"service/service.go:36","msg":"https://www.youtube.com: 102.419417ms\n"}
+{"level":"info","ts":1748005466.6231098,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005466.623777,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005466.623821,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005466.63102,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 7.783417ms\n"}
+{"level":"info","ts":1748005466.6840901,"caller":"service/service.go:36","msg":"https://www.google.com: 61.013166ms\n"}
+{"level":"info","ts":1748005466.715892,"caller":"service/service.go:36","msg":"https://www.youtube.com: 92.796417ms\n"}
+{"level":"info","ts":1748005471.622899,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005471.622983,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005471.6229959,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005471.6312141,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 8.18925ms\n"}
+{"level":"info","ts":1748005471.688591,"caller":"service/service.go:36","msg":"https://www.google.com: 65.620916ms\n"}
+{"level":"info","ts":1748005471.717222,"caller":"service/service.go:36","msg":"https://www.youtube.com: 94.268958ms\n"}
+{"level":"info","ts":1748005476.41342,"caller":"app/main.go:34","msg":"Starting the app."}
+{"level":"info","ts":1748005476.413743,"caller":"controller/controller.go:55","msg":"Starting loop (press Ctrl+C to stop)..."}
+{"level":"info","ts":1748005476.4137862,"caller":"controller/controller.go:57","msg":"Spawning workers for each URL"}
+{"level":"info","ts":1748005476.413803,"caller":"controller/controller.go:115","msg":"URL: https://www.google.com, Queue size: 1\n"}
+{"level":"info","ts":1748005476.4138188,"caller":"controller/controller.go:115","msg":"URL: https://www.youtube.com, Queue size: 1\n"}
+{"level":"info","ts":1748005476.4138482,"caller":"controller/controller.go:115","msg":"URL: https://www.cdn77.com, Queue size: 1\n"}
+{"level":"info","ts":1748005476.485503,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 71.643917ms\n"}
+{"level":"info","ts":1748005476.534127,"caller":"service/service.go:36","msg":"https://www.google.com: 120.317584ms\n"}
+{"level":"info","ts":1748005476.575941,"caller":"service/service.go:36","msg":"https://www.youtube.com: 162.072792ms\n"}
+{"level":"info","ts":1748005476.622797,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005476.623008,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005476.623056,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005476.633284,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 10.374125ms\n"}
+{"level":"info","ts":1748005476.6864388,"caller":"service/service.go:36","msg":"https://www.google.com: 63.617375ms\n"}
+{"level":"info","ts":1748005476.691316,"caller":"service/service.go:36","msg":"https://www.youtube.com: 68.478584ms\n"}
+{"level":"info","ts":1748005481.414529,"caller":"controller/controller.go:115","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005481.414797,"caller":"controller/controller.go:115","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005481.414847,"caller":"controller/controller.go:115","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005481.42531,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 10.717833ms\n"}
+{"level":"info","ts":1748005481.518441,"caller":"service/service.go:36","msg":"https://www.google.com: 103.906834ms\n"}
+{"level":"info","ts":1748005481.538334,"caller":"service/service.go:36","msg":"https://www.youtube.com: 123.754084ms\n"}
+{"level":"info","ts":1748005481.6226969,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005481.622904,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005481.62296,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005481.6300852,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 7.239459ms\n"}
+{"level":"info","ts":1748005481.6859672,"caller":"service/service.go:36","msg":"https://www.google.com: 63.248958ms\n"}
+{"level":"info","ts":1748005481.723086,"caller":"service/service.go:36","msg":"https://www.youtube.com: 100.331917ms\n"}
+{"level":"info","ts":1748005482.415516,"caller":"controller/controller.go:68","msg":"Gracefully exiting..."}
+{"level":"info","ts":1748005482.4154692,"caller":"controller/controller.go:124","msg":"Worker for https://www.cdn77.com stopped\n"}
+{"level":"info","ts":1748005482.415494,"caller":"controller/controller.go:124","msg":"Worker for https://www.youtube.com stopped\n"}
+{"level":"info","ts":1748005482.4155421,"caller":"controller/controller.go:124","msg":"Worker for https://www.google.com stopped\n"}
+{"level":"info","ts":1748005486.622605,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005486.6227899,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005486.622835,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005486.63262,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 9.850167ms\n"}
+{"level":"info","ts":1748005486.685486,"caller":"service/service.go:36","msg":"https://www.google.com: 62.844833ms\n"}
+{"level":"info","ts":1748005486.725317,"caller":"service/service.go:36","msg":"https://www.youtube.com: 102.661875ms\n"}
+{"level":"info","ts":1748005491.6224,"caller":"controller/controller.go:118","msg":"URL: https://www.google.com, Queue size: 0\n"}
+{"level":"info","ts":1748005491.622452,"caller":"controller/controller.go:118","msg":"URL: https://www.youtube.com, Queue size: 0\n"}
+{"level":"info","ts":1748005491.622462,"caller":"controller/controller.go:118","msg":"URL: https://www.cdn77.com, Queue size: 0\n"}
+{"level":"info","ts":1748005491.637565,"caller":"service/service.go:36","msg":"https://www.cdn77.com: 15.113ms\n"}
+{"level":"info","ts":1748005491.686486,"caller":"service/service.go:36","msg":"https://www.google.com: 64.048958ms\n"}
+{"level":"info","ts":1748005491.733666,"caller":"service/service.go:36","msg":"https://www.youtube.com: 111.190833ms\n"}
