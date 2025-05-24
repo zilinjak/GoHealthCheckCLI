@@ -434,3 +434,70 @@ func TestTimeout(t *testing.T) {
 	// 0 requests were successful, all failed due to timeout
 	assert.Equal(t, 0, info["GET https://example1.com"])
 }
+
+func TestHTTPQueueLimit(t *testing.T) {
+	/*
+				HTTP Delay is - 4s
+		        Timeout is - 1s
+			    App runs - 10s
+			    Queue size is - 1
+
+				This means that the app will try to ping the server every second, but since the server responds after 4 seconds,
+				the app will have to wait for the response before it can process the next request,
+				but meanwhile that the queue will get 3 more requests in the queue.
+
+			    Total requests -> 1 nitial, 2 more processed within the 10 seconds, one in the queue -> 4
+	*/
+	t.Parallel()
+	httpmockTransport := httpmock.NewMockTransport()
+	httpmockTransport.RegisterResponder("GET", "https://example1.com",
+		httpmock.NewStringResponder(200, "<html><body>Example Domain</body></html>").
+			Delay(4*time.Second),
+	)
+
+	// the app will ping servers each second
+	output, _, cancel, settings := tests.CreateConfiguration(10, 1)
+	settings.WithMaxQueueSize(1) // Set a small queue size to trigger queue limit
+
+	// Initialize app components
+	inMemoryStore := store.NewInMemoryStore()
+	cliView := view.NewCLIView(settings)
+	httpService := service.NewHTTPServiceWithClient(
+		&http.Client{
+			Transport: httpmockTransport,
+		},
+	)
+	appController := controller.NewController(inMemoryStore, cliView, httpService, settings)
+	done := make(chan struct{})
+
+	// Run the app in a goroutine
+	go func() {
+		_ = appController.Start([]string{"https://example1.com"})
+		close(done) // Signal that the app has finished
+	}()
+
+	// Let it run for a short time
+	time.Sleep(10 * time.Second)
+
+	// Stop the app
+	cancel()
+
+	<-done
+	info := httpmockTransport.GetCallCountInfo()
+	contentStr := output.String()
+	contentStr = strings.ReplaceAll(contentStr, "\u001B[H\u001B[2J", "")
+	exampleCalls := tests.ParseLinesForURL(contentStr, "https://example1.com")
+
+	assert.GreaterOrEqual(t, len(exampleCalls), 3) // Initial + at least 2 rerenders due to queue limit
+
+	for i := 0; i < len(exampleCalls)-1; i++ {
+		tests.VerifyRerenders(t, exampleCalls[i], "UP", "200", 4000, 40)
+	}
+	tests.VerifyMetricsTable(t, exampleCalls[len(exampleCalls)-1], "4/0", "100.0%",
+		4000, 40,
+		4000, 40,
+		4000, 40,
+	)
+
+	assert.Equal(t, 4, info["GET https://example1.com"])
+}
