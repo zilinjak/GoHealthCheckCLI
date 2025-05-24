@@ -37,6 +37,7 @@ func main() {
 		PollingInterval: 1,
 		Context:         ctx,
 		OutputStream:    os.Stdout,
+		MaxQueueSize:    5,
 	}
 
 	inMemoryStore := store.NewInMemoryStore()

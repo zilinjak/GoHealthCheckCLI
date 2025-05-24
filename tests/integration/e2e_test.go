@@ -6,6 +6,7 @@ import (
 	"GoHealthChecker/internal/store"
 	"GoHealthChecker/internal/view"
 	"GoHealthChecker/tests"
+	"errors"
 	"net/http"
 	"strings"
 	"testing"
@@ -246,4 +247,190 @@ func TestNoArgs(t *testing.T) {
 
 	err := appController.Start([]string{})
 	assert.Error(t, err, "Expected error for no URLs provided")
+}
+
+func TestOneSlowWorking(t *testing.T) {
+	t.Parallel()
+	// Enable HTTP mocking
+	// Register mock responses
+	httpmockTransport := httpmock.NewMockTransport()
+	httpmockTransport.RegisterResponder("GET", "https://example1.com",
+		httpmock.NewStringResponder(200, "<html><body>Example Domain</body></html>").Delay(2000*time.Millisecond),
+	)
+
+	// the app will ping servers each second
+	output, _, cancel, settings := tests.CreateConfiguration(1, 1)
+	settings.WithMaxQueueSize(1000) // Increase queue size to handle slow responses
+
+	// Initialize app components
+	inMemoryStore := store.NewInMemoryStore()
+	cliView := view.NewCLIView(settings)
+	httpService := service.NewHTTPServiceWithClient(
+		&http.Client{
+			Transport: httpmockTransport,
+		},
+	)
+	appController := controller.NewController(inMemoryStore, cliView, httpService, settings)
+	done := make(chan struct{})
+
+	// Run the app in a goroutine
+	go func() {
+		_ = appController.Start([]string{"https://example1.com"})
+		close(done) // Signal that the app has finished
+	}()
+
+	// 1 element is added every second -> 10 elements in total
+	// elements are processed every 2 seconds
+	// queue will have 5 elements after 10 seconds
+	time.Sleep(10*time.Second + 500*time.Millisecond)
+
+	// Stop the app
+	cancel()
+
+	<-done
+	info := httpmockTransport.GetCallCountInfo()
+	contentStr := output.String()
+	contentStr = strings.ReplaceAll(contentStr, "\u001B[H\u001B[2J", "")
+	exampleCalls := tests.ParseLinesForURL(contentStr, "https://example1.com")
+
+	// 11 rerenders happened + 1 metrics table
+	assert.Equal(t, 12, len(exampleCalls))
+	for i := 0; i < 11; i++ {
+		tests.VerifyRerenders(t, exampleCalls[i], "UP", "200", 2000.00, 40)
+	}
+	tests.VerifyMetricsTable(t, exampleCalls[11], "11/0", "100.0%", 2000.00, 40, 2000.00, 40, 2000.00, 40)
+	assert.Equal(t, 11, info["GET https://example1.com"])
+}
+
+func TestHTTPClientError(t *testing.T) {
+	t.Parallel()
+	// Enable HTTP mocking
+	// Register mock responses
+	httpmockTransport := httpmock.NewMockTransport()
+	httpmockTransport.RegisterResponder("GET", "https://example1.com",
+		httpmock.NewErrorResponder(errors.New("connection refused")),
+	)
+
+	// the app will ping servers each second
+	output, _, cancel, settings := tests.CreateConfiguration(1, 1)
+
+	// Initialize app components
+	inMemoryStore := store.NewInMemoryStore()
+	cliView := view.NewCLIView(settings)
+	httpService := service.NewHTTPServiceWithClient(
+		&http.Client{
+			Transport: httpmockTransport,
+		},
+	)
+	appController := controller.NewController(inMemoryStore, cliView, httpService, settings)
+	done := make(chan struct{})
+
+	// Run the app in a goroutine
+	go func() {
+		_ = appController.Start([]string{"https://example1.com"})
+		close(done) // Signal that the app has finished
+	}()
+
+	// Let it run for a short time
+	// the app will ping server each second
+	// this results in 1 initial + 5 seconds of pings
+	time.Sleep(5*time.Second + 500*time.Millisecond)
+
+	// Stop the app
+	cancel()
+
+	<-done
+	info := httpmockTransport.GetCallCountInfo()
+	contentStr := output.String()
+	contentStr = strings.ReplaceAll(contentStr, "\u001B[H\u001B[2J", "")
+	exampleCalls := tests.ParseLinesForURL(contentStr, "https://example1.com")
+
+	// 6 rerenders happened
+	assert.Equal(t, 7, len(exampleCalls))
+	for i := 0; i < 6; i++ {
+		assert.Equal(t, "DOWN", exampleCalls[i][1])
+		assert.Equal(t, "ERROR", exampleCalls[i][2])
+		// latency is not tested, just test its here
+		assert.NotEmpty(t, exampleCalls[i][3])
+		assert.Equal(t, "ERROR", exampleCalls[i][4]) // Size should be 0 for errors
+		assert.NotEmpty(t, exampleCalls[i][5])
+	}
+	assert.Equal(t, "0/6", exampleCalls[6][1])
+	assert.Equal(t, "0.0%", exampleCalls[6][2])
+	assert.Equal(t, "ERROR", exampleCalls[6][3])
+	assert.Equal(t, "0 B", exampleCalls[6][4])
+	assert.Equal(t, "ERROR", exampleCalls[6][5])
+	assert.Equal(t, "0 B", exampleCalls[6][6])
+	assert.Equal(t, "ERROR", exampleCalls[6][7])
+	assert.Equal(t, "0 B", exampleCalls[6][8])
+
+	// Verify HTTP mock was actually called
+	// only 6 calls are done, the 7th record is the last rerender with the table result
+	assert.Equal(t, 6, info["GET https://example1.com"])
+}
+
+func TestTimeout(t *testing.T) {
+	t.Parallel()
+	// Enable HTTP mocking
+	// Register mock responses
+	httpmock.RegisterResponder("GET", "https://example1.com",
+		httpmock.NewStringResponder(200, "<html><body>Example Domain</body></html>").
+			Delay(10000*time.Millisecond),
+	)
+
+	// the app will ping servers each second
+	output, _, cancel, settings := tests.CreateConfiguration(1, 1)
+	settings.WithTimeout(100 * time.Millisecond)
+
+	// Initialize app components
+	inMemoryStore := store.NewInMemoryStore()
+	cliView := view.NewCLIView(settings)
+	httpService := service.NewHTTPService(settings)
+	appController := controller.NewController(inMemoryStore, cliView, httpService, settings)
+	done := make(chan struct{})
+
+	// Run the app in a goroutine
+	go func() {
+		_ = appController.Start([]string{"https://example1.com"})
+		close(done) // Signal that the app has finished
+	}()
+
+	// Let it run for a short time
+	// the app will ping server each second
+	// this results in 1 initial + 5 seconds of pings
+	time.Sleep(5*time.Second + 500*time.Millisecond)
+
+	// Stop the app
+	cancel()
+
+	<-done
+	info := httpmock.GetCallCountInfo()
+	contentStr := output.String()
+	contentStr = strings.ReplaceAll(contentStr, "\u001B[H\u001B[2J", "")
+	exampleCalls := tests.ParseLinesForURL(contentStr, "https://example1.com")
+
+	// 6 rerenders happened
+	assert.Equal(t, 7, len(exampleCalls))
+	for i := 0; i < 6; i++ {
+		assert.Equal(t, "DOWN", exampleCalls[i][1])
+		assert.Equal(t, "ERROR", exampleCalls[i][2])
+		// latency is not tested, just test its here
+		assert.NotEmpty(t, exampleCalls[i][3])
+		assert.Equal(t, "ERROR", exampleCalls[i][4]) // Size should be 0 for errors
+		assert.NotEmpty(t, exampleCalls[i][5])
+	}
+	assert.Equal(t, "0/6", exampleCalls[6][1])
+	assert.Equal(t, "0.0%", exampleCalls[6][2])
+	assert.GreaterOrEqual(t, tests.ParseFloatFromString(exampleCalls[6][3]), 100.00*0.8)
+	assert.LessOrEqual(t, tests.ParseFloatFromString(exampleCalls[6][3]), 100.00*1.2)
+	assert.Equal(t, "0 B", exampleCalls[6][4])
+	assert.GreaterOrEqual(t, tests.ParseFloatFromString(exampleCalls[6][5]), 100.00*0.8)
+	assert.LessOrEqual(t, tests.ParseFloatFromString(exampleCalls[6][5]), 100.00*1.2)
+	assert.Equal(t, "0 B", exampleCalls[6][6])
+	assert.GreaterOrEqual(t, tests.ParseFloatFromString(exampleCalls[6][5]), 100.00*0.8)
+	assert.LessOrEqual(t, tests.ParseFloatFromString(exampleCalls[6][5]), 100.00*1.2)
+	assert.Equal(t, "0 B", exampleCalls[6][8])
+
+	// 0 requests were successful, all failed due to timeout
+	assert.Equal(t, 0, info["GET https://example1.com"])
 }

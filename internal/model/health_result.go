@@ -10,6 +10,7 @@ type HealthCheckResult struct {
 	Timestamp  time.Time     `json:"timestamp"`   // When check occurred
 	IsOk       bool          `json:"isOk"`        // Is the URL healthy
 	Size       uint64        `json:"size"`        // Size of the response
+	Error      error         `json:"-"`           // Error if any occurred during the check
 }
 
 func NewHealthCheckResult(
@@ -25,5 +26,14 @@ func NewHealthCheckResult(
 		Latency:    latency,
 		Timestamp:  time.Now().UTC(),
 		Size:       sizeOfResponse,
+	}
+}
+
+func NewHealthCheckResultWithError(err error, latency time.Duration) HealthCheckResult {
+	return HealthCheckResult{
+		IsOk:      false,
+		Latency:   latency,
+		Error:     err,
+		Timestamp: time.Now().UTC(),
 	}
 }

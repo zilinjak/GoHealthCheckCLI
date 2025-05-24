@@ -47,16 +47,29 @@ func (v *CLIView) Render(results map[string]model.HealthCheckResult) {
 		if !result.IsOk {
 			state = "DOWN"
 		}
-		t.AppendRow(
-			table.Row{
-				url,
-				state,
-				result.StatusCode,
-				result.Latency.String(),
-				formatBytes(result.Size),
-				result.Timestamp,
-			},
-		)
+		if result.Error == nil {
+			t.AppendRow(
+				table.Row{
+					url,
+					state,
+					result.StatusCode,
+					result.Latency.String(),
+					formatBytes(result.Size),
+					result.Timestamp,
+				},
+			)
+		} else {
+			t.AppendRow(
+				table.Row{
+					url,
+					state,
+					"ERROR",
+					result.Latency.String(),
+					"ERROR",
+					result.Timestamp,
+				},
+			)
+		}
 	}
 	t.Render()
 }
@@ -105,6 +118,9 @@ func (v *CLIView) clearTerminal() {
 }
 
 func addSuffix(data float64, suffix string) string {
+	if data == 0 {
+		return "ERROR"
+	}
 	return fmt.Sprintf("%.2f%s", data, suffix)
 }
 

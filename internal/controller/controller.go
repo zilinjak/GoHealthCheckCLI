@@ -96,7 +96,7 @@ func (controller *Controller) addToQueue() {
 	// Add elements to Queues
 	for _, url := range controller.Store.GetURLs() {
 		if _, exists := controller.workerChannels[url]; !exists {
-			controller.workerChannels[url] = make(chan struct{}, 5)
+			controller.workerChannels[url] = make(chan struct{}, controller.settings.MaxQueueSize)
 		}
 		if len(controller.workerChannels[url]) == cap(controller.workerChannels[url]) {
 			internal.LOGGER.Warn(fmt.Sprintf("Queue for %s is FULL\n", url))
@@ -113,22 +113,34 @@ func (controller *Controller) addToQueue() {
 func (controller *Controller) worker(url string, ctx context.Context) {
 	for {
 		select {
-		case <-ctx.Done():
-			internal.LOGGER.Info(fmt.Sprintf("Worker for %s stopped\n", url))
-			controller.workersWg.Done()
-			return
 		case <-func() chan struct{} {
 			controller.channelsMutex.RLock()
 			ch := controller.workerChannels[url]
 			controller.channelsMutex.RUnlock()
 			return ch
 		}():
-			resp, err := controller.HTTPService.CheckUrl(url)
-			if err != nil {
-				internal.LOGGER.Error(fmt.Sprintf("Error when requesting %s: %s", url, err))
+			controller.checkURLAndRender(url)
+		case <-ctx.Done():
+			internal.LOGGER.Info(fmt.Sprintf("Context canceled for %s, processing remaining items...", url))
+			// Get channel reference safely
+			controller.channelsMutex.RLock()
+			ch := controller.workerChannels[url]
+			controller.channelsMutex.RUnlock()
+			// Drain the channel - process all remaining items
+			draining := true
+			for draining {
+				select {
+				case <-ch:
+					controller.checkURLAndRender(url)
+				default:
+					// Channel is empty now
+					draining = false
+				}
 			}
-			controller.Store.SaveResult(url, resp)
-			controller.View.Render(controller.Store.GetLatestResults())
+
+			internal.LOGGER.Info(fmt.Sprintf("Worker for %s finished all tasks and stopped\n", url))
+			controller.workersWg.Done()
+			return
 		}
 	}
 }
@@ -142,4 +154,13 @@ func (controller *Controller) startWorkers() (context.Context, context.CancelFun
 		go controller.worker(url, workerCtx)
 	}
 	return workerCtx, cancel
+}
+
+func (controller *Controller) checkURLAndRender(url string) {
+	resp, err := controller.HTTPService.CheckUrl(url)
+	if err != nil {
+		internal.LOGGER.Error(fmt.Sprintf("Error when requesting %s: %s", url, err))
+	}
+	controller.Store.SaveResult(url, resp)
+	controller.View.Render(controller.Store.GetLatestResults())
 }

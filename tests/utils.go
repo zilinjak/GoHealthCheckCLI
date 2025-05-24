@@ -8,6 +8,7 @@ import (
 	"strconv"
 	"strings"
 	"testing"
+	"time"
 )
 
 func ParseLinesForURL(content string, url string) [][]string {
@@ -37,10 +38,11 @@ func CreateConfiguration(timeout int, polling int) (*bytes.Buffer, context.Conte
 	outputBuffer := new(bytes.Buffer)
 	ctx, cancel := context.WithCancel(context.Background())
 	settings := model.AppSettings{
-		Timeout:         timeout,
+		Timeout:         time.Duration(10) * time.Second,
 		PollingInterval: polling,
 		Context:         ctx,
 		OutputStream:    outputBuffer,
+		MaxQueueSize:    5,
 	}
 	return outputBuffer, ctx, cancel, settings
 }
@@ -53,7 +55,14 @@ func VerifyRerenders(t *testing.T, results []string, e_status string, e_result s
 
 	status := results[STATUS_INDEX]
 	result := results[RESULT_INDEX]
-	latency, _ := strconv.ParseFloat(strings.TrimSpace(strings.ReplaceAll(results[LATENCY_INDEX], "ms", "")), 64)
+	latencyString := results[LATENCY_INDEX]
+	latency := 0.0
+	if strings.Contains(latencyString, "ms") {
+		latency, _ = strconv.ParseFloat(strings.TrimSpace(strings.ReplaceAll(latencyString, "ms", "")), 64)
+	} else if strings.Contains(latencyString, "s") {
+		latency, _ = strconv.ParseFloat(strings.TrimSpace(strings.ReplaceAll(latencyString, "s", "")), 64)
+		latency *= 1000
+	}
 	size, _ := strconv.Atoi(strings.TrimSpace(strings.ReplaceAll(results[SIZE_INDEX], "B", "")))
 
 	assert.Equal(t, e_status, status)
@@ -95,4 +104,11 @@ func VerifyMetricsTable(t *testing.T, results []string, eHitRatio string, eHitPe
 	assert.LessOrEqual(t, latencyMax, eLatencyMax*1.20)
 	assert.GreaterOrEqual(t, latencyMax, eLatencyMax*0.80)
 	assert.Equal(t, eSizeMax, sizeMax)
+}
+
+func ParseFloatFromString(value string) float64 {
+	value = strings.TrimSpace(strings.ReplaceAll(value, "ms", ""))
+	value = strings.TrimSpace(strings.ReplaceAll(value, "s", ""))
+	item, _ := strconv.ParseFloat(value, 64)
+	return item
 }
