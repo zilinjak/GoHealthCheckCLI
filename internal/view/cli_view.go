@@ -7,21 +7,26 @@ import (
 	"io"
 	"sort"
 	"strings"
+	"sync"
 )
 
 // CLIView TODO: Change current implementation to use better terminal GUI library
 type CLIView struct {
 	output io.Writer
+	mutex  sync.Mutex
 }
 
 func NewCLIView(appSettings model.AppSettings) *CLIView {
 	instance := &CLIView{
 		output: appSettings.OutputStream,
+		mutex:  sync.Mutex{},
 	}
 	return instance
 }
 
 func (v *CLIView) Render(results map[string]model.HealthCheckResult) {
+	v.mutex.Lock()
+	defer v.mutex.Unlock()
 	v.clearTerminal()
 
 	t := table.NewWriter()
@@ -57,6 +62,8 @@ func (v *CLIView) Render(results map[string]model.HealthCheckResult) {
 }
 
 func (v *CLIView) RenderMetrics(results map[string]model.Metrics) {
+	v.mutex.Lock()
+	defer v.mutex.Unlock()
 	v.clearTerminal()
 
 	t := table.NewWriter()

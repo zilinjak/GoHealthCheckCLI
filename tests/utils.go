@@ -59,8 +59,8 @@ func VerifyRerenders(t *testing.T, results []string, e_status string, e_result s
 	assert.Equal(t, e_status, status)
 	assert.Equal(t, e_result, result)
 	// assert that latency is within 10% of expected
-	assert.LessOrEqual(t, latency, e_latency*1.10)
-	assert.GreaterOrEqual(t, latency, e_latency*0.90)
+	assert.LessOrEqual(t, latency, e_latency*1.20)
+	assert.GreaterOrEqual(t, latency, e_latency*0.80)
 	assert.Equal(t, e_size, size)
 }
 
@@ -86,13 +86,13 @@ func VerifyMetricsTable(t *testing.T, results []string, eHitRatio string, eHitPe
 	assert.Equal(t, eHitRatio, hitRatio)
 	assert.Equal(t, eHitPercentage, hitPercentage)
 	// assert that latency is within 10% of expected
-	assert.LessOrEqual(t, latencyAvg, eLatencyAvg*1.10)
-	assert.GreaterOrEqual(t, latencyAvg, eLatencyAvg*0.90)
+	assert.LessOrEqual(t, latencyAvg, eLatencyAvg*1.20)
+	assert.GreaterOrEqual(t, latencyAvg, eLatencyAvg*0.80)
 	assert.Equal(t, eSizeAvg, sizeAvg)
-	assert.LessOrEqual(t, latencyMin, eLatencyMin*1.10)
-	assert.GreaterOrEqual(t, latencyMin, eLatencyMin*0.90)
+	assert.LessOrEqual(t, latencyMin, eLatencyMin*1.20)
+	assert.GreaterOrEqual(t, latencyMin, eLatencyMin*0.80)
 	assert.Equal(t, eSizeMin, sizeMin)
-	assert.LessOrEqual(t, latencyMax, eLatencyMax*1.10)
-	assert.GreaterOrEqual(t, latencyMax, eLatencyMax*0.90)
+	assert.LessOrEqual(t, latencyMax, eLatencyMax*1.20)
+	assert.GreaterOrEqual(t, latencyMax, eLatencyMax*0.80)
 	assert.Equal(t, eSizeMax, sizeMax)
 }

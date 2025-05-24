@@ -7,7 +7,6 @@ import (
 	"GoHealthChecker/internal/view"
 	"GoHealthChecker/tests"
 	"net/http"
-	"os"
 	"strings"
 	"testing"
 	"time"
@@ -21,15 +20,10 @@ func TestOneWorking(t *testing.T) {
 	// Enable HTTP mocking
 	// Register mock responses
 	httpmockTransport := httpmock.NewMockTransport()
-	defer httpmockTransport.Reset() // Cleanup after test
 	httpmockTransport.RegisterResponder("GET", "https://example1.com",
 		httpmock.NewStringResponder(200, "<html><body>Example Domain</body></html>").Delay(100*time.Millisecond),
 	)
 
-	os.Args = []string{
-		"",
-		"https://example1.com",
-	}
 	// the app will ping servers each second
 	output, _, cancel, settings := tests.CreateConfiguration(1, 1)
 
@@ -46,7 +40,7 @@ func TestOneWorking(t *testing.T) {
 
 	// Run the app in a goroutine
 	go func() {
-		_ = appController.Start()
+		_ = appController.Start([]string{"https://example1.com"})
 		close(done) // Signal that the app has finished
 	}()
 
@@ -90,11 +84,6 @@ func TestTwoWorking(t *testing.T) {
 		httpmock.NewStringResponder(200, "<html><body>Example Domain</body></html>").Delay(100*time.Millisecond),
 	)
 
-	os.Args = []string{
-		"",
-		"https://example2.com",
-		"https://example2.org",
-	}
 	// the app will ping servers each second
 	output, _, cancel, settings := tests.CreateConfiguration(1, 1)
 
@@ -107,10 +96,12 @@ func TestTwoWorking(t *testing.T) {
 		},
 	)
 	appController := controller.NewController(inMemoryStore, cliView, httpService, settings)
+	done := make(chan struct{})
 
 	// Run the app in a goroutine
 	go func() {
-		_ = appController.Start()
+		_ = appController.Start([]string{"https://example2.com", "https://example2.org"})
+		close(done)
 	}()
 
 	// Let it run for a short time
@@ -120,9 +111,7 @@ func TestTwoWorking(t *testing.T) {
 
 	// Stop the app
 	cancel()
-
-	// Wait for the app to finish
-	time.Sleep(10 * time.Second)
+	<-done
 
 	contentStr := output.String()
 	contentStr = strings.ReplaceAll(contentStr, "\u001B[H\u001B[2J", "")

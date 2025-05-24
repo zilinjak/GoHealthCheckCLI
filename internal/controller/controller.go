@@ -40,16 +40,17 @@ func NewController(
 	}
 }
 
-func (controller *Controller) Start() error {
+func (controller *Controller) Start(urls []string) error {
 	// Parse args and load them to Store
-	ticker := time.NewTicker(time.Duration(controller.settings.PollingInterval) * time.Second)
-	defer ticker.Stop()
-
-	err := controller.ParseArgs()
+	err := controller.ParseArgs(urls)
 	if err != nil {
 		fmt.Fprintln(os.Stderr, "Error:", err)
 		return err
 	}
+
+	ticker := time.NewTicker(time.Duration(controller.settings.PollingInterval) * time.Second)
+	defer ticker.Stop()
+
 	internal.LOGGER.Info("Starting loop (press Ctrl+C to stop)...")
 	// Add elements to Queues
 	internal.LOGGER.Info("Spawning workers for each URL")
@@ -75,9 +76,7 @@ func (controller *Controller) Stop() {
 	controller.View.RenderMetrics(controller.Store.GetMetrics())
 }
 
-func (controller *Controller) ParseArgs() error {
-	urls := os.Args[1:]
-
+func (controller *Controller) ParseArgs(urls []string) error {
 	if len(urls) == 0 {
 		return fmt.Errorf("no URLs provided")
 	}
