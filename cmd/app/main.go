@@ -34,7 +34,7 @@ func main() {
 
 	settings := model.AppSettings{
 		Timeout:         10,
-		PollingInterval: 1,
+		PollingInterval: 5,
 		Context:         ctx,
 		OutputStream:    os.Stdout,
 		MaxQueueSize:    5,
