@@ -135,3 +135,115 @@ func TestTwoWorking(t *testing.T) {
 	assert.Equal(t, 6, info["GET https://example2.com"])
 	assert.Equal(t, 6, info["GET https://example2.org"])
 }
+
+func TestOneWorkingOne500(t *testing.T) {
+	t.Parallel()
+
+	// Enable HTTP mocking
+	httpmockTransport := httpmock.NewMockTransport()
+	defer httpmockTransport.Reset() // Cleanup after test
+
+	// Register mock responses
+	httpmockTransport.RegisterResponder("GET", "https://example2.com",
+		httpmock.NewStringResponder(200, "<html><body>Example Domain</body></html>").Delay(100*time.Millisecond),
+	)
+	httpmockTransport.RegisterResponder("GET", "https://error.org",
+		httpmock.NewStringResponder(500, "<html><body>Example Domain</body></html>").Delay(100*time.Millisecond),
+	)
+
+	// the app will ping servers each second
+	output, _, cancel, settings := tests.CreateConfiguration(1, 1)
+
+	// Initialize app components
+	inMemoryStore := store.NewInMemoryStore()
+	cliView := view.NewCLIView(settings)
+	httpService := service.NewHTTPServiceWithClient(
+		&http.Client{
+			Transport: httpmockTransport,
+		},
+	)
+	appController := controller.NewController(inMemoryStore, cliView, httpService, settings)
+	done := make(chan struct{})
+
+	// Run the app in a goroutine
+	go func() {
+		_ = appController.Start([]string{"https://example2.com", "https://error.org"})
+		close(done)
+	}()
+
+	// Let it run for a short time
+	// the app will ping server each second
+	// this results in 1 initial + 5 seconds of pings
+	time.Sleep(5*time.Second + 500*time.Millisecond)
+
+	// Stop the app
+	cancel()
+	<-done
+
+	contentStr := output.String()
+	contentStr = strings.ReplaceAll(contentStr, "\u001B[H\u001B[2J", "")
+	exampleCalls := tests.ParseLinesForURL(contentStr, "https://example2.com")
+	errorCalls := tests.ParseLinesForURL(contentStr, "https://error.org")
+
+	// 6 rerenders happened, verify
+	for i := 0; i < len(exampleCalls)-1; i++ {
+		tests.VerifyRerenders(t, exampleCalls[i], "UP", "200", 100.00, 40)
+	}
+	// 6 rerenders happened, verify example2.org
+	for i := 0; i < len(errorCalls)-1; i++ {
+		tests.VerifyRerenders(t, errorCalls[i], "DOWN", "500", 100.00, 40)
+	}
+	// verify resulting metrics
+	tests.VerifyMetricsTable(t, exampleCalls[len(exampleCalls)-1], "6/0", "100.0%", 100.00, 40, 100.00, 40, 100.00, 40)
+	tests.VerifyMetricsTable(t, errorCalls[len(errorCalls)-1], "0/6", "0.0%", 100.00, 40, 100.00, 40, 100.00, 40)
+	// Verify HTTP mock was actually called
+	info := httpmockTransport.GetCallCountInfo()
+	// only 6 calls are done, the 7th record is the last rerender with the table result
+	assert.Equal(t, 6, info["GET https://example2.com"])
+	assert.Equal(t, 6, info["GET https://error.org"])
+}
+
+func TestInvalidArgs(t *testing.T) {
+	t.Parallel()
+
+	_, _, _, settings := tests.CreateConfiguration(1, 1)
+
+	// Initialize app components
+	inMemoryStore := store.NewInMemoryStore()
+	cliView := view.NewCLIView(settings)
+	httpService := service.NewHTTPService(settings)
+	appController := controller.NewController(inMemoryStore, cliView, httpService, settings)
+
+	// Test various invalid URLs
+	invalidURLs := []string{
+		"htt://invalid-url",
+		"://missing-scheme",
+		"http:/missing-slash",
+		"",                      // Empty string
+		"http://invalid@host$",  // Invalid characters
+		"ftp://unsupported.com", // Unsupported scheme
+		"https://:443/path",
+		"https://this-domain-should-not-exist-anywhere.net",
+	}
+
+	for _, url := range invalidURLs {
+		t.Logf("Testing invalid URL: %s", url)
+		err := appController.Start([]string{url})
+		assert.Error(t, err, "Expected error for invalid URL: %s", url)
+	}
+}
+
+func TestNoArgs(t *testing.T) {
+	t.Parallel()
+
+	_, _, _, settings := tests.CreateConfiguration(1, 1)
+
+	// Initialize app components
+	inMemoryStore := store.NewInMemoryStore()
+	cliView := view.NewCLIView(settings)
+	httpService := service.NewHTTPService(settings)
+	appController := controller.NewController(inMemoryStore, cliView, httpService, settings)
+
+	err := appController.Start([]string{})
+	assert.Error(t, err, "Expected error for no URLs provided")
+}
