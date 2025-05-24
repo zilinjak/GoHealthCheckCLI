@@ -373,7 +373,8 @@ func TestTimeout(t *testing.T) {
 	t.Parallel()
 	// Enable HTTP mocking
 	// Register mock responses
-	httpmock.RegisterResponder("GET", "https://example1.com",
+	httpmockTransport := httpmock.NewMockTransport()
+	httpmockTransport.RegisterResponder("GET", "https://example1.com",
 		httpmock.NewStringResponder(200, "<html><body>Example Domain</body></html>").
 			Delay(10000*time.Millisecond),
 	)
@@ -385,7 +386,12 @@ func TestTimeout(t *testing.T) {
 	// Initialize app components
 	inMemoryStore := store.NewInMemoryStore()
 	cliView := view.NewCLIView(settings)
-	httpService := service.NewHTTPService(settings)
+	httpService := service.NewHTTPServiceWithClient(
+		&http.Client{
+			Transport: httpmockTransport,
+			Timeout:   settings.Timeout,
+		})
+
 	appController := controller.NewController(inMemoryStore, cliView, httpService, settings)
 	done := make(chan struct{})
 
