@@ -2,8 +2,6 @@ package store
 
 import (
 	"GoHealthChecker/internal/model"
-	"errors"
-	urllib "net/url"
 	"sync"
 )
 
@@ -42,14 +40,12 @@ func (s *InMemoryStore) SaveResult(url string, result model.HealthCheckResult) {
 }
 
 func (s *InMemoryStore) AddURL(url string) error {
+	err := ValidateURL(url)
+	if err != nil {
+		return err
+	}
 	s.mu.Lock()
 	defer s.mu.Unlock()
-
-	// check if the URL is valid
-	if _, err := urllib.ParseRequestURI(url); err != nil {
-		return errors.New("invalid URL: " + err.Error())
-	}
-
 	// URL already exists in registeredURLs
 	for _, registeredURL := range s.registeredURLs {
 		if registeredURL == url {

@@ -30,20 +30,28 @@ func signalHandler() (context.Context, context.CancelFunc) {
 }
 
 func main() {
+	// Initiaize the context and signal handler for CTRL+C handling
 	ctx, _ := signalHandler()
 
+	// Set up the application settings and components
 	settings := model.AppSettings{
 		Timeout:         10,
-		PollingInterval: 1,
+		PollingInterval: 5,
 		Context:         ctx,
 		OutputStream:    os.Stdout,
+		MaxQueueSize:    5,
 	}
 
 	inMemoryStore := store.NewInMemoryStore()
 	CLIView := view.NewCLIView(settings)
 	HTTPService := service.NewHTTPService(settings)
 	appController := controller.NewController(inMemoryStore, CLIView, HTTPService, settings)
-
+	// Handle failure of the app controller - eg invalid inputs etc.
 	internal.LOGGER.Info("Starting the app.")
-	appController.Start()
+	err := appController.Start(os.Args[1:])
+	if err != nil {
+		internal.LOGGER.Error("Error starting the app:" + err.Error())
+		os.Exit(1)
+	}
+	os.Exit(0)
 }
