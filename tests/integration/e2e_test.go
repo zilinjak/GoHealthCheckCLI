@@ -500,3 +500,62 @@ func TestHTTPQueueLimit(t *testing.T) {
 
 	assert.Equal(t, 4, info["GET https://testqueue.com"])
 }
+
+func TestForProfiller(t *testing.T) {
+	t.SkipNow()
+	t.Parallel()
+	// Enable HTTP mocking
+	httpmockTransport := httpmock.NewMockTransport()
+	httpmockTransport.RegisterResponder("GET", "https://testperformance1.com",
+		httpmock.NewStringResponder(200, "<html><body>Example Domain</body></html>").
+			Delay(100*time.Millisecond),
+	)
+
+	httpmockTransport.RegisterResponder("GET", "https://testperformance2.com",
+		httpmock.NewStringResponder(200, "<html><body>Example Domain</body></html>").
+			Delay(100*time.Millisecond),
+	)
+
+	httpmockTransport.RegisterResponder("GET", "https://testperformance3.com",
+		httpmock.NewStringResponder(200, "<html><body>Example Domain</body></html>").
+			Delay(100*time.Millisecond),
+	)
+
+	httpmockTransport.RegisterResponder("GET", "https://testperformance4.com",
+		httpmock.NewStringResponder(200, "<html><body>Example Domain</body></html>").
+			Delay(100*time.Millisecond),
+	)
+
+	httpmockTransport.RegisterResponder("GET", "https://testperformance5.com",
+		httpmock.NewStringResponder(200, "<html><body>Example Domain</body></html>").
+			Delay(100*time.Millisecond),
+	)
+
+	// the app will ping servers each second
+	_, _, cancel, settings := tests.CreateConfiguration(1, 1)
+	settings.WithPollingInterval(100 * time.Millisecond)
+	// Initialize app components
+	inMemoryStore := store.NewInMemoryStore()
+	cliView := view.NewCLIView(settings)
+	httpService := service.NewHTTPServiceWithTransport(httpmockTransport, settings)
+	appController := controller.NewController(inMemoryStore, cliView, httpService, settings)
+	done := make(chan struct{})
+
+	// Run the app in a goroutine
+	go func() {
+		_ = appController.Start([]string{
+			"https://testperformance1.com",
+			"https://testperformance2.com",
+			"https://testperformance3.com",
+			"https://testperformance4.com",
+			"https://testperformance5.com",
+		})
+		close(done) // Signal that the app has finished
+	}()
+
+	time.Sleep(300 * time.Second)
+
+	cancel()
+
+	<-done
+}

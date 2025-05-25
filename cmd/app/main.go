@@ -10,6 +10,7 @@ import (
 	"context"
 	"os"
 	"os/signal"
+	"time"
 )
 
 func signalHandler() (context.Context, context.CancelFunc) {
@@ -36,7 +37,7 @@ func main() {
 	// Set up the application settings and components
 	settings := model.AppSettings{
 		Timeout:         10,
-		PollingInterval: 5,
+		PollingInterval: 5 * time.Second,
 		Context:         ctx,
 		OutputStream:    os.Stdout,
 		MaxQueueSize:    5,

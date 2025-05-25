@@ -39,7 +39,7 @@ func CreateConfiguration(timeout int, polling int) (*bytes.Buffer, context.Conte
 	ctx, cancel := context.WithCancel(context.Background())
 	settings := model.AppSettings{
 		Timeout:         time.Duration(10) * time.Second,
-		PollingInterval: polling,
+		PollingInterval: time.Duration(polling) * time.Second,
 		Context:         ctx,
 		OutputStream:    outputBuffer,
 		MaxQueueSize:    5,

@@ -53,7 +53,7 @@ func (controller *Controller) Start(urls []string) error {
 		return err
 	}
 
-	ticker := time.NewTicker(time.Duration(controller.settings.PollingInterval) * time.Second)
+	ticker := time.NewTicker(controller.settings.PollingInterval)
 	defer ticker.Stop()
 
 	internal.LOGGER.Info("Starting loop (press Ctrl+C to stop)...")

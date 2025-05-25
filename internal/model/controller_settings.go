@@ -8,17 +8,16 @@ import (
 
 type AppSettings struct {
 	Timeout         time.Duration
-	PollingInterval int
+	PollingInterval time.Duration
 	Context         context.Context
 	OutputStream    io.Writer
 	MaxQueueSize    int
 }
 
-// builder pattern for AppSettings
 func NewAppSettings() *AppSettings {
 	return &AppSettings{
 		Timeout:         10 * time.Second, // default timeout
-		PollingInterval: 5,                // default polling interval
+		PollingInterval: 5 * time.Second,  // default polling interval
 		MaxQueueSize:    5,                // default max queue size
 	}
 }
@@ -28,7 +27,7 @@ func (s *AppSettings) WithTimeout(timeout time.Duration) *AppSettings {
 	return s
 }
 
-func (s *AppSettings) WithPollingInterval(interval int) *AppSettings {
+func (s *AppSettings) WithPollingInterval(interval time.Duration) *AppSettings {
 	s.PollingInterval = interval
 	return s
 }
