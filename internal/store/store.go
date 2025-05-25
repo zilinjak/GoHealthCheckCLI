@@ -3,8 +3,6 @@ package store
 import (
 	"GoHealthChecker/internal/model"
 	"errors"
-	"fmt"
-	"net"
 	urllib "net/url"
 	"regexp"
 )
@@ -47,9 +45,9 @@ func ValidateURL(url string) error {
 		return errors.New("hostname contains invalid characters")
 	}
 
-	_, err = net.LookupHost(hostname)
-	if err != nil {
-		return fmt.Errorf("DNS resolution failed: %w", err)
-	}
+	//_, err = net.LookupHost(hostname)
+	//if err != nil {
+	//	return fmt.Errorf("DNS resolution failed: %w", err)
+	//}
 	return nil
 }

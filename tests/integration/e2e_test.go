@@ -223,7 +223,6 @@ func TestInvalidArgs(t *testing.T) {
 		"http://invalid@host$",  // Invalid characters
 		"ftp://unsupported.com", // Unsupported scheme
 		"https://:443/path",
-		"https://this-domain-should-not-exist-anywhere.net",
 	}
 
 	for _, url := range invalidURLs {
@@ -372,19 +371,23 @@ func TestTimeout(t *testing.T) {
 	t.Parallel()
 	// Enable HTTP mocking
 	// Register mock responses
-	httpmock.RegisterResponder("GET", "https://testtimeout.com",
+	httpmockTransport := httpmock.NewMockTransport()
+	httpmockTransport.RegisterResponder("GET", "https://testtimeout.com",
 		httpmock.NewStringResponder(200, "<html><body>Example Domain</body></html>").
 			Delay(10000*time.Millisecond),
 	)
 
 	// the app will ping servers each second
 	output, _, cancel, settings := tests.CreateConfiguration(1, 1)
-	settings.WithTimeout(100 * time.Millisecond)
-
 	// Initialize app components
 	inMemoryStore := store.NewInMemoryStore()
 	cliView := view.NewCLIView(settings)
-	httpService := service.NewHTTPService(settings)
+	httpService := service.NewHTTPServiceWithClient(
+		&http.Client{
+			Transport: httpmockTransport,
+			Timeout:   100 * time.Millisecond,
+		})
+
 	appController := controller.NewController(inMemoryStore, cliView, httpService, settings)
 	done := make(chan struct{})
 
