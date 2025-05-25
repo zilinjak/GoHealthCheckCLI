@@ -36,7 +36,7 @@ func main() {
 
 	// Set up the application settings and components
 	settings := model.AppSettings{
-		Timeout:         10,
+		Timeout:         10 * time.Second,
 		PollingInterval: 5 * time.Second,
 		Context:         ctx,
 		OutputStream:    os.Stdout,
