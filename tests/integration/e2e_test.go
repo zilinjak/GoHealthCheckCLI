@@ -229,7 +229,7 @@ func TestInvalidArgs(t *testing.T) {
 	for _, url := range invalidURLs {
 		t.Logf("Testing invalid URL: %s", url)
 		err := appController.Start([]string{url})
-		assert.Error(t, err, "Expected error for invalid URL: %s", url)
+		assert.Error(t, err)
 	}
 }
 
@@ -245,7 +245,7 @@ func TestNoArgs(t *testing.T) {
 	appController := controller.NewController(inMemoryStore, cliView, httpService, settings)
 
 	err := appController.Start([]string{})
-	assert.Error(t, err, "Expected error for no URLs provided")
+	assert.Error(t, err)
 }
 
 func TestOneSlowWorking(t *testing.T) {
