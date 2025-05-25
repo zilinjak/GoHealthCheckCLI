@@ -40,3 +40,10 @@ go run cmd/app/main.go \
 not the tests mainly test the integration of yeah component, but not the CLI itself
 - Table rendering - proper info like - TIMEOUT could be displayed
 - Better models -> SuccessFull model, Failed model, Timeout model etc, with proper inheritance
+
+
+## Run the tests
+
+```bash
+go test -v ./...
+```
