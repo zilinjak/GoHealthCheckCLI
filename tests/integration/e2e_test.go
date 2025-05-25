@@ -379,14 +379,11 @@ func TestTimeout(t *testing.T) {
 
 	// the app will ping servers each second
 	output, _, cancel, settings := tests.CreateConfiguration(1, 1)
+	settings.WithTimeout(100 * time.Millisecond)
 	// Initialize app components
 	inMemoryStore := store.NewInMemoryStore()
 	cliView := view.NewCLIView(settings)
-	httpService := service.NewHTTPServiceWithClient(
-		&http.Client{
-			Transport: httpmockTransport,
-			Timeout:   100 * time.Millisecond,
-		})
+	httpService := service.NewHTTPServiceWithTransport(httpmockTransport, settings)
 
 	appController := controller.NewController(inMemoryStore, cliView, httpService, settings)
 	done := make(chan struct{})

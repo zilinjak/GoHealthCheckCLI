@@ -35,6 +35,19 @@ func NewHTTPServiceWithClient(client *http.Client) *HTTPService {
 	}
 }
 
+func NewHTTPServiceWithTransport(transport http.RoundTripper, settings model.AppSettings) *HTTPService {
+	return &HTTPService{
+		client: &http.Client{
+			Transport: transport,
+			// disable follow redirects
+			CheckRedirect: func(req *http.Request, via []*http.Request) error {
+				return http.ErrUseLastResponse
+			},
+			Timeout: settings.Timeout, // Default timeout
+		},
+	}
+}
+
 func (H HTTPService) CheckUrl(url string) (model.HealthCheckResult, error) {
 	internal.LOGGER.Info(fmt.Sprintf("Checking %s\n", url))
 	start := time.Now()
