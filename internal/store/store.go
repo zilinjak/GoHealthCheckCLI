@@ -45,6 +45,7 @@ func ValidateURL(url string) error {
 		return errors.New("hostname contains invalid characters")
 	}
 
+	// TODO: This breaks the tests
 	//_, err = net.LookupHost(hostname)
 	//if err != nil {
 	//	return fmt.Errorf("DNS resolution failed: %w", err)

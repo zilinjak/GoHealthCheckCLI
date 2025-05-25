@@ -5,7 +5,7 @@
 for i in {1..100}; do
     echo "Running test iteration $i"
     go clean -testcache
-    go test -race -parallel 1 .
+    go test -race .
     if [ $? -ne 0 ]; then
         echo "Integration tests failed on iteration $i"
         exit 1
