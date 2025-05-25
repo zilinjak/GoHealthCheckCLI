@@ -21,7 +21,7 @@ func TestOneWorking(t *testing.T) {
 	// Enable HTTP mocking
 	// Register mock responses
 	httpmockTransport := httpmock.NewMockTransport()
-	httpmockTransport.RegisterResponder("GET", "https://example1.com",
+	httpmockTransport.RegisterResponder("GET", "https://testoneworking.com",
 		httpmock.NewStringResponder(200, "<html><body>Example Domain</body></html>").Delay(100*time.Millisecond),
 	)
 
@@ -41,7 +41,7 @@ func TestOneWorking(t *testing.T) {
 
 	// Run the app in a goroutine
 	go func() {
-		_ = appController.Start([]string{"https://example1.com"})
+		_ = appController.Start([]string{"https://testoneworking.com"})
 		close(done) // Signal that the app has finished
 	}()
 
@@ -57,7 +57,7 @@ func TestOneWorking(t *testing.T) {
 	info := httpmockTransport.GetCallCountInfo()
 	contentStr := output.String()
 	contentStr = strings.ReplaceAll(contentStr, "\u001B[H\u001B[2J", "")
-	exampleCalls := tests.ParseLinesForURL(contentStr, "https://example1.com")
+	exampleCalls := tests.ParseLinesForURL(contentStr, "https://testoneworking.com")
 
 	// 6 rerenders happened
 	assert.Equal(t, 7, len(exampleCalls))
@@ -67,7 +67,7 @@ func TestOneWorking(t *testing.T) {
 	tests.VerifyMetricsTable(t, exampleCalls[6], "6/0", "100.0%", 100.00, 40, 100.00, 40, 100.00, 40)
 	// Verify HTTP mock was actually called
 	// only 6 calls are done, the 7th record is the last rerender with the table result
-	assert.Equal(t, 6, info["GET https://example1.com"])
+	assert.Equal(t, 6, info["GET https://testoneworking.com"])
 }
 
 func TestTwoWorking(t *testing.T) {
@@ -78,10 +78,10 @@ func TestTwoWorking(t *testing.T) {
 	defer httpmockTransport.Reset() // Cleanup after test
 
 	// Register mock responses
-	httpmockTransport.RegisterResponder("GET", "https://example2.com",
+	httpmockTransport.RegisterResponder("GET", "https://test2working.com",
 		httpmock.NewStringResponder(200, "<html><body>Example Domain</body></html>").Delay(100*time.Millisecond),
 	)
-	httpmockTransport.RegisterResponder("GET", "https://example2.org",
+	httpmockTransport.RegisterResponder("GET", "https://test2working.org",
 		httpmock.NewStringResponder(200, "<html><body>Example Domain</body></html>").Delay(100*time.Millisecond),
 	)
 
@@ -101,7 +101,7 @@ func TestTwoWorking(t *testing.T) {
 
 	// Run the app in a goroutine
 	go func() {
-		_ = appController.Start([]string{"https://example2.com", "https://example2.org"})
+		_ = appController.Start([]string{"https://test2working.com", "https://test2working.org"})
 		close(done)
 	}()
 
@@ -116,14 +116,14 @@ func TestTwoWorking(t *testing.T) {
 
 	contentStr := output.String()
 	contentStr = strings.ReplaceAll(contentStr, "\u001B[H\u001B[2J", "")
-	exampleCalls := tests.ParseLinesForURL(contentStr, "https://example2.com")
-	exampleOrgCalls := tests.ParseLinesForURL(contentStr, "https://example2.org")
+	exampleCalls := tests.ParseLinesForURL(contentStr, "https://test2working.com")
+	exampleOrgCalls := tests.ParseLinesForURL(contentStr, "https://test2working.org")
 
 	// 6 rerenders happened, verify
 	for i := 0; i < len(exampleCalls)-1; i++ {
 		tests.VerifyRerenders(t, exampleCalls[i], "UP", "200", 100.00, 40)
 	}
-	// 6 rerenders happened, verify example2.org
+	// 6 rerenders happened, verify test2working.org
 	for i := 0; i < len(exampleOrgCalls)-1; i++ {
 		tests.VerifyRerenders(t, exampleOrgCalls[i], "UP", "200", 100.00, 40)
 	}
@@ -133,8 +133,8 @@ func TestTwoWorking(t *testing.T) {
 	// Verify HTTP mock was actually called
 	info := httpmockTransport.GetCallCountInfo()
 	// only 6 calls are done, the 7th record is the last rerender with the table result
-	assert.Equal(t, 6, info["GET https://example2.com"])
-	assert.Equal(t, 6, info["GET https://example2.org"])
+	assert.Equal(t, 6, info["GET https://test2working.com"])
+	assert.Equal(t, 6, info["GET https://test2working.org"])
 }
 
 func TestOneWorkingOne500(t *testing.T) {
@@ -143,12 +143,11 @@ func TestOneWorkingOne500(t *testing.T) {
 	// Enable HTTP mocking
 	httpmockTransport := httpmock.NewMockTransport()
 	defer httpmockTransport.Reset() // Cleanup after test
-
 	// Register mock responses
-	httpmockTransport.RegisterResponder("GET", "https://example2.com",
+	httpmockTransport.RegisterResponder("GET", "https://testoneworkingone500.com",
 		httpmock.NewStringResponder(200, "<html><body>Example Domain</body></html>").Delay(100*time.Millisecond),
 	)
-	httpmockTransport.RegisterResponder("GET", "https://error.org",
+	httpmockTransport.RegisterResponder("GET", "https://testoneworkingone500-error.org",
 		httpmock.NewStringResponder(500, "<html><body>Example Domain</body></html>").Delay(100*time.Millisecond),
 	)
 
@@ -168,7 +167,7 @@ func TestOneWorkingOne500(t *testing.T) {
 
 	// Run the app in a goroutine
 	go func() {
-		_ = appController.Start([]string{"https://example2.com", "https://error.org"})
+		_ = appController.Start([]string{"https://testoneworkingone500.com", "https://testoneworkingone500-error.org"})
 		close(done)
 	}()
 
@@ -183,8 +182,8 @@ func TestOneWorkingOne500(t *testing.T) {
 
 	contentStr := output.String()
 	contentStr = strings.ReplaceAll(contentStr, "\u001B[H\u001B[2J", "")
-	exampleCalls := tests.ParseLinesForURL(contentStr, "https://example2.com")
-	errorCalls := tests.ParseLinesForURL(contentStr, "https://error.org")
+	exampleCalls := tests.ParseLinesForURL(contentStr, "https://testoneworkingone500.com")
+	errorCalls := tests.ParseLinesForURL(contentStr, "https://testoneworkingone500-error.org")
 
 	// 6 rerenders happened, verify
 	for i := 0; i < len(exampleCalls)-1; i++ {
@@ -200,8 +199,8 @@ func TestOneWorkingOne500(t *testing.T) {
 	// Verify HTTP mock was actually called
 	info := httpmockTransport.GetCallCountInfo()
 	// only 6 calls are done, the 7th record is the last rerender with the table result
-	assert.Equal(t, 6, info["GET https://example2.com"])
-	assert.Equal(t, 6, info["GET https://error.org"])
+	assert.Equal(t, 6, info["GET https://testoneworkingone500.com"])
+	assert.Equal(t, 6, info["GET https://testoneworkingone500-error.org"])
 }
 
 func TestInvalidArgs(t *testing.T) {
@@ -254,7 +253,7 @@ func TestOneSlowWorking(t *testing.T) {
 	// Enable HTTP mocking
 	// Register mock responses
 	httpmockTransport := httpmock.NewMockTransport()
-	httpmockTransport.RegisterResponder("GET", "https://example1.com",
+	httpmockTransport.RegisterResponder("GET", "https://oneslow.com",
 		httpmock.NewStringResponder(200, "<html><body>Example Domain</body></html>").Delay(2000*time.Millisecond),
 	)
 
@@ -275,7 +274,7 @@ func TestOneSlowWorking(t *testing.T) {
 
 	// Run the app in a goroutine
 	go func() {
-		_ = appController.Start([]string{"https://example1.com"})
+		_ = appController.Start([]string{"https://oneslow.com"})
 		close(done) // Signal that the app has finished
 	}()
 
@@ -291,7 +290,7 @@ func TestOneSlowWorking(t *testing.T) {
 	info := httpmockTransport.GetCallCountInfo()
 	contentStr := output.String()
 	contentStr = strings.ReplaceAll(contentStr, "\u001B[H\u001B[2J", "")
-	exampleCalls := tests.ParseLinesForURL(contentStr, "https://example1.com")
+	exampleCalls := tests.ParseLinesForURL(contentStr, "https://oneslow.com")
 
 	// 11 rerenders happened + 1 metrics table
 	assert.Equal(t, 12, len(exampleCalls))
@@ -299,7 +298,7 @@ func TestOneSlowWorking(t *testing.T) {
 		tests.VerifyRerenders(t, exampleCalls[i], "UP", "200", 2000.00, 40)
 	}
 	tests.VerifyMetricsTable(t, exampleCalls[11], "11/0", "100.0%", 2000.00, 40, 2000.00, 40, 2000.00, 40)
-	assert.Equal(t, 11, info["GET https://example1.com"])
+	assert.Equal(t, 11, info["GET https://oneslow.com"])
 }
 
 func TestHTTPClientError(t *testing.T) {
@@ -307,7 +306,7 @@ func TestHTTPClientError(t *testing.T) {
 	// Enable HTTP mocking
 	// Register mock responses
 	httpmockTransport := httpmock.NewMockTransport()
-	httpmockTransport.RegisterResponder("GET", "https://example1.com",
+	httpmockTransport.RegisterResponder("GET", "https://httpclienterror.com",
 		httpmock.NewErrorResponder(errors.New("connection refused")),
 	)
 
@@ -327,7 +326,7 @@ func TestHTTPClientError(t *testing.T) {
 
 	// Run the app in a goroutine
 	go func() {
-		_ = appController.Start([]string{"https://example1.com"})
+		_ = appController.Start([]string{"https://httpclienterror.com"})
 		close(done) // Signal that the app has finished
 	}()
 
@@ -343,7 +342,7 @@ func TestHTTPClientError(t *testing.T) {
 	info := httpmockTransport.GetCallCountInfo()
 	contentStr := output.String()
 	contentStr = strings.ReplaceAll(contentStr, "\u001B[H\u001B[2J", "")
-	exampleCalls := tests.ParseLinesForURL(contentStr, "https://example1.com")
+	exampleCalls := tests.ParseLinesForURL(contentStr, "https://httpclienterror.com")
 
 	// 6 rerenders happened
 	assert.Equal(t, 7, len(exampleCalls))
@@ -366,15 +365,14 @@ func TestHTTPClientError(t *testing.T) {
 
 	// Verify HTTP mock was actually called
 	// only 6 calls are done, the 7th record is the last rerender with the table result
-	assert.Equal(t, 6, info["GET https://example1.com"])
+	assert.Equal(t, 6, info["GET https://httpclienterror.com"])
 }
 
 func TestTimeout(t *testing.T) {
 	t.Parallel()
 	// Enable HTTP mocking
 	// Register mock responses
-	httpmockTransport := httpmock.NewMockTransport()
-	httpmockTransport.RegisterResponder("GET", "https://example1.com",
+	httpmock.RegisterResponder("GET", "https://testtimeout.com",
 		httpmock.NewStringResponder(200, "<html><body>Example Domain</body></html>").
 			Delay(10000*time.Millisecond),
 	)
@@ -386,18 +384,13 @@ func TestTimeout(t *testing.T) {
 	// Initialize app components
 	inMemoryStore := store.NewInMemoryStore()
 	cliView := view.NewCLIView(settings)
-	httpService := service.NewHTTPServiceWithClient(
-		&http.Client{
-			Transport: httpmockTransport,
-			Timeout:   settings.Timeout,
-		})
-
+	httpService := service.NewHTTPService(settings)
 	appController := controller.NewController(inMemoryStore, cliView, httpService, settings)
 	done := make(chan struct{})
 
 	// Run the app in a goroutine
 	go func() {
-		_ = appController.Start([]string{"https://example1.com"})
+		_ = appController.Start([]string{"https://testtimeout.com"})
 		close(done) // Signal that the app has finished
 	}()
 
@@ -413,7 +406,7 @@ func TestTimeout(t *testing.T) {
 	info := httpmock.GetCallCountInfo()
 	contentStr := output.String()
 	contentStr = strings.ReplaceAll(contentStr, "\u001B[H\u001B[2J", "")
-	exampleCalls := tests.ParseLinesForURL(contentStr, "https://example1.com")
+	exampleCalls := tests.ParseLinesForURL(contentStr, "https://testtimeout.com")
 
 	// 6 rerenders happened
 	assert.Equal(t, 7, len(exampleCalls))
@@ -438,7 +431,7 @@ func TestTimeout(t *testing.T) {
 	assert.Equal(t, "0 B", exampleCalls[6][8])
 
 	// 0 requests were successful, all failed due to timeout
-	assert.Equal(t, 0, info["GET https://example1.com"])
+	assert.Equal(t, 0, info["GET https://testtimeout.com"])
 }
 
 func TestHTTPQueueLimit(t *testing.T) {
@@ -456,7 +449,7 @@ func TestHTTPQueueLimit(t *testing.T) {
 	*/
 	t.Parallel()
 	httpmockTransport := httpmock.NewMockTransport()
-	httpmockTransport.RegisterResponder("GET", "https://example1.com",
+	httpmockTransport.RegisterResponder("GET", "https://testqueue.com",
 		httpmock.NewStringResponder(200, "<html><body>Example Domain</body></html>").
 			Delay(4*time.Second),
 	)
@@ -478,7 +471,7 @@ func TestHTTPQueueLimit(t *testing.T) {
 
 	// Run the app in a goroutine
 	go func() {
-		_ = appController.Start([]string{"https://example1.com"})
+		_ = appController.Start([]string{"https://testqueue.com"})
 		close(done) // Signal that the app has finished
 	}()
 
@@ -492,7 +485,7 @@ func TestHTTPQueueLimit(t *testing.T) {
 	info := httpmockTransport.GetCallCountInfo()
 	contentStr := output.String()
 	contentStr = strings.ReplaceAll(contentStr, "\u001B[H\u001B[2J", "")
-	exampleCalls := tests.ParseLinesForURL(contentStr, "https://example1.com")
+	exampleCalls := tests.ParseLinesForURL(contentStr, "https://testqueue.com")
 
 	assert.GreaterOrEqual(t, len(exampleCalls), 3) // Initial + at least 2 rerenders due to queue limit
 
@@ -505,5 +498,5 @@ func TestHTTPQueueLimit(t *testing.T) {
 		4000, 40,
 	)
 
-	assert.Equal(t, 4, info["GET https://example1.com"])
+	assert.Equal(t, 4, info["GET https://testqueue.com"])
 }
