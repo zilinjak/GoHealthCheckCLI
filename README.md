@@ -22,5 +22,21 @@ The application is built using these components:
  - Controller - putting it all together
    - HealthCheckController - controller for health check, responsible for starting and stopping the health check
 
+## How to run the app
 
+```bash
+go run cmd/app/main.go \
+  https://www.seznam.cz \
+  https://www.google.com \
+  https://www.cdn77.com \
+  https://www.nonexistingdomain.com \
+  https://www.youtube.com
+```
 
+## What can be improved?
+
+- UI rendering
+- E2E testing of the CLI -> run the main.go with some arguments, 
+not the tests mainly test the integration of yeah component, but not the CLI itself
+- Table rendering - proper info like - TIMEOUT could be displayed
+- Better models -> SuccessFull model, Failed model, Timeout model etc, with proper inheritance
